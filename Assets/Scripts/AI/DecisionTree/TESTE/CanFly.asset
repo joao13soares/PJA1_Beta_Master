@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de214abe0db3e52478aface126bd2322, type: 3}
+  m_Name: CanFly
+  m_EditorClassIdentifier: 
+  trueChild: {fileID: 11400000, guid: 5356a6949af7df746a6a701e7ae25d04, type: 2}
+  falseChild: {fileID: 11400000, guid: 4777e4b1972e7a1429dd359035ca7ee0, type: 2}
+  canFly: 0
