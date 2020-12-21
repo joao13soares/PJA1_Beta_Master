@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\s11p1\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\s11p1\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_PJA1_Beta_Master.234562627.00" t="ExcludeRecursive" />
+    <e p="D:\UnityProjects\PJA1_Beta_Master" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="AI" t="Include">
+            <e p="DecisionTree" t="Include">
+              <e p="ActionNode.cs" t="Include" />
+              <e p="DecisionNode.cs" t="Include" />
+              <e p="DecisionTree.cs" t="Include" />
+              <e p="Node.cs" t="Include" />
+              <e p="TESTE" t="Include">
+                <e p="BirdAction.cs" t="Include" />
+                <e p="CanFly.cs" t="Include" />
+                <e p="CanSwim.cs" t="Include" />
+                <e p="FishAction.cs" t="Include" />
+                <e p="HumanAction.cs" t="Include" />
+                <e p="IsBipede.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Locomotion" t="Include">
+              <e p="AuxMethods.cs" t="Include" />
+              <e p="MovementInfo.cs" t="Include" />
+              <e p="SteeringBehaviours" t="Include">
+                <e p="Arrive.cs" t="Include" />
+                <e p="BlendedSteering.cs" t="Include" />
+                <e p="LookWhereYouGo.cs" t="Include" />
+                <e p="Steering.cs" t="Include" />
+                <e p="SteeringBehaviour.cs" t="Include" />
+                <e p="WeightedSteeringBehaviour.cs" t="Include" />
+              </e>
+            </e>
+            <e p="PathFinding" t="Include">
+              <e p="HeapStructure.cs" t="Include" />
+              <e p="PathFindingAStar.cs" t="Include" />
+              <e p="VoxelDivision" t="Include">
+                <e p="Cell.cs" t="Include" />
+                <e p="WorldGrid.cs" t="Include" />
+              </e>
+            </e>
+            <e p="StateMachine" t="Include">
+              <e p="State.cs" t="Include" />
+              <e p="StateMachine.cs" t="Include" />
+              <e p="Transition.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Book" t="Include">
+            <e p="DisplayPanel.cs" t="Include" />
+            <e p="HealthTab" t="Include">
+              <e p="HeartSprites" t="Include">
+                <e p="HeartAnimation.cs" t="Include" />
+              </e>
+            </e>
+            <e p="InspectItemRender.cs" t="Include" />
+            <e p="InventoryTab" t="Include">
+              <e p="Logic" t="Include">
+                <e p="Inventory.cs" t="Include" />
+              </e>
+              <e p="UI" t="Include">
+                <e p="InventoryTabManager.cs" t="Include" />
+              </e>
+            </e>
+            <e p="SlotS" t="Include">
+              <e p="InventorySlot.cs" t="Include" />
+              <e p="SlotSelection.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Enemies" t="Include">
+            <e p="BaseEnemy" t="Include">
+              <e p="AliveActionNode.cs" t="Include" />
+              <e p="IsDeadDecisionNode.cs" t="Include" />
+              <e p="StateMachine" t="Include">
+                <e p="LookForState.cs" t="Include" />
+                <e p="PatrolState.cs" t="Include" />
+                <e p="PatrolToPatrol.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Enemy.cs" t="Include" />
+          </e>
+          <e p="Flashlight" t="Include">
+            <e p="Flashlight.cs" t="Include" />
+            <e p="FlashlightOrientation.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IPickUpable.cs" t="Include" />
+            <e p="IRaycastResponse.cs" t="Include" />
+            <e p="IRechargeable.cs" t="Include" />
+            <e p="ISlot.cs" t="Include" />
+            <e p="IUnlockable.cs" t="Include" />
+          </e>
+          <e p="Movement" t="Include">
+            <e p="Movement" t="Include">
+              <e p="Movement.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Player" t="Include">
+            <e p="Health.cs" t="Include" />
+            <e p="Interactables" t="Include">
+              <e p="DragDoor.cs" t="Include" />
+              <e p="Item" t="Include">
+                <e p="Action.cs" t="Include" />
+                <e p="HealAction.cs" t="Include" />
+                <e p="Item.cs" t="Include" />
+                <e p="ItemInspect.cs" t="Include" />
+              </e>
+              <e p="Keys" t="Include">
+                <e p="ItemUnlock.cs" t="Include" />
+                <e p="Keypad" t="Include">
+                  <e p="KeypadClearButton.cs" t="Include" />
+                  <e p="KeypadEnterButton.cs" t="Include" />
+                  <e p="KeypadNumberButton.cs" t="Include" />
+                  <e p="KeypadUnlock.cs" t="Include" />
+                </e>
+                <e p="UnlockManager.cs" t="Include" />
+              </e>
+              <e p="PickUpRigidBody.cs" t="Include" />
+              <e p="PlayerRaycast.cs" t="Include" />
+            </e>
+            <e p="PlayerHealthManager.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+          </e>
+          <e p="Safe" t="Include">
+            <e p="UnlockSafe.cs" t="Include" />
+          </e>
+          <e p="Sound" t="Include">
+            <e p="DoorSound.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Crosshair.cs" t="Include" />
+            <e p="FlashlightCapacity.cs" t="Include" />
+            <e p="KeypadUI" t="Include">
+              <e p="KeypadUI.cs" t="Include" />
+            </e>
+            <e p="Map" t="Include">
+              <e p="MapShowArea.cs" t="Include" />
+            </e>
+            <e p="UIStateMachine" t="Include">
+              <e p="InGameUIState.cs" t="Include" />
+              <e p="InspectToInventoryTransition.cs" t="Include" />
+              <e p="InspectUIState.cs" t="Include" />
+              <e p="InventoryInputTransition.cs" t="Include" />
+              <e p="InventoryUIState.cs" t="Include" />
+              <e p="ToInspectTransition.cs" t="Include" />
+            </e>
+            <e p="WeaponUI" t="Include">
+              <e p="WeaponUI.cs" t="Include" />
+              <e p="WeaponUIManager.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Weapons" t="Include">
+            <e p="PelletHoles" t="Include">
+              <e p="PelletHole.cs" t="Include" />
+              <e p="PelletHoleManager.cs" t="Include" />
+            </e>
+            <e p="WeaponHierarchy" t="Include">
+              <e p="Melee" t="Include">
+                <e p="Melee.cs" t="Include" />
+              </e>
+              <e p="Pistol.cs" t="Include" />
+              <e p="Shotgun.cs" t="Include" />
+              <e p="Weapon.cs" t="Include" />
+              <e p="WeaponInfo.cs" t="Include" />
+              <e p="WeaponManager.cs" t="Include" />
+              <e p="WeaponsAnimation" t="Include">
+                <e p="WeaponAnimationManager.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Sound" t="Include">
+          <e p="Heartbeat" t="Include">
+            <e p="HeartbeatSound.cs" t="Include" />
+          </e>
+          <e p="Steps" t="Include">
+            <e p="StepsSoundManager.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="LocalPackages" t="Include">
+        <e p="com.unity.render-pipelines.high-definition-config" t="Include">
+          <e p="Runtime" t="Include">
+            <e p="ShaderConfig.cs" t="Include" />
+            <e p="ShaderConfig.cs.hlsl" t="Include" />
+            <e p="Unity.RenderPipelines.HighDefinition.Config.Runtime.asmdef" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="PJA1_Beta_Master.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Unity.RenderPipelines.HighDefinition.Config.Runtime.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>

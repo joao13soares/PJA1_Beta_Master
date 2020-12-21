@@ -19,14 +19,14 @@ public abstract class State : MonoBehaviour
     
     
     // Fuck scriptableObjects and their awake method, I hate working with this shit
-    public  void Awake()
+    public void Awake()
     {
         onEnterActions = new List<System.Action>();
         onStayActions = new List<System.Action>();
         onExitActions = new List<System.Action>();
     }
 
-    public void Start()
+    public virtual void Start()
     {
         CreateActions();
     }

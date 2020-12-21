@@ -6,51 +6,62 @@ using UnityEngine;
 
 public class KeypadUnlock : MonoBehaviour
 {
-    [SerializeField] private List<int> correctCode;
-    public List<int> currentCode;
+    [SerializeField] private int[] correctCode;
+    public int[] currentCode;
+
+    private int currentIndex;
 
 
+    [SerializeField] private DragDoor dragDoor;
 
-    [SerializeField]private DragDoor dragDoor;
 
+    private AudioSource beepAudioSource;
+
+
+    public delegate void CodeChange();
+
+    public event CodeChange CodeChanged;
 
 
     private bool CanUnlock()
     {
-
-        if (currentCode.Count < correctCode.Count) return false;
-        
-        for (int i = 0; i < currentCode.Count; i++)
+        for (int i = 0; i < currentCode.Length; i++)
         {
-            if ( currentCode[i] != correctCode[i]) return false;
+            if (currentCode[i] != correctCode[i]) return false;
         }
 
         return true;
-
-
     }
 
 
     public void AddNumber(int numberToAdd)
     {
-        if (currentCode.Count >= correctCode.Count) return;
-        
-            currentCode.Add(numberToAdd);
+        if (currentIndex >= correctCode.Length) return;
 
-
-
-
+        currentCode[currentIndex++] = numberToAdd;
+        CodeChanged?.Invoke();
     }
 
-    public void ClearKey() => currentCode.Clear();
+    public void ClearKey()
+    {
+        ClearCode();
+
+        CodeChanged?.Invoke();
+
+        currentIndex = 0;
+    }
 
     public void EnterKey()
     {
-        Debug.Log("ENTERKEY CLICKED");
-        
-        
-        Debug.Log(CanUnlock());
         if (CanUnlock()) dragDoor.UnlockDoor();
-    } 
-    
+        else ClearKey();
+    }
+
+    private void ClearCode()
+    {
+        for (int i = 0; i < currentCode.Length; i++)
+        {
+            currentCode[i] = 0;
+        }
+    }
 }

@@ -19,6 +19,7 @@ public class StepsSoundManager : MonoBehaviour
         stepsSounds = new Dictionary<string, StepsSound>();
 		stepsSounds.Add("tyle", new StepsSound("tyle", stepsAudioClips[0]));
 		stepsSounds.Add("wood", new StepsSound("wood", stepsAudioClips[1]));
+		// stepsSounds.Add("door", new StepsSound("door", stepsAudioClips[2]));
 
         currentFloorType = "tyle";
     }
@@ -63,6 +64,9 @@ public class StepsSound
 				AddWoodAudioSample(audioSamples);
 				break;
 				
+			case "door":
+				AddDoorCreackingsAudioSample(audioSamples);
+				break;
 			default:
 				break;
 		}
@@ -127,6 +131,15 @@ public class StepsSound
         list.Add(new AudioSample(list[list.Count - 1].EndTime, 9.500f));
         list.Add(new AudioSample(list[list.Count - 1].EndTime, 10.000f));
         list.Add(new AudioSample(list[list.Count - 1].EndTime, 10.700f));
+	}
+	
+	
+	private void AddDoorCreackingsAudioSample(List<AudioSample> list)
+	{
+		// door_creakings AudioSamples
+		list.Add(new AudioSample(0, 3.000f));
+		list.Add(new AudioSample(list[list.Count - 1].EndTime, 7.000f));
+		list.Add(new AudioSample(list[list.Count - 1].EndTime, 9.500f));
 	}
 }
 

@@ -61,16 +61,11 @@ public class InspectItemRender : MonoBehaviour
         }
 
         
-        // Check for Esc key to leave (destroys item and changes to InventoryUI)
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            InspectClosed?.Invoke();
-            
-        }
+        
     }
 
-    void ItemDestroy()
+    public void ItemDestroy()
     {
-        GameObject.Destroy(instantiatedItem);
+        Destroy(instantiatedItem);
     }
 }

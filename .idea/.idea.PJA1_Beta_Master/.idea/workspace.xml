@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c1929056-2b2c-44e9-9b69-8a66dd2451e7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IRechargeable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/DoorSound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/DragDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IRechargeable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/WeaponManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStateManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InGameUIState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InventoryInputTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/ToInspectTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InspectToInventoryTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InspectUIState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Book/InspectItemRender.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sound/Steps/StepsSoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InventoryUIState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/Keys/Keypad/KeypadUnlock.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lvrSQHbHVssIsETt96fEQKb57m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1929056-2b2c-44e9-9b69-8a66dd2451e7" name="Default Changelist" comment="" />
+      <created>1608488426477</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608488426477</updated>
+      <workItem from="1608488489678" duration="545000" />
+      <workItem from="1608564982798" duration="1258000" />
+      <workItem from="1608566331412" duration="10083000" />
+      <workItem from="1608585962724" duration="2595000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608572803962">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608572803962" />
+  </component>
+</project>

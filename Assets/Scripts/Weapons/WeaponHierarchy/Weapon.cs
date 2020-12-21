@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class Weapon : MonoBehaviour, IPickUpable, IRaycastResponse
+public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRechargeable
 {
     
     // Variables
@@ -216,7 +216,7 @@ public abstract class Weapon : MonoBehaviour, IPickUpable, IRaycastResponse
 
     //Changes the magazine for the current weapon with a magazine thats has random bullets in her
 
-    public void ChangeMagazine()
+    private void ChangeMagazine()
     {
         float fillPercentage = RandomNonLinearProbabilityPercentage();
         bulletsinCurrentMagazine = (int)(defaultMagazineSize * fillPercentage);
@@ -319,8 +319,9 @@ public abstract class Weapon : MonoBehaviour, IPickUpable, IRaycastResponse
     }
 
 
-   
-    
-   
+    public void Recharge()
+    {
+        ChangeMagazine();
+    }
 }
 

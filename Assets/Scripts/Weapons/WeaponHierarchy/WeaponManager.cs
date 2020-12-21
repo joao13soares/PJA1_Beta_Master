@@ -68,7 +68,7 @@ public class WeaponManager : MonoBehaviour
 
         if (Input.GetKeyDown(reloadKeycode) && equippedWeapon.CanReload)
         {
-                equippedWeapon.ChangeMagazine();
+                equippedWeapon.Recharge();
                 WeaponReloaded?.Invoke(equippedWeapon);
 
         }
