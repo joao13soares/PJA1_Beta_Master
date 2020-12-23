@@ -112,6 +112,8 @@ public class DragDoor : MonoBehaviour, IRaycastResponse
 
         playerMovementScript.enabled = true;
         flashlightOrientationScript.enabled = true;
+        
+        stopped?.Invoke();
     }
 
     public void OnRaycastSelect()

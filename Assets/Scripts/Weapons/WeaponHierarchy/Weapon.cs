@@ -79,7 +79,10 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
 
     // Camera variables
     [SerializeField] protected Camera playerCamera;          // Holds a reference to the first person camera
+    
     public Vector3 rayOrigin;
+
+    [SerializeField] protected Transform transformForParent;
 
     // Weapon Events
     public delegate void OnShooting(int bullets);
@@ -308,7 +311,7 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
     public void StoreItem()
     {
         inventory.AddItemSlot(this.gameObject);
-        weaponManager.AddWeapon(this.gameObject, playerCamera.transform);
+        weaponManager.AddWeapon(this.gameObject, transformForParent.transform);
 
     }
    

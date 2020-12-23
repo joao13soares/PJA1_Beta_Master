@@ -6,7 +6,7 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     // Value obtained by hand testing best position
-    private readonly Vector3 defaultOffSet = new Vector3(0.46f, -0.101f, 1.1f);
+    private readonly Vector3 defaultOffSet = new Vector3(0.22f, -0.147f, 0.39f);
 
     [SerializeField] private List<Weapon> ownedGuns; // SERIALIZED FOR DEBUGGING
 
