@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRechargeable
 {
-    
     // Variables
     [SerializeField] protected List<Action> itemActions;
     [SerializeField] protected GameObject itemGameObjectForInspect;
@@ -30,6 +29,7 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
 
 
     [SerializeField] private string magazineType;
+
     public int RemainingMagazines
     {
         get
@@ -41,28 +41,31 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
 
             return 0;
         }
-        
     }
 
-  
-   
-    
+
     // Magazine/bullets variables
     [SerializeField] protected int bulletsinCurrentMagazine;
     [SerializeField] protected int defaultMagazineSize = 10;
     [SerializeField] protected int bulletDamage = 1;
 
     // Variables for shooting
-    [SerializeField] protected float defaultShotCooldown = 0.25f;  // Number in seconds which controls how often the player can fire
-    [SerializeField] public float nextShotCooldown; // Float to store the time left until the player will be allowed to fire again, after firing
-    [SerializeField] protected int pelletsPerBulletShot = 5;  // Number of pellets per bullet shoot
+    [SerializeField]
+    protected float defaultShotCooldown = 0.25f; // Number in seconds which controls how often the player can fire
+
+    [SerializeField]
+    public float
+        nextShotCooldown; // Float to store the time left until the player will be allowed to fire again, after firing
+
+    [SerializeField] protected int pelletsPerBulletShot = 5; // Number of pellets per bullet shoot
 
     // Bullet spread variables
-    [SerializeField] protected float pelletSpreadRadiusMultiplier = 1.0f;   // Maximum spread radius per pellet (multiplier)
+    [SerializeField]
+    protected float pelletSpreadRadiusMultiplier = 1.0f; // Maximum spread radius per pellet (multiplier)
 
     // Weapon recoil effect variables
-    [SerializeField] protected float recoil = 20.0f;    // Recoil angle after shooting
-    [SerializeField] protected float weaponKickRecoil = 0.15f;  // Kickback intensity after shooting
+    [SerializeField] protected float recoil = 20.0f; // Recoil angle after shooting
+    [SerializeField] protected float weaponKickRecoil = 0.15f; // Kickback intensity after shooting
 
     protected Vector3 defaultLocalPosition;
     protected Quaternion defaultLocalRotation;
@@ -70,22 +73,29 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
 
     // Gun specific values
     [SerializeField] protected float gunRange = 50f; // Distance in Unity units over which the player can fire
-    [SerializeField] protected float hitForce = 100f;   // Amount of force which will be added to objects with a rigidbody shot by the player
+
+    [SerializeField]
+    protected float
+        hitForce = 100f; // Amount of force which will be added to objects with a rigidbody shot by the player
 
     // Sound effects for weapon
     [SerializeField] protected AudioClip[] gunSounds;
-    [SerializeField] protected AudioSource gunAudio;   // Holds a reference to the audio source which will play our shooting and reloading sound effects
+
+    [SerializeField]
+    protected AudioSource
+        gunAudio; // Holds a reference to the audio source which will play our shooting and reloading sound effects
 
 
     // Camera variables
-    [SerializeField] protected Camera playerCamera;          // Holds a reference to the first person camera
-    
+    [SerializeField] protected Camera playerCamera; // Holds a reference to the first person camera
+
     public Vector3 rayOrigin;
 
     [SerializeField] protected Transform transformForParent;
 
     // Weapon Events
     public delegate void OnShooting(int bullets);
+
     public event OnShooting Shot;
 
     // Visual shot hit effect manager
@@ -101,8 +111,7 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
     //ACESSORS
     public int BulletsInCurrentMagazine => bulletsinCurrentMagazine;
     public int DefaultMagazineSize => defaultMagazineSize;
-    
-   
+
 
     // ANIMATIONS
     [SerializeField] protected Animation animationComponent;
@@ -114,18 +123,19 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
 
     public bool IsAnimationPlaying => weaponAnimationManager.IsAnimationPlaying;
 
-    
-    
-    // Conditions(TIRAR COMENTARIO QUANDO ANIMATIONS PRONTAS)
-    public virtual bool CanShoot => nextShotCooldown <= 0 && bulletsinCurrentMagazine > 0 ;// && !IsAnimationPlaying;
-    public virtual bool CanReload => RemainingMagazines  > 0 && bulletsinCurrentMagazine != defaultMagazineSize; // && !IsAnimationPlaying;
 
-    
-    
+    // Conditions(TIRAR COMENTARIO QUANDO ANIMATIONS PRONTAS)
+    public virtual bool CanShoot => nextShotCooldown <= 0 && bulletsinCurrentMagazine > 0; // && !IsAnimationPlaying;
+
+    public virtual bool CanReload =>
+        RemainingMagazines > 0 && bulletsinCurrentMagazine != defaultMagazineSize; // && !IsAnimationPlaying;
+
+
     private void Awake()
     {
-        weaponAnimationManager = new WeaponAnimationManager(animationComponent, holsterWeaponAnimation,drawWeaponAnimation,reloadWeaponAnimation);
-        
+        weaponAnimationManager = new WeaponAnimationManager(animationComponent, holsterWeaponAnimation,
+            drawWeaponAnimation, reloadWeaponAnimation);
+
         pelletHoleManager = new PelletHoleManager();
         bulletsinCurrentMagazine = defaultMagazineSize;
 
@@ -137,8 +147,10 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
     private void Update()
     {
         // Gradually restore position and rotation after shooting kickback and recoil, respectively
-        this.transform.localPosition = Vector3.Lerp(this.transform.localPosition, defaultLocalPosition, Time.deltaTime * 4f);
-        this.transform.localRotation = Quaternion.Lerp(this.transform.localRotation, defaultLocalRotation, Time.deltaTime * 4f);
+        this.transform.localPosition =
+            Vector3.Lerp(this.transform.localPosition, defaultLocalPosition, Time.deltaTime * 4f);
+        this.transform.localRotation =
+            Quaternion.Lerp(this.transform.localRotation, defaultLocalRotation, Time.deltaTime * 4f);
 
         // If there is a delay for the next shot
         if (nextShotCooldown > 0)
@@ -147,6 +159,7 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
             nextShotCooldown -= Time.deltaTime;
         }
     }
+
     public virtual void Attacking()
     {
         // Update the time when our player can fire next
@@ -168,7 +181,6 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
         // Check if our raycast has hit anything
         if (Physics.Raycast(rayOrigin, pelletDirection, out hit, gunRange))
         {
-
             // Get a reference to an Enemy script attached to the collider we hit
             Enemy enemy = hit.collider.GetComponent<Enemy>();
 
@@ -179,16 +191,12 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
             ApplyWeaponForce(hit, impactPercentageWithDistance);
 
             HoleCreation(hit);
-
-
-
         }
 
         WeaponRecoil();
         Debug.Log($"bullets: {bulletsinCurrentMagazine}");
         ShotEvent();
     }
-
 
 
     //CReates the holes
@@ -222,17 +230,16 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
     private void ChangeMagazine()
     {
         float fillPercentage = RandomNonLinearProbabilityPercentage();
-        bulletsinCurrentMagazine = (int)(defaultMagazineSize * fillPercentage);
-        
-        
+        bulletsinCurrentMagazine = (int) (defaultMagazineSize * fillPercentage);
+
+
         // Play the reloading sound effect
         gunAudio.PlayOneShot(gunSounds[1]);
-        
+
         //DESCOMENTAR QUANDO ANIMATIONS PRONTAS
         // weaponAnimationManager.PlayReloadAnimation();
-        
+
         inventory.RemoveSlot(type);
-        
     }
 
     //Calculates the % of next magazines bullets 
@@ -242,14 +249,13 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
 
         for (int i = 1; i <= 4; i++)
         {
-            randNonLinearProbabilityPercentage = UnityEngine.Random.Range(randNonLinearProbabilityPercentage, 0.25f * i);
+            randNonLinearProbabilityPercentage =
+                UnityEngine.Random.Range(randNonLinearProbabilityPercentage, 0.25f * i);
         }
 
         return randNonLinearProbabilityPercentage;
     }
 
-
-  
 
     // Play the shooting sound effect
     //protected void PlayShootingSound() => gunAudio.PlayOneShot(gunSounds[0]);
@@ -264,9 +270,15 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
         if (currentRecoil >= 360f) currentRecoil = 0.0f;
         recoilSpreadFactor = currentRecoil;
 
-        float pelletSpreadRadius = Random.Range(0.0f, recoilSpreadFactor / 400.0f) * pelletSpreadRadiusMultiplier;  // Pellet spread radius increases with the current weapon X rotation, due to recoil
-        Vector3 pelletSpreadAngle = this.transform.TransformDirection(Random.insideUnitCircle.normalized);  // TransformDirection from local space to world space | .normalized turns it into .onUnitCircle
-        Vector3 pelletDirection = this.transform.forward - (this.transform.forward.y - playerCamera.transform.forward.y) * 0.5f * Vector3.up + pelletSpreadAngle * pelletSpreadRadius;
+        float pelletSpreadRadius =
+            Random.Range(0.0f, recoilSpreadFactor / 400.0f) *
+            pelletSpreadRadiusMultiplier; // Pellet spread radius increases with the current weapon X rotation, due to recoil
+        Vector3 pelletSpreadAngle =
+            this.transform.TransformDirection(Random.insideUnitCircle
+                .normalized); // TransformDirection from local space to world space | .normalized turns it into .onUnitCircle
+        Vector3 pelletDirection = this.transform.forward -
+                                  (this.transform.forward.y - playerCamera.transform.forward.y) * 0.5f * Vector3.up +
+                                  pelletSpreadAngle * pelletSpreadRadius;
 
         return pelletDirection;
     }
@@ -275,36 +287,29 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
     protected float WeaponForceCalculation(RaycastHit hit) => 1 - hit.distance / gunRange;
 
 
-
     protected void DoDamage(Enemy enemy, float impactPercentageWithDistance)
     {
-        // If there was an Enemy script attached
-        if (enemy != null && !enemy.isDying())
-        {
-            // Call the damage function of the Enemy script, passing in our pelletDamage
-            enemy.Damage(bulletDamage * impactPercentageWithDistance);
-        }
+        if (enemy == null) return; 
+
+        // Call the damage function of the Enemy script, passing in our pelletDamage
+        enemy.ReceiveDamage(bulletDamage * impactPercentageWithDistance);
     }
 
 
     protected void ApplyWeaponForce(RaycastHit hit, float impactPercentageWithDistance)
     {
         // Check if the object we hit has a rigidbody attached
-        if (hit.rigidbody != null)
-        {
-            // Add force to the rigidbody we hit, in the direction from which it was hit
-            hit.rigidbody.AddForce(-hit.normal * hitForce * impactPercentageWithDistance);
-        }
+        if (hit.rigidbody == null) return;
+
+        // Add force to the rigidbody we hit, in the direction from which it was hit
+        hit.rigidbody.AddForce(-hit.normal * hitForce * impactPercentageWithDistance);
     }
 
-    
-    
-    
+
     public void OnRaycastSelect()
     {
         StoreItem();
     }
-
 
 
     //Stores the weapon on the inventory
@@ -312,11 +317,10 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
     {
         inventory.AddItemSlot(this.gameObject);
         weaponManager.AddWeapon(this.gameObject, transformForParent.transform);
-
     }
-   
 
-    public  void RemoveItem()
+
+    public void RemoveItem()
     {
         inventory.RemoveSlot(type);
     }
@@ -327,4 +331,3 @@ public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRe
         ChangeMagazine();
     }
 }
-

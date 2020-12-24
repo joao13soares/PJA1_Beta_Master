@@ -71,8 +71,6 @@
           </e>
           <e p="Enemies" t="Include">
             <e p="BaseEnemy" t="Include">
-              <e p="AliveActionNode.cs" t="Include" />
-              <e p="IsDeadDecisionNode.cs" t="Include" />
               <e p="StateMachine" t="Include">
                 <e p="LookForState.cs" t="Include" />
                 <e p="PatrolState.cs" t="Include" />

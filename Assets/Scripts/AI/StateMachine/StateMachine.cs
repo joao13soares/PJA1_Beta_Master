@@ -25,10 +25,10 @@ public  class StateMachine : MonoBehaviour
         }
     }
     
-    void Update()
-    {
-        currentState.OnStay();
-    }
+ 
+
+    public void ExecuteStateMachine() => currentState.OnStay();
+    
     private void ChangeState(State newState)
     {
         Debug.Log("new state:" + newState);
