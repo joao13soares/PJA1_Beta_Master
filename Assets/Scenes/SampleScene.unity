@@ -34772,7 +34772,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658050308837216271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.23, y: 2, z: 8.09}
+  m_LocalPosition: {x: -5.85, y: 2, z: 7.01}
   m_LocalScale: {x: 1.32, y: 2, z: 1.32}
   m_Children:
   - {fileID: 1048230984}
@@ -34964,6 +34964,7 @@ GameObject:
   - component: {fileID: 658050308837216276}
   - component: {fileID: 658050308837216275}
   - component: {fileID: 658050308837216274}
+  - component: {fileID: 658050308837216277}
   m_Layer: 0
   m_Name: PROTOTYPEENEMY
   m_TagString: Untagged
@@ -35067,6 +35068,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allStates:
   - {fileID: 658050308837216275}
+--- !u!114 &658050308837216277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658050308837216271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5e023d651023743b931a6f950f3bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTransform: {fileID: 658050308837216261}
+  playerTransform: {fileID: 4490467827067958854}
+  fovAngle: 70
+  detectRange: 9
 --- !u!23 &681403346439964562
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -40,6 +40,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Crosshair.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/PlayerRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FielOfViewDetection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FieldOfViewDetection.cs" />
       </list>
     </option>
   </component>
@@ -96,6 +98,7 @@
       <workItem from="1608738744920" duration="3457000" />
       <workItem from="1608757647956" duration="2727000" />
       <workItem from="1608821495085" duration="10330000" />
+      <workItem from="1608912572952" duration="3635000" />
     </task>
     <servers />
   </component>
