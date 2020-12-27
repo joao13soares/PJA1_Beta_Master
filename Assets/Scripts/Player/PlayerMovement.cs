@@ -37,9 +37,11 @@ public class PlayerMovement : MonoBehaviour
 
     
      [SerializeField] private float distanceBetweenStepsSounds = 0.25f;
-     Vector3 lastStepSoundPosition;
-     [SerializeField]StepsSoundManager stepsSoundManager;
-    
+     public Vector3 lastStepPosition;
+     
+
+     public delegate void OnStep();
+     public event OnStep Stepped;
     
     void Awake()
     {
@@ -49,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerCamera != null) playerCamera = GameObject.Find("Main Camera");
         
         
-        lastStepSoundPosition = this.transform.position;
+        lastStepPosition = this.transform.position;
         
 
 
@@ -74,10 +76,10 @@ public class PlayerMovement : MonoBehaviour
         info.position = transform.position;
         
         // Check if plays sound manager according to new position
-        if (Vector3.Distance(transform.position, lastStepSoundPosition) >= distanceBetweenStepsSounds)
+        if (Vector3.Distance(transform.position, lastStepPosition) >= distanceBetweenStepsSounds)
         {
-            stepsSoundManager.PlayAudioSample();
-            lastStepSoundPosition = transform.position;
+            Stepped?.Invoke();
+            lastStepPosition = transform.position;
         }
     }
 

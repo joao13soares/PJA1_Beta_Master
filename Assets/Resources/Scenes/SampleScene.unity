@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 184.12514, g: 184.12514, b: 184.12514, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3224,6 +3224,7 @@ GameObject:
   - component: {fileID: 244743512}
   - component: {fileID: 244743511}
   - component: {fileID: 244743510}
+  - component: {fileID: 244743513}
   m_Layer: 0
   m_Name: Light_01_Light
   m_TagString: Untagged
@@ -3417,6 +3418,22 @@ Transform:
   m_Father: {fileID: 1917360197}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &244743513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244743509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4972f649e8e9d8744a553b7368037840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upTime: 0
+  currentTimer: 0
+  downTime: 0
+  lightToTurnOff: {fileID: 0}
 --- !u!1 &249362545
 GameObject:
   m_ObjectHideFlags: 0
@@ -34772,7 +34789,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658050308837216271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.85, y: 2, z: 7.01}
+  m_LocalPosition: {x: 7.47, y: 2, z: 6.96}
   m_LocalScale: {x: 1.32, y: 2, z: 1.32}
   m_Children:
   - {fileID: 1048230984}
@@ -34963,7 +34980,10 @@ GameObject:
   - component: {fileID: 658050308837216273}
   - component: {fileID: 658050308837216276}
   - component: {fileID: 658050308837216275}
+  - component: {fileID: 658050308837216279}
   - component: {fileID: 658050308837216274}
+  - component: {fileID: 658050308837216278}
+  - component: {fileID: 658050308837216280}
   - component: {fileID: 658050308837216277}
   m_Layer: 0
   m_Name: PROTOTYPEENEMY
@@ -35028,7 +35048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 658050308837216275}
-  PatrolState: {fileID: 658050308837216275}
+  movement: {fileID: 658050308837216272}
 --- !u!114 &658050308837216275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35043,8 +35063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateTransitions:
   - {fileID: 658050308837216274}
+  - {fileID: 658050308837216278}
   baseEnemyMovement: {fileID: 658050308837216272}
-  baseEnemyTransform: {fileID: 658050308837216261}
   currentTargetIndex: 0
   randomPatrolPoints:
   - {fileID: 1769437163}
@@ -35068,6 +35088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allStates:
   - {fileID: 658050308837216275}
+  - {fileID: 658050308837216279}
 --- !u!114 &658050308837216277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35082,8 +35103,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTransform: {fileID: 658050308837216261}
   playerTransform: {fileID: 4490467827067958854}
-  fovAngle: 70
-  detectRange: 9
+  fovAngle: 40
+  detectRange: 20
+--- !u!114 &658050308837216278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658050308837216271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa22c86bfb7adc14caeafac0da1d59d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 658050308837216279}
+  fovDetection: {fileID: 658050308837216277}
+--- !u!114 &658050308837216279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658050308837216271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4e6bdffeb4ce3439faf9e3cec243cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateTransitions:
+  - {fileID: 658050308837216280}
+  playerMovement: {fileID: 4490467827067958852}
+  baseEnemyMovement: {fileID: 658050308837216272}
+  fovDetection: {fileID: 658050308837216277}
+--- !u!114 &658050308837216280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658050308837216271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c3061dbc47e3644ace689cb5685869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 658050308837216275}
+  fovDetection: {fileID: 658050308837216277}
+  movementToCheckEnd: {fileID: 658050308837216272}
+  currentUnknownTime: 0
 --- !u!23 &681403346439964562
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41467,7 +41535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4490467826105401997}
   m_LocalRotation: {x: -0, y: -0.99632794, z: -0, w: 0.08562014}
-  m_LocalPosition: {x: 9.61, y: 0.524, z: -4.68}
+  m_LocalPosition: {x: -19.15, y: 0.524, z: 15.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4490467827067958854}
@@ -41804,7 +41872,7 @@ MonoBehaviour:
   mouseSensitivity: 0.5
   playerCamera: {fileID: 4490467826576082368}
   distanceBetweenStepsSounds: 1
-  stepsSoundManager: {fileID: 4490467827067958860}
+  lastStepPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &4490467827067958853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41950,6 +42018,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b4dde1984df7a5743a0a3daabe7fa587, type: 3}
   - {fileID: 8300000, guid: 5d0671021966b5b449c0d0eafc954a79, type: 3}
   audioSource: {fileID: 2053140000}
+  playerMovement: {fileID: 4490467827067958852}
 --- !u!82 &4490467827067958861
 AudioSource:
   m_ObjectHideFlags: 0

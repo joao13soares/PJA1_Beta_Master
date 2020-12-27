@@ -13,9 +13,13 @@ public  class StateMachine : MonoBehaviour
     {
         StateEventSubscription();
         currentState = allStates.ElementAt(0);
+    }
+
+    private void Start()
+    {
         currentState.OnEnter();
     }
-    
+
     // protected abstract void  StateCreation();
     void StateEventSubscription()
     {
@@ -31,7 +35,6 @@ public  class StateMachine : MonoBehaviour
     
     private void ChangeState(State newState)
     {
-        Debug.Log("new state:" + newState);
         currentState = newState;
     }
 }

@@ -72,8 +72,11 @@
           <e p="Enemies" t="Include">
             <e p="BaseEnemy" t="Include">
               <e p="StateMachine" t="Include">
+                <e p="ChaseState.cs" t="Include" />
+                <e p="ChaseToPatrolTransition.cs" t="Include" />
                 <e p="LookForState.cs" t="Include" />
                 <e p="PatrolState.cs" t="Include" />
+                <e p="PatrolToChaseTransition.cs" t="Include" />
                 <e p="PatrolToPatrol.cs" t="Include" />
               </e>
             </e>
@@ -90,6 +93,9 @@
             <e p="IRechargeable.cs" t="Include" />
             <e p="ISlot.cs" t="Include" />
             <e p="IUnlockable.cs" t="Include" />
+          </e>
+          <e p="Lights" t="Include">
+            <e p="FlickerLight.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
             <e p="Movement" t="Include">
@@ -127,6 +133,7 @@
           </e>
           <e p="Sound" t="Include">
             <e p="DoorSound.cs" t="Include" />
+            <e p="StepsSoundManager.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="Crosshair.cs" t="Include" />
@@ -173,9 +180,6 @@
         <e p="Sound" t="Include">
           <e p="Heartbeat" t="Include">
             <e p="HeartbeatSound.cs" t="Include" />
-          </e>
-          <e p="Steps" t="Include">
-            <e p="StepsSoundManager.cs" t="Include" />
           </e>
         </e>
       </e>

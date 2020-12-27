@@ -12,6 +12,8 @@ public class StepsSoundManager : MonoBehaviour
     
     string currentFloorType;
 
+    [SerializeField]private PlayerMovement playerMovement;
+
     void Start()
     {
         
@@ -22,9 +24,13 @@ public class StepsSoundManager : MonoBehaviour
 		// stepsSounds.Add("door", new StepsSound("door", stepsAudioClips[2]));
 
         currentFloorType = "tyle";
+
+
+        playerMovement.Stepped += PlayAudioSample;
+
     }
 	
-	public void PlayAudioSample()
+	private void PlayAudioSample()
 	{
 		try
 		{

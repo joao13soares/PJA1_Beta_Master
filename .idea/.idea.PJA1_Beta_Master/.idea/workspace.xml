@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IRechargeable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseToPatrolTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/46/39b07108/Physics.cs" root0="SKIP_HIGHLIGHTING" />
@@ -28,20 +29,30 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InspectUIState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Book/InspectItemRender.cs" />
         <option value="$PROJECT_DIR$/Assets/Sound/Steps/StepsSoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InventoryUIState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/Keys/Keypad/KeypadUnlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/DragDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sound/DoorSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/WeaponManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/StateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Crosshair.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FielOfViewDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FieldOfViewDetection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlickerLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/StepsSoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/LookLastKnownPositionState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolToChaseTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolToPatrol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseToPatrolTransition.cs" />
       </list>
     </option>
   </component>
@@ -99,6 +110,10 @@
       <workItem from="1608757647956" duration="2727000" />
       <workItem from="1608821495085" duration="10330000" />
       <workItem from="1608912572952" duration="3635000" />
+      <workItem from="1608921615948" duration="2662000" />
+      <workItem from="1608932745439" duration="2061000" />
+      <workItem from="1608995563417" duration="8682000" />
+      <workItem from="1609019880003" duration="3730000" />
     </task>
     <servers />
   </component>

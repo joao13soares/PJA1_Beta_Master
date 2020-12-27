@@ -27,42 +27,38 @@ public class Movement : MonoBehaviour
     [SerializeField] private PathFindingAStar pathfinding;
 
 
-    private List<Cell> currentPath;
-    private List<Cell> nextPath;
+    public List<Cell> currentPath;
     private int currentTargetIndex;
+
+    public int CurrentTargetIndex => currentTargetIndex;
 
 
     void Awake()
     {
-        currentPath = new List<Cell>();
-        nextPath = null;
-
+        
         steeringBehaviour = Instantiate(steeringBehaviour);
 
         currentTargetIndex = 0;
     }
 
 
-    void Start()
+  
+
+    public void MovementUpdate()
     {
-        GetNewEndTarget(true);
-    }
+        Debug.Log(currentPath == null);
+        if (currentPath == null) return;
+        currentTargetIndex = GetTargetIndex(currentPath[currentTargetIndex],currentTargetIndex);
+        
+        
+        Cell currentTarget = currentPath[currentTargetIndex];
 
-
-    // Update is called once per frame
-    public void MovementUpdate(Cell currentTarget)
-    {
-        UpdatePath();
-
-
+        
+        
         Steering steering = steeringBehaviour.GetSteering(this.movInfo, currentTarget.Position);
 
         UpdatePosition(steering);
         UpdateOrientation(steering);
-
-        
-
-
       
     }
 
@@ -72,40 +68,27 @@ public class Movement : MonoBehaviour
     }
 
 
-    void UpdatePath()
+    public void UpdatePath(Vector3 endPosition)
     {
-        int indexToStartCreatingNextPath = currentPath.Count - 3;
-
-        if (currentTargetIndex == currentPath.Count)
-        {
-            currentTargetIndex = 0;
-            currentPath = nextPath;
-            nextPath = null;
-            return;
-        }
-
-        if (currentTargetIndex == indexToStartCreatingNextPath && nextPath == null)
-        {
-            GetNewEndTarget(false);
-        }
+        currentPath = pathfinding.FindPath(this.transform.position, endPosition);
+        currentTargetIndex = 0;
     }
-
-    void GetNewEndTarget(bool isCurrent)
+    
+    private int GetTargetIndex(Cell currentTarget,int currentIndex)
     {
-      
+        Vector3 convertThis2D = new Vector3(transform.position.x, 0f, transform.position.z);
+        Vector3 convertTargetTo2D = new Vector3(currentTarget.Position.x, 0f, currentTarget.Position.z);
+
+
+        if (Vector3.Distance(convertThis2D, convertTargetTo2D) > 0.5f) return currentIndex;
+        
+        return Mathf.Clamp(++currentIndex,0,currentPath.Count-1);
         
         
-        if (isCurrent)
-            currentPath = pathfinding.FindPath(transform.position, randomPatrolPoints[randomTargetNumber].position);
-        else
-        {
-            // nextPath = new List<Cell>();
-            nextPath = pathfinding.FindPath(currentPath[currentPath.Count-1].Position, randomPatrolPoints[randomTargetNumber].position);
-        }
-
-       
     }
 
+    
+    
     void UpdatePosition(Steering nextFrameSteering)
     {
         // Adds linear to velocity
@@ -151,4 +134,7 @@ public class Movement : MonoBehaviour
             }
         }
     }
+    
+    
+    
 }
