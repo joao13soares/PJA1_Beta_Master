@@ -12,10 +12,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IRechargeable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseToPatrolTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/RangedAttackActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/46/39b07108/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToAttackTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelleeAttackActionNode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,6 +58,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseToPatrolTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/LookForState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/AttackState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/DecisionTree/Node.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/AttackToChase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/PLACEHOLDERNODE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToAttackTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MeleeAttackActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelLeeAttackActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelleeAttackActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/RangedAttackActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" />
       </list>
     </option>
   </component>
@@ -114,6 +132,7 @@
       <workItem from="1608932745439" duration="2061000" />
       <workItem from="1608995563417" duration="8682000" />
       <workItem from="1609019880003" duration="3730000" />
+      <workItem from="1609075170289" duration="8665000" />
     </task>
     <servers />
   </component>

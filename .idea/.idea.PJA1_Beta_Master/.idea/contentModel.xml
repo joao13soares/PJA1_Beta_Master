@@ -71,13 +71,24 @@
           </e>
           <e p="Enemies" t="Include">
             <e p="BaseEnemy" t="Include">
+              <e p="DecisionTree" t="Include">
+                <e p="IsInAttackRangeDecisionNode.cs" t="Include" />
+                <e p="IsInMeleeRangeDecisionNode.cs" t="Include" />
+                <e p="MelLeeAttackActionNode.cs" t="Include" />
+                <e p="RangedAttackActionNode.cs" t="Include" />
+                <e p="ToChaseActionNode.cs" t="Include" />
+              </e>
               <e p="StateMachine" t="Include">
+                <e p="AttackState.cs" t="Include" />
                 <e p="ChaseState.cs" t="Include" />
-                <e p="ChaseToPatrolTransition.cs" t="Include" />
-                <e p="LookForState.cs" t="Include" />
                 <e p="PatrolState.cs" t="Include" />
-                <e p="PatrolToChaseTransition.cs" t="Include" />
-                <e p="PatrolToPatrol.cs" t="Include" />
+                <e p="Transitions" t="Include">
+                  <e p="AttackToChase.cs" t="Include" />
+                  <e p="ChaseToAttackTransition.cs" t="Include" />
+                  <e p="ChaseToPatrolTransition.cs" t="Include" />
+                  <e p="PatrolToChaseTransition.cs" t="Include" />
+                  <e p="PatrolToPatrol.cs" t="Include" />
+                </e>
               </e>
             </e>
             <e p="Enemy.cs" t="Include" />
