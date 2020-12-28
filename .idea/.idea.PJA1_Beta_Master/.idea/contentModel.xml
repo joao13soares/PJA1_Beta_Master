@@ -8,6 +8,15 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AI" t="Include">
+            <e p="BehaviourTree" t="Include">
+              <e p="BehaviourTree.cs" t="Include" />
+              <e p="BTComposite.cs" t="Include" />
+              <e p="BTDecorator.cs" t="Include" />
+              <e p="BTNode.cs" t="Include" />
+              <e p="BTParallel.cs" t="Include" />
+              <e p="BTSelector.cs" t="Include" />
+              <e p="BTSequencer.cs" t="Include" />
+            </e>
             <e p="DecisionTree" t="Include">
               <e p="ActionNode.cs" t="Include" />
               <e p="DecisionNode.cs" t="Include" />

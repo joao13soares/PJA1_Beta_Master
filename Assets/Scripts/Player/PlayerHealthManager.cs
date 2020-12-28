@@ -14,19 +14,21 @@ public class PlayerHealthManager : MonoBehaviour
 	void  Awake()
 	{
 		playerHealth = new Health(100);
-		displayPanel.HealthPlus += HealHealth;
+		// displayPanel.HealthPlus += HealHealth;
 	}
 
 
-	private void DamageHealth()
+	private void DamageHealth(int damage)
 	{
+		playerHealth.currenthealth -= damage;
+
+	}
+	private void HealHealth(int healAmount)
+	{
+
+		playerHealth.currenthealth =
+			Mathf.Clamp(playerHealth.currenthealth + healAmount, 0, playerHealth.maxHealth);
 		
-
-	}
-	private void HealHealth()
-	{
-
-		playerHealth.currenthealth = playerHealth.maxHealth;
 	}
 
 	public float GetPlayerHP => playerHealth.currenthealth;

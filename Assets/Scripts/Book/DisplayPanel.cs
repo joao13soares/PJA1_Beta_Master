@@ -69,6 +69,7 @@ public class DisplayPanel : MonoBehaviour
 
 	public event OnAction inspectOpen;
 	public event OnAction HealthPlus;
+	
 	private InventorySlot ReturnSlot() => currentInventorySlot;
 
 	private void CreatePanelWithActions()

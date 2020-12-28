@@ -11,24 +11,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IRechargeable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/RangedAttackActionNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTDecorator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/46/39b07108/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToAttackTransition.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelleeAttackActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IRechargeable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IRechargeable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStateManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InGameUIState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InventoryInputTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/ToInspectTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InspectToInventoryTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InspectUIState.cs" />
@@ -71,6 +70,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelleeAttackActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/RangedAttackActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Book/DisplayPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTDecorator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTComposite.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BehaviourTree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTParallel.cs" />
       </list>
     </option>
   </component>
@@ -133,6 +141,9 @@
       <workItem from="1608995563417" duration="8682000" />
       <workItem from="1609019880003" duration="3730000" />
       <workItem from="1609075170289" duration="8665000" />
+      <workItem from="1609105901036" duration="1516000" />
+      <workItem from="1609170125523" duration="9262000" />
+      <workItem from="1609182254602" duration="3098000" />
     </task>
     <servers />
   </component>
@@ -145,6 +156,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1609182834934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609182834934" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608572803962">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
