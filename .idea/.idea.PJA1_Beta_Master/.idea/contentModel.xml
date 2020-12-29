@@ -80,6 +80,18 @@
           </e>
           <e p="Enemies" t="Include">
             <e p="BaseEnemy" t="Include">
+              <e p="BehaviourTree" t="Include">
+                <e p="ChaseParallel" t="Include">
+                  <e p="CanAttackPlayerBTNode.cs" t="Include" />
+                  <e p="MoveInChasePathBTNode.cs" t="Include" />
+                  <e p="UpdateStepDestinationBTNode.cs" t="Include" />
+                </e>
+                <e p="PatrolParallel" t="Include">
+                  <e p="GetRandomPatrolPoint.cs" t="Include" />
+                  <e p="IsPlayerDetectedBTNode.cs" t="Include" />
+                </e>
+                <e p="WalkPathBTNode.cs" t="Include" />
+              </e>
               <e p="DecisionTree" t="Include">
                 <e p="IsInAttackRangeDecisionNode.cs" t="Include" />
                 <e p="IsInMeleeRangeDecisionNode.cs" t="Include" />

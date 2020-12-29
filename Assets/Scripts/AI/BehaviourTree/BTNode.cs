@@ -7,9 +7,9 @@ using UnityEngine;
 [RequireComponent(typeof(BehaviourTree))]
 public abstract class BTNode : MonoBehaviour
 {
-    [SerializeField]private BehaviourTree behaviourTree;
+   protected BehaviourTree behaviourTree;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         behaviourTree = GetComponent<BehaviourTree>();
     }
@@ -26,5 +26,9 @@ public abstract class BTNode : MonoBehaviour
     {
         return Result.Failure;
     }
-   
+
+    public virtual void OnInterrupt()
+    {
+        Debug.Log("NODE INTERRUPTED");;
+    }
 }

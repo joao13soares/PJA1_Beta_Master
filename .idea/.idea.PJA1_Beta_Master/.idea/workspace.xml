@@ -13,14 +13,17 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/RangedAttackActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/MoveInChasePathBTNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTDecorator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/46/39b07108/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToAttackTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelleeAttackActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IRechargeable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/30/793363cc/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/UpdateStepDestinationBTNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -28,20 +31,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/ToInspectTransition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InspectToInventoryTransition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InspectUIState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Book/InspectItemRender.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sound/Steps/StepsSoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStates/InventoryUIState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/Keys/Keypad/KeypadUnlock.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/DragDoor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/DoorSound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/WeaponManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/Weapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Crosshair.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/PlayerRaycast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FielOfViewDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FieldOfViewDetection.cs" />
@@ -51,10 +40,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/LookLastKnownPositionState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolToChaseTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolToPatrol.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/StateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseToPatrolTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/LookForState.cs" />
@@ -73,12 +60,28 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Book/DisplayPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTDecorator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTComposite.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/IsPlayerDetectedBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/WalkPatrolPathBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BehaviourTree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/GetRandomPatrolPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolSequencerBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTComposite.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/IsInAttackRangeBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/MoveInChasePathBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolParallel/WalkPatrolPathBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolParallel/WalkPathBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/WalkPathBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/CanChasePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTParallel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/CanDetectPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/UpdateStepDestinationBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/CanAttackPlayerBTNode.cs" />
       </list>
     </option>
   </component>
@@ -144,6 +147,9 @@
       <workItem from="1609105901036" duration="1516000" />
       <workItem from="1609170125523" duration="9262000" />
       <workItem from="1609182254602" duration="3098000" />
+      <workItem from="1609252364749" duration="4761000" />
+      <workItem from="1609257238222" duration="220000" />
+      <workItem from="1609257945466" duration="5274000" />
     </task>
     <servers />
   </component>

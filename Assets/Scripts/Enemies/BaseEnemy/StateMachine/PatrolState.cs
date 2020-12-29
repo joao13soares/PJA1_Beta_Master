@@ -11,8 +11,8 @@ public class PatrolState : State
     [SerializeField]private Movement baseEnemyMovement;
 
 
-    [SerializeField]private int currentTargetIndex;
-    public int CurrentTargetIndex => currentTargetIndex;
+    // [SerializeField]private int currentTargetIndex;
+    // public int CurrentTargetIndex => currentTargetIndex;
 
     [SerializeField]private List<Transform> randomPatrolPoints;
     private int lastRandom;
@@ -50,7 +50,7 @@ public class PatrolState : State
         
         baseEnemyMovement.UpdatePath(randomPatrolPoint);
         
-        currentTargetIndex = 0;
+        // currentTargetIndex = 0;
 
     }
 

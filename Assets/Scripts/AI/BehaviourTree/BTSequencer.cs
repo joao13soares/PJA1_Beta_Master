@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BTSequencer : BTComposite
 {
-    private int currentChild;
 
     public override Result Execute()
     {
@@ -26,7 +25,8 @@ public class BTSequencer : BTComposite
         ResetChildIndex();
         return Result.Success;
     }
-
-
+    
     private void ResetChildIndex() => currentChild = 0;
+
+   
 }

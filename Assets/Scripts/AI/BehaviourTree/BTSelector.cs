@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BTSelector : BTComposite
 {
-    private int currentChild;
 
     public override Result Execute()
     {
@@ -28,4 +27,6 @@ public class BTSelector : BTComposite
     }
 
     private void ResetChildIndex() => currentChild = 0;
+    
+  
 }

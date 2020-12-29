@@ -7,9 +7,12 @@ public class Enemy : MonoBehaviour
 {
     //The box's current health point total
     [SerializeField] float currentHealth;
-    
-    
-    [SerializeField] private AudioClip[] screams;
+
+    private float rangedAttackRange, meleeAttackRange;
+
+    public float RangedAttackRange => rangedAttackRange;
+
+    private AudioClip[] screams;
 
 
     public StateMachine baseEnemyStateMachine;
@@ -34,7 +37,9 @@ public class Enemy : MonoBehaviour
 
         if (isDying) return;
 
-        baseEnemyStateMachine.ExecuteStateMachine();
+        // baseEnemyStateMachine.ExecuteStateMachine();
+        
+        
 
 
     }

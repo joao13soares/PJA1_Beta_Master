@@ -21,8 +21,8 @@ public class BehaviourTree : MonoBehaviour
     {
         if (!behaviourTreeRunning)
         {
-            behaviourTreeExecution = StartCoroutine(StartBehaviourTree());
             behaviourTreeRunning = true;
+            behaviourTreeExecution = StartCoroutine(StartBehaviourTree());
         }
     }
 
@@ -38,7 +38,7 @@ public class BehaviourTree : MonoBehaviour
             result = root.Execute();
         }
         
-        Debug.Log("ENDED");
+        Debug.Log("ENDED WIUTH " + result);
         behaviourTreeRunning = false;
 
 

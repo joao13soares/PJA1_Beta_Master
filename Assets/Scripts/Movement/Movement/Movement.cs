@@ -19,14 +19,12 @@ public class Movement : MonoBehaviour
     [SerializeField] private float rotationSensitivity = 1.5f;
 
 
-    [SerializeField] private List<Transform> randomPatrolPoints;
-    private int randomTargetNumber;
-    private int lastRandom;
+    // [SerializeField] private List<Transform> randomPatrolPoints;
+    // private int randomTargetNumber;
+    // private int lastRandom;
 
 
     [SerializeField] private PathFindingAStar pathfinding;
-
-
     public List<Cell> currentPath;
     private int currentTargetIndex;
 
