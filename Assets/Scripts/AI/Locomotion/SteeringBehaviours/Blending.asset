@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Blending
   m_EditorClassIdentifier: 
   behavioursToBlend:
-  - weight: 1
+  - weight: 0.8
     behaviour: {fileID: 11400000, guid: 0bf43b562c5b14a408fbe8d4ba39ec64, type: 2}
   - weight: 1
     behaviour: {fileID: 11400000, guid: 8627bfbd33875d646b7dc650ceca7f0a, type: 2}
+  - weight: 0.2
+    behaviour: {fileID: 11400000, guid: 3703131dc5ac0a04ca5a89f9f483ca7c, type: 2}
   maxAcceleration: 1
   maxRotation: 45

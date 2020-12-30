@@ -23,7 +23,6 @@ public class PatrolToPatrol : Transition
         lastCellIndex = movement.currentPath.Count -1;
 
         
-        Debug.Log(currentTargetIndex == lastCellIndex);
         return currentTargetIndex == lastCellIndex;
 
     }

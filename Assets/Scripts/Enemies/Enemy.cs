@@ -8,14 +8,15 @@ public class Enemy : MonoBehaviour
     //The box's current health point total
     [SerializeField] float currentHealth;
 
-    private float rangedAttackRange, meleeAttackRange;
+    [SerializeField]private float rangedAttackRange,
+                                  meleeAttackRange;
 
     public float RangedAttackRange => rangedAttackRange;
 
     private AudioClip[] screams;
 
 
-    public StateMachine baseEnemyStateMachine;
+    [SerializeField] private IAIControlable AIController;
 
     private Color[] colors = {Color.black, Color.red, Color.yellow, Color.green};
 
@@ -28,7 +29,7 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
-        baseEnemyStateMachine = this.GetComponent<StateMachine>();
+        AIController = this.GetComponent<IAIControlable>();
         isDying = false;
     }
 
@@ -37,7 +38,7 @@ public class Enemy : MonoBehaviour
 
         if (isDying) return;
 
-        // baseEnemyStateMachine.ExecuteStateMachine();
+        AIController?.ExecuteAIControl();
         
         
 
@@ -48,21 +49,6 @@ public class Enemy : MonoBehaviour
     {
         //subtract damage amount when ReceiveDamage function is called
         currentHealth -= damageAmount;
-
-        Debug.Log($"Enemy health {currentHealth}");
-        
-        // int index = 0;
-        // if(currentHealth >= 50.0f) index = 2;
-        // else if(currentHealth >= 0.0f) index = 1;
-        // else index = 0;
-        //
-        // this.GetComponent<AudioSource>().clip = screams[index];
-        // this.GetComponent<AudioSource>().Play();
-        //
-        // this.GetComponent<Renderer>().material.color = colors[index];
-
-        //Check if health has fallen below zero
-        
         DamageTaken?.Invoke();
         
         

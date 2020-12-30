@@ -12,7 +12,9 @@ public class PlayerRaycast : MonoBehaviour
 
     [SerializeField] private Camera playerCamera;
 
-    [SerializeField] private Crosshair crosshair;
+    [SerializeField] private Crosshair crossair;
+    
+    
 
 
     private float interactRange = 3f;
@@ -26,6 +28,8 @@ public class PlayerRaycast : MonoBehaviour
 
         RaycastHit hit;
 
+
+        
         bool isHitting = Physics.Raycast(playerRay, out hit, playerLayer);
         bool hasCollider = hit.collider != null;
         bool hasInput = Input.GetKeyDown(KeyCode.E);
@@ -45,10 +49,10 @@ public class PlayerRaycast : MonoBehaviour
 
         if (isInRange && temp != null)
         {
-            crosshair.ExpandCrosshair();
+            crossair.ExpandCrosshair();
             if (hasInput)
                 temp.OnRaycastSelect();
         }
-        else crosshair.CollapseCrosshair();
+        else crossair.CollapseCrosshair();
     }
 }

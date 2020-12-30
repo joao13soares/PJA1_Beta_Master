@@ -44,7 +44,6 @@ public class Movement : MonoBehaviour
 
     public void MovementUpdate()
     {
-        Debug.Log(currentPath == null);
         if (currentPath == null) return;
         currentTargetIndex = GetTargetIndex(currentPath[currentTargetIndex],currentTargetIndex);
         

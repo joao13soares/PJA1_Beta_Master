@@ -38,6 +38,7 @@
                 <e p="Arrive.cs" t="Include" />
                 <e p="BlendedSteering.cs" t="Include" />
                 <e p="LookWhereYouGo.cs" t="Include" />
+                <e p="Separation.cs" t="Include" />
                 <e p="Steering.cs" t="Include" />
                 <e p="SteeringBehaviour.cs" t="Include" />
                 <e p="WeightedSteeringBehaviour.cs" t="Include" />
@@ -120,6 +121,7 @@
             <e p="FlashlightOrientation.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
+            <e p="IAIControlable.cs" t="Include" />
             <e p="IPickUpable.cs" t="Include" />
             <e p="IRaycastResponse.cs" t="Include" />
             <e p="IRechargeable.cs" t="Include" />
@@ -128,6 +130,9 @@
           </e>
           <e p="Lights" t="Include">
             <e p="FlickerLight.cs" t="Include" />
+          </e>
+          <e p="MainMenu" t="Include">
+            <e p="MainMenu.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
             <e p="Movement" t="Include">

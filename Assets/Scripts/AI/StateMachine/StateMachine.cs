@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public  class StateMachine : MonoBehaviour
+public  class StateMachine : MonoBehaviour, IAIControlable
 {
     private State currentState;
     [SerializeField] private List<State> allStates;
@@ -36,5 +36,10 @@ public  class StateMachine : MonoBehaviour
     private void ChangeState(State newState)
     {
         currentState = newState;
+    }
+
+    public void ExecuteAIControl()
+    {
+        ExecuteStateMachine();
     }
 }

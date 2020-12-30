@@ -6,10 +6,10 @@ public class ChaseToAttackTransition : Transition
 {
     [SerializeField] private Transform playerTransform;
 
-    [SerializeField] private float attackRange = 6f;
+    [SerializeField] private Enemy enemyScript;
     
     public override bool CanTransition()
     {
-        return Vector3.Distance(playerTransform.position, transform.position) < attackRange;
+        return Vector3.Distance(playerTransform.position, transform.position) < enemyScript.RangedAttackRange;
     }
 }

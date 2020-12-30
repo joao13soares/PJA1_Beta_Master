@@ -7,6 +7,7 @@ public class FieldOfViewDetection : MonoBehaviour
 {
     [SerializeField] private Transform enemyTransform;
     [SerializeField] private Transform playerTransform;
+    [SerializeField] private LayerMask enemyLayer;
 
     public float fovAngle;
     public float detectRange;
@@ -44,6 +45,12 @@ public class FieldOfViewDetection : MonoBehaviour
     
     private void OnDrawGizmos()
     {
+        Gizmos.color=Color.red;
+        
+        Gizmos.DrawWireSphere(enemyTransform.position, 3f);
+        
+        
+        
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(enemyTransform.position, detectRange);
 

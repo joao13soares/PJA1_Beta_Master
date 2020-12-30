@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c1929056-2b2c-44e9-9b69-8a66dd2451e7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +39,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IRechargeable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/30/793363cc/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/Separation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/UpdateStepDestinationBTNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IAIControlable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -31,17 +51,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/PlayerRaycast.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FielOfViewDetection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FieldOfViewDetection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlickerLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/StepsSoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/LookLastKnownPositionState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolToChaseTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolToPatrol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/State.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/StateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseToPatrolTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/LookForState.cs" />
@@ -50,7 +63,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/AttackToChase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/PLACEHOLDERNODE.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToAttackTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MeleeAttackActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelLeeAttackActionNode.cs" />
@@ -62,15 +74,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTDecorator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/IsPlayerDetectedBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/PatrolState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/WalkPatrolPathBTNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BehaviourTree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/GetRandomPatrolPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolSequencerBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTComposite.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/IsInAttackRangeBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/MoveInChasePathBTNode.cs" />
@@ -82,6 +91,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/CanDetectPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/UpdateStepDestinationBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/CanAttackPlayerBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IAIControlable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BehaviourTree.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/StateMachine/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/PlayerRaycast.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/PatrolToPatrol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Movement/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FieldOfViewDetection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToAttackTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/Separation.cs" />
       </list>
     </option>
   </component>
@@ -150,6 +170,7 @@
       <workItem from="1609252364749" duration="4761000" />
       <workItem from="1609257238222" duration="220000" />
       <workItem from="1609257945466" duration="5274000" />
+      <workItem from="1609345781290" duration="6216000" />
     </task>
     <servers />
   </component>
@@ -158,6 +179,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BehaviourTree : MonoBehaviour
+public class BehaviourTree : MonoBehaviour,IAIControlable
 {
     [SerializeField]private BTNode root;
     private bool behaviourTreeRunning;
-    private Coroutine behaviourTreeExecution;
 
-    public Dictionary<string, GameObject> Blackboard;
     
     // Start is called before the first frame update
     void Start()
@@ -16,17 +14,10 @@ public class BehaviourTree : MonoBehaviour
         behaviourTreeRunning = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (!behaviourTreeRunning)
-        {
-            behaviourTreeRunning = true;
-            behaviourTreeExecution = StartCoroutine(StartBehaviourTree());
-        }
-    }
 
 
+
+    
 
     private IEnumerator StartBehaviourTree()
     {
@@ -43,5 +34,14 @@ public class BehaviourTree : MonoBehaviour
 
 
 
+    }
+
+    public void ExecuteAIControl()
+    {
+        if (!behaviourTreeRunning)
+        {
+            behaviourTreeRunning = true;
+            StartCoroutine(StartBehaviourTree());
+        }
     }
 }
