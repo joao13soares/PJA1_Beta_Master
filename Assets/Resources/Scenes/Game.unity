@@ -510,12 +510,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 212492647}
+  handleToRotate: {fileID: 379002561}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &53924624
 BoxCollider:
@@ -1447,12 +1454,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 2083869795}
+  handleToRotate: {fileID: 1284922114}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &76579556
 BoxCollider:
@@ -2867,12 +2881,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1335294182}
+  handleToRotate: {fileID: 362643305}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &205527573
 BoxCollider:
@@ -3565,12 +3586,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1173356572}
+  handleToRotate: {fileID: 770900818}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &255890538
 BoxCollider:
@@ -3983,12 +4011,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1757939850}
+  handleToRotate: {fileID: 1843797437}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &274672525
 BoxCollider:
@@ -5042,12 +5077,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 796690420}
+  handleToRotate: {fileID: 395162415}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &382256283
 BoxCollider:
@@ -5438,12 +5480,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1715667675}
+  handleToRotate: {fileID: 1773522170}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &400876617
 BoxCollider:
@@ -5802,12 +5851,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 751700426}
+  handleToRotate: {fileID: 185582141}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &427646941
 BoxCollider:
@@ -6015,12 +6071,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1188054616}
+  handleToRotate: {fileID: 1527452316}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &439270802
 BoxCollider:
@@ -8556,12 +8619,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1892015432}
+  handleToRotate: {fileID: 42076247}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &552706104
 BoxCollider:
@@ -10187,12 +10257,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 110405183}
+  handleToRotate: {fileID: 1918445669}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &729300355
 BoxCollider:
@@ -11063,12 +11140,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 4289564005182967946}
+  handleToRotate: {fileID: 6512301836366374993}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!54 &779713100
 Rigidbody:
@@ -16755,19 +16839,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1124401983}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1124830922 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7167590548120883030, guid: 1538ca706e18dcf46881a3231ddef0e7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1848273760}
-  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1124830926
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124830922}
+  m_GameObject: {fileID: 7167590547683222582}
   m_Material: {fileID: 13400000, guid: f96f52d3bfd22244b89a67f356d62f71, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -17454,12 +17532,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1321602823}
+  handleToRotate: {fileID: 1852053060}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1155219687
 BoxCollider:
@@ -19323,12 +19408,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 927592349}
+  handleToRotate: {fileID: 403081742}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1233774903
 BoxCollider:
@@ -20073,12 +20165,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 678961820}
+  handleToRotate: {fileID: 451395499}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1304086468
 BoxCollider:
@@ -20688,12 +20787,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1203442510}
+  handleToRotate: {fileID: 1970750771}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1324884177
 BoxCollider:
@@ -21823,12 +21929,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1939744261}
+  handleToRotate: {fileID: 89356100}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1376662916
 BoxCollider:
@@ -22278,12 +22391,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 555498765}
+  handleToRotate: {fileID: 1079300330}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1472998177
 BoxCollider:
@@ -22720,25 +22840,13 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8733634057784737328, guid: c38d98a2d332aa64683e3948b1278b89, type: 3}
---- !u!1 &1500537853 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8665374912803100077, guid: 1538ca706e18dcf46881a3231ddef0e7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1848273760}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1500537854 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -3261226788322452980, guid: 1538ca706e18dcf46881a3231ddef0e7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1848273760}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1500537857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1500537853}
+  m_GameObject: {fileID: 557997125495963955}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02bf724fd2e2f44488c9963afb3b6e94, type: 3}
@@ -22747,13 +22855,20 @@ MonoBehaviour:
   startsLocked: 0
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
-  transformToRotate: {fileID: 1500537854}
+  transformToRotate: {fileID: 5962145248030699884}
+  handleToRotate: {fileID: 0}
   unlockedMaxAngle: 1
   unlockedMinAngle: -90
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 0
+  handleMinAngle: 0
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 0
   isObjectHeld: 0
 --- !u!64 &1500537858
 MeshCollider:
@@ -22761,7 +22876,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1500537853}
+  m_GameObject: {fileID: 557997125495963955}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -23621,12 +23736,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1219753809}
+  handleToRotate: {fileID: 1031291693}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1555378643
 BoxCollider:
@@ -25747,12 +25869,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 513282518}
+  handleToRotate: {fileID: 1690770114}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1729431669
 BoxCollider:
@@ -26315,12 +26444,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1200118783}
+  handleToRotate: {fileID: 1904565620}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1775180928
 BoxCollider:
@@ -26725,25 +26861,13 @@ Transform:
   m_Father: {fileID: 550791850}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1811131010 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2834452149904478141, guid: 1538ca706e18dcf46881a3231ddef0e7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1848273760}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1811131011 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2541840859129327162, guid: 1538ca706e18dcf46881a3231ddef0e7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1848273760}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1811131014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811131010}
+  m_GameObject: {fileID: 2834452148325737693}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02bf724fd2e2f44488c9963afb3b6e94, type: 3}
@@ -26752,13 +26876,20 @@ MonoBehaviour:
   startsLocked: 0
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
-  transformToRotate: {fileID: 1811131011}
+  transformToRotate: {fileID: 2541840858489046362}
+  handleToRotate: {fileID: 0}
   unlockedMaxAngle: 90
   unlockedMinAngle: 1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 0
+  handleMinAngle: 0
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 0
   isObjectHeld: 0
 --- !u!64 &1811131015
 MeshCollider:
@@ -26766,7 +26897,7 @@ MeshCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811131010}
+  m_GameObject: {fileID: 2834452148325737693}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -27036,180 +27167,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843797436}
   m_Mesh: {fileID: -4223151906506891888, guid: ba37aa18ba6737b468081ec6d75a83e9, type: 3}
---- !u!1001 &1848273760
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.93
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.34
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 18.612019
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 18.612019
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 18.612019
-      objectReference: {fileID: 0}
-    - target: {fileID: -8665374912803100077, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_Name
-      value: Door_02
-      objectReference: {fileID: 0}
-    - target: {fileID: -8665374912803100077, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -8665374912803100077, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_TagString
-      value: Dragable
-      objectReference: {fileID: 0}
-    - target: {fileID: -3610507694576508830, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: ae6ea981fa84b604a8cbb1e62b2e843f, type: 2}
-    - target: {fileID: -3261226788322452980, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3261226788322452980, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3261226788322452980, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -3261226788322452980, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3261226788322452980, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -2312592332734318172, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 52104daa08933234e9eb846585ed7fcd, type: 2}
-    - target: {fileID: 919132149155446097, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_Name
-      value: Wardrobe
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541840859129327162, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541840859129327162, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541840859129327162, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541840859129327162, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2541840859129327162, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2834452149904478141, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2834452149904478141, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_TagString
-      value: Dragable
-      objectReference: {fileID: 0}
-    - target: {fileID: 8961999901495105429, guid: 1538ca706e18dcf46881a3231ddef0e7,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c46708a88cadc394e87cc0b5fdedda4d, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1538ca706e18dcf46881a3231ddef0e7, type: 3}
 --- !u!1001 &1848793631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28772,12 +28729,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1801557759}
+  handleToRotate: {fileID: 2141300051}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &1927704553
 BoxCollider:
@@ -30034,12 +29998,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1213787926}
+  handleToRotate: {fileID: 1181606521}
   unlockedMaxAngle: 90
   unlockedMinAngle: -1
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 1
+  handleMinAngle: -25
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 100
   isObjectHeld: 0
 --- !u!65 &2027832585
 BoxCollider:
@@ -35115,6 +35086,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 85.951004, y: 24.975, z: 118.02701}
+--- !u!4 &543450651851951243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147647206961}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.93, y: 0, z: -2.34}
+  m_LocalScale: {x: 18.612019, y: 18.612019, z: 18.612019}
+  m_Children:
+  - {fileID: 2541840858489046362}
+  - {fileID: 5962145248030699884}
+  - {fileID: 5615065572855954318}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543450652176474775
 Transform:
   m_ObjectHideFlags: 0
@@ -35166,6 +35154,26 @@ Transform:
   m_Father: {fileID: 1681348287}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &557997125495963955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5962145248030699884}
+  - component: {fileID: 6641683395979167922}
+  - component: {fileID: 6910779704626533060}
+  - component: {fileID: 1500537858}
+  - component: {fileID: 1500537857}
+  m_Layer: 10
+  m_Name: Door_02
+  m_TagString: Dragable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!23 &634222083596831916
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35899,6 +35907,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09036059, y: 0.016878488, z: 0.35715663}
   m_Center: {x: -0.0012732752, y: 0.013630923, z: 0.060802218}
+--- !u!1 &919132147647206961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543450651851951243}
+  m_Layer: 0
+  m_Name: Wardrobe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &919132147749021870
 GameObject:
   m_ObjectHideFlags: 0
@@ -36082,12 +36106,19 @@ MonoBehaviour:
   playerMovementScript: {fileID: 4490467827067958852}
   flashlightOrientationScript: {fileID: 4490467825841200320}
   transformToRotate: {fileID: 1711123011}
+  handleToRotate: {fileID: 0}
   unlockedMaxAngle: 1
   unlockedMinAngle: -90
   minAngle: 0
   maxAngle: 0
   defaultAngle: 0
   nextAngle: 0
+  hasHandle: 0
+  handleMinAngle: 0
+  handleMaxAngle: 0
+  handleNextAngle: 0
+  handleDirectionToRotate: 0
+  handleForce: 0
   isObjectHeld: 0
 --- !u!65 &1155298509172872053
 BoxCollider:
@@ -37576,6 +37607,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!4 &2541840858489046362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834452148325737693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0013938665, y: 0.0000024205447, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543450651851951243}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2636721550274599600
 Transform:
   m_ObjectHideFlags: 0
@@ -38314,6 +38359,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2756807408580325469}
   m_CullTransparentMesh: 0
+--- !u!1 &2834452148325737693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2541840858489046362}
+  - component: {fileID: 8595328501105384022}
+  - component: {fileID: 8961999899715042549}
+  - component: {fileID: 1811131015}
+  - component: {fileID: 1811131014}
+  m_Layer: 10
+  m_Name: Door_01
+  m_TagString: Dragable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!33 &2856338999051375583
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -42113,7 +42178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4490467826105401997}
   m_LocalRotation: {x: -0, y: -0.99632794, z: -0, w: 0.08562014}
-  m_LocalPosition: {x: -21.4, y: 0.524, z: -0.2}
+  m_LocalPosition: {x: -10.83, y: 0.524, z: -6.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4490467827067958854}
@@ -43288,6 +43353,14 @@ Transform:
   m_Father: {fileID: 817098797}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -83.05801, z: 0}
+--- !u!33 &5330332485850744170
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7167590547683222582}
+  m_Mesh: {fileID: 7856464988808651109, guid: 1538ca706e18dcf46881a3231ddef0e7, type: 3}
 --- !u!4 &5396481659766193990
 Transform:
   m_ObjectHideFlags: 0
@@ -43383,6 +43456,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8531149260353337694}
   m_Mesh: {fileID: -4223151906506891888, guid: ba37aa18ba6737b468081ec6d75a83e9, type: 3}
+--- !u!23 &5612864343719381762
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7167590547683222582}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ae6ea981fa84b604a8cbb1e62b2e843f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!4 &5615065572855954318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7167590547683222582}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.02160737, y: 0.038533576, z: 0.017045}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543450651851951243}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5677704972590379645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43504,6 +43630,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   associatedKeypad: {fileID: 1155298509172872054}
+--- !u!4 &5962145248030699884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557997125495963955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04182233, y: 0.000001040697, z: -8.9406965e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543450651851951243}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6074629646493242620
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -43662,7 +43802,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8531149260353337694}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.00021992504, y: 0.022798581, z: 0.026606578}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -43797,6 +43937,14 @@ Transform:
   m_Father: {fileID: 543450653689629280}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6641683395979167922
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557997125495963955}
+  m_Mesh: {fileID: 4938184237280664282, guid: 1538ca706e18dcf46881a3231ddef0e7, type: 3}
 --- !u!4 &6771236595217066587
 Transform:
   m_ObjectHideFlags: 0
@@ -43891,6 +44039,45 @@ Transform:
   m_Father: {fileID: 543450651750347284}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &6910779704626533060
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557997125495963955}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 52104daa08933234e9eb846585ed7fcd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &6915676483100546073
 GameObject:
   m_ObjectHideFlags: 0
@@ -43929,6 +44116,25 @@ Transform:
   m_Father: {fileID: 8980718059647450212}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7167590547683222582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5615065572855954318}
+  - component: {fileID: 5330332485850744170}
+  - component: {fileID: 5612864343719381762}
+  - component: {fileID: 1124830926}
+  m_Layer: 0
+  m_Name: Wardrobe_Structure
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!65 &7200484909997756774
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50424,6 +50630,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!33 &8595328501105384022
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834452148325737693}
+  m_Mesh: {fileID: -6151747068533630916, guid: 1538ca706e18dcf46881a3231ddef0e7, type: 3}
 --- !u!33 &8631346668931621841
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -50617,6 +50831,45 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 7594a5781781f174190e76767b5e65b9, type: 3}
   type: Syringe
   isPermanent: 0
+--- !u!23 &8961999899715042549
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834452148325737693}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c46708a88cadc394e87cc0b5fdedda4d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!33 &8965431122459117224
 MeshFilter:
   m_ObjectHideFlags: 0

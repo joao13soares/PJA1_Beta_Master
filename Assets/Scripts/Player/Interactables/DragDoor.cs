@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 
 public class DragDoor : MonoBehaviour, IRaycastResponse
@@ -12,6 +13,7 @@ public class DragDoor : MonoBehaviour, IRaycastResponse
     [SerializeField] private FlashlightOrientation flashlightOrientationScript;
 
     [SerializeField] private Transform transformToRotate;
+    [SerializeField] private Transform handleToRotate;
 
     [SerializeField] private float unlockedMaxAngle, unlockedMinAngle;
 
@@ -19,6 +21,18 @@ public class DragDoor : MonoBehaviour, IRaycastResponse
         maxAngle,
         defaultAngle,
         nextAngle;
+
+
+
+    [SerializeField] private bool hasHandle;
+    
+    [SerializeField] private float handleMinAngle;
+    [SerializeField] private float handleMaxAngle;
+    [SerializeField] private float handleNextAngle;
+    [SerializeField] private float handleDirectionToRotate;
+    [SerializeField] private float handleForce;
+
+         
 
 
     public bool isObjectHeld;
@@ -40,6 +54,7 @@ public class DragDoor : MonoBehaviour, IRaycastResponse
         isObjectHeld = false;
 
         defaultAngle = transformToRotate.localEulerAngles.y;
+        // handleNextAngle = handleToRotate.rotation.x;
 
 
         if (startsLocked)
@@ -52,11 +67,21 @@ public class DragDoor : MonoBehaviour, IRaycastResponse
             minAngle = unlockedMinAngle;
             maxAngle = unlockedMaxAngle;
         }
+        
+        
+        
     }
 
 
     private void Update()
     {
+        
+
+       
+        
+        
+        if(hasHandle)RotateHandle();
+        
         if (!isObjectHeld) return;
 
         HoldObject();
@@ -97,8 +122,38 @@ public class DragDoor : MonoBehaviour, IRaycastResponse
         // temp.Rotate(Vector3.up, (Input.GetAxis("Mouse Y") * Time.deltaTime) * 300f, Space.Self);
 
         Quaternion.Slerp(transformToRotate.localRotation, temp.localRotation, 1f);
+        
+        
+        // Open handle direction
+        handleDirectionToRotate = -1;
+       
+
+        
     }
 
+
+    private void RotateHandle()
+    {
+        bool isInsideLimits = handleNextAngle <= handleMaxAngle &&
+                              handleNextAngle >= handleMinAngle;
+
+        if (!isInsideLimits) return;
+        
+        Transform temp = handleToRotate;
+
+        float frameAngleToAdd = Time.deltaTime * handleDirectionToRotate * handleForce;
+
+        handleNextAngle += frameAngleToAdd;
+        handleNextAngle = Mathf.Clamp(handleNextAngle, handleMinAngle, handleMaxAngle);
+        
+        temp.transform.localEulerAngles = new Vector3(handleNextAngle, temp.transform.localEulerAngles.y,
+            temp.transform.localEulerAngles.z);
+        // temp.Rotate(Vector3.up, (Input.GetAxis("Mouse Y") * Time.deltaTime) * 300f, Space.Self);
+
+        Quaternion.Slerp(transformToRotate.localRotation, temp.localRotation, 1f);
+
+        
+    }
 
     public void UnlockDoor()
     {
@@ -114,6 +169,10 @@ public class DragDoor : MonoBehaviour, IRaycastResponse
         flashlightOrientationScript.enabled = true;
         
         stopped?.Invoke();
+
+        handleDirectionToRotate = 1f;
+
+
     }
 
     public void OnRaycastSelect()
