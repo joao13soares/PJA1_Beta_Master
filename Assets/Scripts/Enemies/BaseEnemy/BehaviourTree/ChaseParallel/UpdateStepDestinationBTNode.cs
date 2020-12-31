@@ -17,9 +17,10 @@ public class UpdateStepDestinationBTNode : BTNode
 
     protected override void Awake()
     {
-        behaviourTree = GetComponent<BehaviourTree>();
+        
         enemyMovement = GetComponent<Movement>();
         fovDetection = GetComponent<FieldOfViewDetection>();
+        base.Awake();
 
     }
     

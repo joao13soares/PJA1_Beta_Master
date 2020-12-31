@@ -18055,13 +18055,19 @@ GameObject:
   - component: {fileID: 1195982772}
   - component: {fileID: 1195982771}
   - component: {fileID: 1195982770}
+  - component: {fileID: 1195982780}
+  - component: {fileID: 1195982779}
+  - component: {fileID: 1195982778}
+  - component: {fileID: 1195982777}
+  - component: {fileID: 1195982776}
+  - component: {fileID: 1195982775}
   m_Layer: 11
   m_Name: PROTOTYPEENEMY BT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1195982754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18152,6 +18158,7 @@ MonoBehaviour:
   children:
   - {fileID: 1195982758}
   - {fileID: 1195982774}
+  - {fileID: 1195982780}
 --- !u!114 &1195982760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18235,6 +18242,8 @@ MonoBehaviour:
   currentHealth: 100
   rangedAttackRange: 3
   meleeAttackRange: 1
+  rangedAttackDamage: 15
+  meleeAttackDamage: 25
 --- !u!82 &1195982765
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18399,7 +18408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195982753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.65, y: 0.79, z: 21.02}
+  m_LocalPosition: {x: 0, y: 0.79, z: 3.81}
   m_LocalScale: {x: 1, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18473,6 +18482,105 @@ MonoBehaviour:
   children:
   - {fileID: 1195982773}
   - {fileID: 1195982772}
+--- !u!114 &1195982775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195982753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc3c09d956853ab469e895a4327833b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 4490467827067958854}
+  enemyScript: {fileID: 0}
+  anim: {fileID: 0}
+  meleeAttackAnimation: {fileID: 0}
+  impactMomentOfAnimation: 0
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 2048
+--- !u!114 &1195982776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195982753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdabbafa330871946be4cf2df26e2487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 4490467827067958854}
+  enemyScript: {fileID: 0}
+--- !u!114 &1195982777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195982753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc986d75d142c154188f6c161d902507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 4490467827067958854}
+  enemyScript: {fileID: 0}
+  anim: {fileID: 0}
+  rangedAttackAnimation: {fileID: 0}
+  impactMomentOfAnimation: 0
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 2048
+--- !u!111 &1195982778
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195982753}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1195982779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195982753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ad4079e715538489e2ed67cebd3501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  children:
+  - {fileID: 1195982776}
+  - {fileID: 1195982775}
+--- !u!114 &1195982780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195982753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658fd95225d40114aa130978343426f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  children:
+  - {fileID: 1195982779}
+  - {fileID: 1195982777}
 --- !u!1001 &1197492413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35113,8 +35221,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658050308837216271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.47, y: 0.96, z: 6.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7.47, y: 0.79, z: 6.96}
+  m_LocalScale: {x: 1, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 39
@@ -35228,8 +35336,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 100
-  rangedAttackRange: 0
-  meleeAttackRange: 0
+  rangedAttackRange: 3
+  meleeAttackRange: 1
+  rangedAttackDamage: 15
+  meleeAttackDamage: 25
 --- !u!65 &658050308837216266
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35490,6 +35600,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ccf83fbe05f459458a802d1c4dc1ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTransform: {fileID: 4490467827067958854}
+  enemyScript: {fileID: 0}
+  anim: {fileID: 0}
+  meleeAttackAnimation: {fileID: 0}
+  impactMomentOfAnimation: 0
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!114 &658050308837216282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35518,7 +35636,7 @@ MonoBehaviour:
   trueChild: {fileID: 658050308837216289}
   falseChild: {fileID: 658050308837216282}
   playerTransform: {fileID: 4490467827067958854}
-  attackRange: 6
+  enemyScript: {fileID: 0}
 --- !u!114 &658050308837216284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35588,6 +35706,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbfc28d3d59ffe44a37e2a8b319ea7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTransform: {fileID: 4490467827067958854}
+  enemyScript: {fileID: 0}
+  anim: {fileID: 0}
+  rangedAttackAnimation: {fileID: 0}
+  impactMomentOfAnimation: 0
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!114 &658050308837216289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35603,6 +35729,7 @@ MonoBehaviour:
   trueChild: {fileID: 658050308837216281}
   falseChild: {fileID: 658050308837216288}
   playerTransform: {fileID: 4490467827067958854}
+  enemyScript: {fileID: 0}
 --- !u!23 &681403346439964562
 MeshRenderer:
   m_ObjectHideFlags: 0

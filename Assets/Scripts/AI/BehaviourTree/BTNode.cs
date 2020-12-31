@@ -9,7 +9,7 @@ public abstract class BTNode : MonoBehaviour
 {
    protected BehaviourTree behaviourTree;
 
-    protected virtual void Awake()
+    protected  virtual void Awake()
     {
         behaviourTree = GetComponent<BehaviourTree>();
     }
@@ -29,6 +29,6 @@ public abstract class BTNode : MonoBehaviour
 
     public virtual void OnInterrupt()
     {
-        Debug.Log("NODE INTERRUPTED");;
+        // Debug.Log("NODE INTERRUPTED");;
     }
 }

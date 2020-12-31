@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealthManager : MonoBehaviour
+public class PlayerHealthManager : MonoBehaviour,IDamageable
 {
 	[SerializeField]
 	DisplayPanel displayPanel;
@@ -14,15 +14,9 @@ public class PlayerHealthManager : MonoBehaviour
 	void  Awake()
 	{
 		playerHealth = new Health(100);
-		// displayPanel.HealthPlus += HealHealth;
 	}
 
 
-	private void DamageHealth(int damage)
-	{
-		playerHealth.currenthealth -= damage;
-
-	}
 	private void HealHealth(int healAmount)
 	{
 
@@ -32,4 +26,11 @@ public class PlayerHealthManager : MonoBehaviour
 	}
 
 	public float GetPlayerHP => playerHealth.currenthealth;
+	
+	
+	public void TakeDamage(int damage)
+	{
+		Debug.Log(damage);
+		playerHealth.currenthealth -= damage;
+	}
 }

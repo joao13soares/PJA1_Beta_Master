@@ -82,6 +82,11 @@
           <e p="Enemies" t="Include">
             <e p="BaseEnemy" t="Include">
               <e p="BehaviourTree" t="Include">
+                <e p="Attack" t="Include">
+                  <e p="IsMeleeRangeBTNode.cs" t="Include" />
+                  <e p="MelleeAttackBTNode.cs" t="Include" />
+                  <e p="RangedAttackBTNode.cs" t="Include" />
+                </e>
                 <e p="ChaseParallel" t="Include">
                   <e p="CanAttackPlayerBTNode.cs" t="Include" />
                   <e p="MoveInChasePathBTNode.cs" t="Include" />
@@ -122,6 +127,7 @@
           </e>
           <e p="Interfaces" t="Include">
             <e p="IAIControlable.cs" t="Include" />
+            <e p="IDamageable.cs" t="Include" />
             <e p="IPickUpable.cs" t="Include" />
             <e p="IRaycastResponse.cs" t="Include" />
             <e p="IRechargeable.cs" t="Include" />

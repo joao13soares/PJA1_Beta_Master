@@ -8,10 +8,19 @@ public class Enemy : MonoBehaviour
     //The box's current health point total
     [SerializeField] float currentHealth;
 
-    [SerializeField]private float rangedAttackRange,
-                                  meleeAttackRange;
+    [SerializeField] private int rangedAttackRange;
+    [SerializeField] private int meleeAttackRange;
 
-    public float RangedAttackRange => rangedAttackRange;
+    [SerializeField] private int rangedAttackDamage;
+    [SerializeField] private int meleeAttackDamage;
+
+    public int RangedAttackRange => rangedAttackRange;
+    
+    public int MeleeAttackRange => meleeAttackRange;
+    public int RangedAttackDamage => rangedAttackDamage;
+
+    public int MeleeAttackDamage => meleeAttackDamage;
+
 
     private AudioClip[] screams;
 
@@ -35,26 +44,22 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-
         if (isDying) return;
 
         AIController?.ExecuteAIControl();
-        
-        
-
-
     }
-    
+
     public void ReceiveDamage(float damageAmount)
     {
         //subtract damage amount when ReceiveDamage function is called
         currentHealth -= damageAmount;
         DamageTaken?.Invoke();
-        
-        
+
+
         if (currentHealth <= 0)
         {
-            StartCoroutine (DestroyWithDelay()); // Destroy with delay in order to be able to listen the audio clip and to see the material color change
+            StartCoroutine(
+                DestroyWithDelay()); // Destroy with delay in order to be able to listen the audio clip and to see the material color change
         }
     }
 
@@ -62,9 +67,7 @@ public class Enemy : MonoBehaviour
     {
         isDying = true;
         yield return new WaitForSeconds(2.0f);
-        
+
         GameObject.Destroy(this.gameObject);
     }
-
-    
 }

@@ -11,8 +11,9 @@ public class WalkPathBTNode : BTNode
 
    protected override void Awake()
    {
-      behaviourTree = GetComponent<BehaviourTree>();
+      
       enemyMovement = GetComponent<Movement>();
+      base.Awake();
    }
 
    public override Result Execute()

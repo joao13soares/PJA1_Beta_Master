@@ -18,13 +18,12 @@ public class Separation : SteeringBehaviour
 
         RaycastHit[] hits = Physics.SphereCastAll(ray, sphereRadius,sphereRadius,enemyLayerMask);
         
-        Debug.Log(hits.Length);
+      
 
         
         
         foreach (RaycastHit hit in hits)
         {
-            Debug.Log(hit.collider.gameObject.name);
             if (hit.collider.gameObject.transform.position != origin.position)
             {
                 

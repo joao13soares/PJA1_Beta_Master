@@ -29,7 +29,7 @@ public class BehaviourTree : MonoBehaviour,IAIControlable
             result = root.Execute();
         }
         
-        Debug.Log("ENDED WIUTH " + result);
+        
         behaviourTreeRunning = false;
 
 

@@ -14,15 +14,18 @@ public class CanAttackPlayerBTNode : BTNode
 
     protected override void Awake()
     {
-        behaviourTree = GetComponent<BehaviourTree>();
+        
         enemyScript = GetComponent<Enemy>();
         fovDetection = GetComponent<FieldOfViewDetection>();
+        base.Awake();
     }
 
     public override Result Execute()
     {
-        if (DistanceToPlayer() <= enemyScript.RangedAttackRange 
-        && fovDetection.isPlayerDetected) return Result.Failure;
+        
+        if (fovDetection.isPlayerDetected &&
+            DistanceToPlayer() <= enemyScript.RangedAttackRange)
+            return Result.Failure;
 
         return Result.Success;
     }
