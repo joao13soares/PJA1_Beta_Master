@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 //[CreateAssetMenu(menuName ="Interactable/Item")]
 
-public class Item : MonoBehaviour, IPickUpable, IRaycastResponse
+public class Item : MonoBehaviour, IPickUpable, IInteractable
 {
 	// -------------------------------------IPickUpable---------------------------------------------//
 

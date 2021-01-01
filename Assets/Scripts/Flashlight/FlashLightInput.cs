@@ -1,94 +1,61 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
-public class Flashlight : MonoBehaviour
+public class FlashLightInput : MonoBehaviour
 {
     //--------------------------------------------------
 
-    // Action variables
-    private float holdKeyDelay = 1f, currentTimer = 0f;
-    private bool isRecharging;
-    public bool canBeUsed { get; set; }
+    // Input variables
+    private const float HoldKeyDelay = 1f;
+    private float currentTimer;
+    private bool canBeUsed;
 
 
-    [SerializeField]
-    private Light flashlightLight;
-
-
-    // TEST
-    [SerializeField]
-    Transform player, playerCamera;
-    GameObject playerObject;
-
-    private Vector3 offset;
-    private Vector3 initialOffset;
-
-    public MovementInfo info;
-
-    float angularDrag = 0.95f;
+    [SerializeField] private Light flashlightLight;
 
 
     [SerializeField] private Inventory inventoryToCheckBatteries;
     [SerializeField] private string batteriesType;
 
-    private int remainingCharges
+    [SerializeField] int chargeDuration;
+    [SerializeField] float currentChargeDurationRemaining;
+    public int CurrentChargePercentageRemaining => (int) ((currentChargeDurationRemaining / chargeDuration) * 100);
+    private int RemainingCharges
     {
         get
         {
             if (inventoryToCheckBatteries.IsStored(batteriesType))
                 return inventoryToCheckBatteries.GetQuantity(batteriesType);
-            
-           return 0;
+
+            return 0;
         }
-    } 
+    }
 
 
+   
     
-    
-    int chargeDuration;
-    float currentChargeDurationRemaining;
-    public int CurrentChargePercentageRemaining => (int) ((currentChargeDurationRemaining / chargeDuration) * 100);
 
     //--------------------------------------------------
 
     void Awake()
     {
-        if (flashlightLight == null) flashlightLight = this.GetComponentInChildren<Light>();
-
-        playerObject = GameObject.FindGameObjectWithTag("Player");
-
-        player = playerObject.transform;
-        playerCamera = playerObject.GetComponentInChildren<Camera>().transform;
-
-        offset = playerCamera.position - this.transform.position;
-
-        initialOffset = player.transform.localPosition - this.transform.position;
-        initialOffset.Normalize();
-
-        currentChargeDurationRemaining = 300;
-        chargeDuration = 300;
-        isRecharging = false;
+        currentChargeDurationRemaining = chargeDuration;
         canBeUsed = true;
-
     }
 
     void Update()
     {
-
         // Timer counting battery time left
         if (flashlightLight.enabled)
             BatteryTimer();
 
         // Input
         FlashLightAction();
-
     }
 
 
     private void FlashLightAction()
     {
-
         // If it is only a click and has battery
         if (Input.GetKeyUp(KeyCode.F) && currentChargeDurationRemaining > 0)
         {
@@ -101,29 +68,22 @@ public class Flashlight : MonoBehaviour
                 flashlightLight.enabled = !flashlightLight.enabled;
             }
             else canBeUsed = true;
-
-
         }
 
         // Checks if it is held down(1sec held)
         else if (Input.GetKey(KeyCode.F))
         {
-
-            if (currentTimer >= holdKeyDelay && canBeUsed && remainingCharges > 0)
+            if (currentTimer >= HoldKeyDelay && canBeUsed && RemainingCharges > 0)
             {
                 flashlightLight.enabled = false;
                 Recharge();
                 currentTimer = 0f;
                 canBeUsed = false;
-
             }
 
             else
                 currentTimer += Time.deltaTime;
         }
-
-
-
     }
 
     private void BatteryTimer()
@@ -137,28 +97,15 @@ public class Flashlight : MonoBehaviour
         {
             currentChargeDurationRemaining = 0;
             flashlightLight.enabled = false;
-
         }
-        
     }
 
-    public void Recharge()
+    private void Recharge()
     {
-        if (remainingCharges > 0)
+        if (RemainingCharges > 0)
         {
             inventoryToCheckBatteries.RemoveSlot(batteriesType);
             currentChargeDurationRemaining = chargeDuration;
         }
-
-
     }
-
-
-  
-
-
-
-
-
-
 }

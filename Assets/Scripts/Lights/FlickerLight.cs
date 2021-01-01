@@ -19,7 +19,7 @@ public class FlickerLight : MonoBehaviour
     
     private void Awake()
     {
-        lightToTurnOff = this.GetComponent<Light>();
+        
         
         currentTimer = 0f;
         upTime = Random.Range(minUpTime, maxUpTime);

@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class Weapon : MonoBehaviour, IRaycastResponse, IPickUpable, IRechargeable
+public abstract class Weapon : MonoBehaviour, IInteractable, IPickUpable, IRechargeable
 {
     // Variables
     [SerializeField] protected List<Action> itemActions;

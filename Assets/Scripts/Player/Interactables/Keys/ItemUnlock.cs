@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemUnlock : MonoBehaviour, IRaycastResponse
+public class ItemUnlock : MonoBehaviour, IInteractable
 {
 
     [SerializeField] private Inventory inventoryToCheck;

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.PlayerLoop;
 
 
-public class DragDoor : MonoBehaviour, IRaycastResponse
+public class DragDoor : MonoBehaviour, IInteractable
 {
     [SerializeField] private bool startsLocked;
 

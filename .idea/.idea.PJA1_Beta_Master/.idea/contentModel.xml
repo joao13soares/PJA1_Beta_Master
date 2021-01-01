@@ -122,14 +122,15 @@
             <e p="FieldOfViewDetection.cs" t="Include" />
           </e>
           <e p="Flashlight" t="Include">
-            <e p="Flashlight.cs" t="Include" />
+            <e p="FlashLightInput.cs" t="Include" />
             <e p="FlashlightOrientation.cs" t="Include" />
+            <e p="FlashLightPickup.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="IAIControlable.cs" t="Include" />
             <e p="IDamageable.cs" t="Include" />
+            <e p="IInteractable.cs" t="Include" />
             <e p="IPickUpable.cs" t="Include" />
-            <e p="IRaycastResponse.cs" t="Include" />
             <e p="IRechargeable.cs" t="Include" />
             <e p="ISlot.cs" t="Include" />
             <e p="IUnlockable.cs" t="Include" />

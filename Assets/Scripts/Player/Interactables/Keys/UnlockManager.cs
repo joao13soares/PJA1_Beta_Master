@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class UnlockManager : MonoBehaviour, IRaycastResponse
+public abstract class UnlockManager : MonoBehaviour, IInteractable
 {
 
     [SerializeField] private DragDoor dragDoor;

@@ -38,6 +38,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/46/39b07108/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToAttackTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelleeAttackActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightPickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/30/793363cc/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/Separation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,11 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/ChaseToPatrolTransition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/LookForState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/AttackState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/DecisionTree/Node.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/AttackToChase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/PLACEHOLDERNODE.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MeleeAttackActionNode.cs" />
@@ -103,6 +99,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/DragDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/Flashlight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInteractable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightPickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlickerLight.cs" />
       </list>
     </option>
   </component>
@@ -176,6 +177,7 @@
       <workItem from="1609367623267" duration="7616000" />
       <workItem from="1609375494362" duration="1990000" />
       <workItem from="1609428899142" duration="3695000" />
+      <workItem from="1609514385148" duration="2668000" />
     </task>
     <servers />
   </component>
@@ -200,10 +202,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="616" y="240" key="run.anything.popup" timestamp="1609182834934">
+    <state x="788" y="194" key="RiderGenerateDialog" timestamp="1609515354094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609182834934" />
+    <state x="788" y="194" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609515354094" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1609514829758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609514829758" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608572803962">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

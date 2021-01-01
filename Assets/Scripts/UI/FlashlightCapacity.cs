@@ -11,13 +11,13 @@ public class FlashlightCapacity : MonoBehaviour
     [SerializeField]
     Text percentageText;
     [SerializeField]
-    Flashlight flashlight;
+    FlashLightInput flashLightInput;
 
     private int currentBatteryPercentage;
 
     void Awake()
     {
-        currentBatteryPercentage = flashlight.CurrentChargePercentageRemaining;
+        currentBatteryPercentage = flashLightInput.CurrentChargePercentageRemaining;
         percentageText.text = currentBatteryPercentage + "%";
     }
 
@@ -25,7 +25,7 @@ public class FlashlightCapacity : MonoBehaviour
     void Update()
     {
         // Updates percentage value
-        currentBatteryPercentage = flashlight.CurrentChargePercentageRemaining;
+        currentBatteryPercentage = flashLightInput.CurrentChargePercentageRemaining;
         
         UpdatePercentageUI();
 

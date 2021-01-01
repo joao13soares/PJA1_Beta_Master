@@ -39,7 +39,7 @@ public class PlayerRaycast : MonoBehaviour
         
         
         GameObject objectHit = hit.collider.gameObject;
-        IRaycastResponse temp = objectHit.GetComponent<IRaycastResponse>();
+        IInteractable temp = objectHit.GetComponent<IInteractable>();
 
 
         float currentDistance = (hit.point - this.transform.position).magnitude;

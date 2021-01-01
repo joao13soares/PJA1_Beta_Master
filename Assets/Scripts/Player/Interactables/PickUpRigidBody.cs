@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent (typeof (Rigidbody))]
 
-public class PickUpRigidBody : MonoBehaviour, IRaycastResponse
+public class PickUpRigidBody : MonoBehaviour, IInteractable
 {
     public GameObject playerCam;
 
