@@ -15,6 +15,7 @@ public class MelleeAttackActionNode : ActionNode
     [SerializeField] private float impactMomentOfAnimation;
     [SerializeField] private LayerMask enemyMask;
 
+    private bool isAttacking;
     private bool attackFinished;
 
     private void Awake()
@@ -22,6 +23,7 @@ public class MelleeAttackActionNode : ActionNode
         anim = this.GetComponent<Animation>();
         enemyScript = GetComponent<Enemy>();
         attackFinished = false;
+        isAttacking = false;
     }
 
     protected override void ExecuteAction()
@@ -33,40 +35,64 @@ public class MelleeAttackActionNode : ActionNode
             return;
         }
 
-        // StartCoroutine(MeleeAttack());
-        TEST();
+        if(!isAttacking)
+         StartCoroutine(MeleeAttack());
+        // TEST();
         
         
-        // MELEE ATTACK LOGIC HERE
-         Debug.Log("MELLEE ATTACK");
     }
     
-    private void TEST()
+    // private void TEST()
+    // {
+    //
+    //     RaycastHit hit;
+    //
+    //     Vector3 rayDirection = playerTransform.position - transform.position;
+    //     
+    //     if (Physics.Raycast 
+    //         (transform.position,rayDirection,out hit,enemyScript.MeleeAttackRange))
+    //     {
+    //        
+    //         
+    //         GameObject objectHit = hit.collider.gameObject;
+    //         IDamageable temp = objectHit.GetComponent<IDamageable>();
+    //
+    //         if(temp != null) Debug.Log("HIT PLAYER");
+    //         temp?.TakeDamage(enemyScript.MeleeAttackDamage);
+    //         
+    //         
+    //     }
+    //
+    //     attackFinished = true;
+    //
+    // }
+   
+    IEnumerator MeleeAttack()
     {
+        isAttacking = true;
+        
+        anim.clip = meleeAttackAnimation;
+        anim.Play();
+        yield return new WaitForSeconds(impactMomentOfAnimation);
+
+       
 
         RaycastHit hit;
-
-        Vector3 rayDirection = playerTransform.position - transform.position;
         
-        if (Physics.Raycast 
-            (transform.position,rayDirection,out hit,enemyScript.MeleeAttackRange))
+        Vector3 rayDirection = playerTransform.position - transform.position;
+
+        if (Physics.Raycast(transform.position, rayDirection, out hit, enemyScript.RangedAttackRange,~enemyMask))
         {
-           
-            
             GameObject objectHit = hit.collider.gameObject;
             IDamageable temp = objectHit.GetComponent<IDamageable>();
 
-            if(temp != null) Debug.Log("HIT PLAYER");
             temp?.TakeDamage(enemyScript.MeleeAttackDamage);
-            
-            
         }
-
+        
+        yield return new WaitForSeconds(meleeAttackAnimation.length-impactMomentOfAnimation);
         attackFinished = true;
-
+        isAttacking = false;
     }
-   
-
    
 
 }

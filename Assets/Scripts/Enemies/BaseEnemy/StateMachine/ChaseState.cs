@@ -6,6 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(Movement))]
 public class ChaseState : State
 {
+    
+    
+    
     private Vector3 playerPositionLastStep;
     [SerializeField]private PlayerMovement playerMovement;
 
@@ -13,6 +16,9 @@ public class ChaseState : State
 
     [SerializeField]private FieldOfViewDetection fovDetection;
 
+
+    [SerializeField] private Animation enemyAnimation;
+    [SerializeField] private AnimationClip chasingAnimation;
 
     private bool isLookingFor;
 
@@ -40,6 +46,13 @@ public class ChaseState : State
         playerPositionLastStep = playerMovement.lastStepPosition;
 
         baseEnemyMovement.UpdatePath(playerPositionLastStep);
+
+
+        enemyAnimation.Stop();
+        enemyAnimation.clip = chasingAnimation;
+        enemyAnimation.Play();
+
+
     }
     
     private void ChaseAction()

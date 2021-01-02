@@ -6,7 +6,10 @@ public class GetRandomPatrolPoint : BTNode
 {
     [SerializeField]private List<Transform> patrolPoints;
     [SerializeField] private Movement enemyMovement;
-    
+
+
+    [SerializeField] private Animation enemyAnimation;
+    [SerializeField] private AnimationClip walkingAnimation;
     private int lastRandom;
 
     private Vector3 randomPointForNewPath;
@@ -15,6 +18,8 @@ public class GetRandomPatrolPoint : BTNode
     public override Result Execute()
     {
         enemyMovement.UpdatePath(GetRandomPatrolPosition());
+        enemyAnimation.clip = walkingAnimation;
+        enemyAnimation.Play();
         return Result.Success;
     }
 

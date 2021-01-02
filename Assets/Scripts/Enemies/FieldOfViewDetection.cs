@@ -35,9 +35,13 @@ public class FieldOfViewDetection : MonoBehaviour
         Vector3 toPlayer = playerTransform.position - enemyTransform.position;
 
 
-        if (Physics.Raycast(enemyTransform.position, toPlayer, out hit, detectRange))
+        if (Physics.Raycast(enemyTransform.position, toPlayer, out hit, detectRange,~enemyLayer))
         {
-            if (hit.collider.gameObject.transform == playerTransform) return true;
+           
+            if (hit.collider.gameObject.transform == playerTransform)
+            {
+                return true;
+            }
         }
 
         return false;

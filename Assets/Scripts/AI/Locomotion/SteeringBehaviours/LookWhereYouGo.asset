@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LookWhereYouGo
   m_EditorClassIdentifier: 
   maxAngAccel: 0.3926991
-  targetRadius: 0.6
-  slowRadius: 0.7853982
+  targetRadius: 0.2
+  slowRadius: 1
   timeToTarget: 5
-  maxAngSpeed: 3.14
+  maxAngSpeed: 1

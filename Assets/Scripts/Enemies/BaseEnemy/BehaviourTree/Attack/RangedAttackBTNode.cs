@@ -15,6 +15,7 @@ public class RangedAttackBTNode : BTNode
     [SerializeField] private float impactMomentOfAnimation;
     [SerializeField] private LayerMask enemyMask;
 
+    private bool isAttacking;
     private bool attackFinished;
 
     protected override void Awake()
@@ -22,6 +23,7 @@ public class RangedAttackBTNode : BTNode
         anim = this.GetComponent<Animation>();
         enemyScript = GetComponent<Enemy>();
         attackFinished = false;
+        isAttacking = false;
         base.Awake();
     }
 
@@ -33,49 +35,30 @@ public class RangedAttackBTNode : BTNode
             return Result.Success;
         }
 
-        // StartCoroutine(RangedAttack());
+        if(!isAttacking)
+         StartCoroutine(RangedAttack());
         // StartCoroutine(TEST());
-        TEST();
+        // TEST();
         
         return Result.Running;
     }
 
     
-   private void TEST()
-    {
-        
-
-        RaycastHit hit;
-
-
-       
-        Vector3 rayDirection = playerTransform.position - transform.position;
-
-        if (Physics.Raycast
-            (transform.position,rayDirection,out hit,enemyScript.RangedAttackRange))
-        {
-            Debug.Log("ATINGIU QQLR MERDA");
-            GameObject objectHit = hit.collider.gameObject;
-            IDamageable temp = objectHit.GetComponent<IDamageable>();
-            
-
-            temp?.TakeDamage(enemyScript.RangedAttackDamage);
-        }
-        attackFinished = true;
-
-    }
+  
 
     IEnumerator RangedAttack()
     {
+        isAttacking = true;
         anim.clip = rangedAttackAnimation;
         anim.Play();
         yield return new WaitForSeconds(impactMomentOfAnimation);
 
-        Ray ray = new Ray(transform.position,transform.forward);
 
         RaycastHit hit;
         
-        if (Physics.Raycast(ray,out hit,enemyScript.RangedAttackRange,enemyMask))
+        Vector3 rayDirection = playerTransform.position - transform.position;
+
+        if (Physics.Raycast(transform.position, rayDirection, out hit, enemyScript.RangedAttackRange,~enemyMask))
         {
             GameObject objectHit = hit.collider.gameObject;
             IDamageable temp = objectHit.GetComponent<IDamageable>();
@@ -85,6 +68,7 @@ public class RangedAttackBTNode : BTNode
         
         yield return new WaitForSeconds(rangedAttackAnimation.length-impactMomentOfAnimation);
         attackFinished = true;
+        isAttacking = false;
     }
 
 

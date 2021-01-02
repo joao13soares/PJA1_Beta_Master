@@ -12,6 +12,8 @@ public class UpdateStepDestinationBTNode : BTNode
     private Movement enemyMovement;
     [SerializeField] private PlayerMovement playerMovement;
 
+    [SerializeField] private Animation enemyAnimation;
+    [SerializeField] private AnimationClip chasingAnimation;
 
     private FieldOfViewDetection fovDetection;
 
@@ -39,6 +41,10 @@ public class UpdateStepDestinationBTNode : BTNode
         {
             playerMovement.Stepped += UpdateDestination;
             isAlreadySubscribed = true;
+
+            enemyAnimation.clip = chasingAnimation;
+            enemyAnimation.Play();
+
         }
         
         else if (!fovDetection.isPlayerDetected &&

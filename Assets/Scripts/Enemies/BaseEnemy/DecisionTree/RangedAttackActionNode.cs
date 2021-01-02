@@ -11,14 +11,17 @@ public class RangedAttackActionNode : ActionNode
     [SerializeField] private float impactMomentOfAnimation;
     [SerializeField] private LayerMask enemyMask;
 
+    private bool isAttacking;
     private bool attackFinished;
 
     private void Awake()
     {
         anim = this.GetComponent<Animation>();
         enemyScript = GetComponent<Enemy>();
+        isAttacking = false;
         attackFinished = false;
     }
+
     protected override void ExecuteAction()
     {
         if (attackFinished)
@@ -26,38 +29,63 @@ public class RangedAttackActionNode : ActionNode
             attackFinished = false;
             return;
         }
-
-        // StartCoroutine(RangedAttack());
-        // StartCoroutine(TEST());
-        TEST();
         
-        // // RANGED ATTACK LOGIC HERE
-         Debug.Log("RANGED ATTACK");
+        if(!isAttacking)
+        StartCoroutine(RangedAttack());
+        // StartCoroutine(TEST());
+        // TEST();
+
     }
-    
-    private void TEST()
+
+    // private void TEST()
+    // {
+    //    
+    //
+    //     RaycastHit hit;
+    //
+    //     Vector3 rayDirection = playerTransform.position - transform.position;
+    //     if (Physics.Raycast 
+    //         (transform.position,rayDirection,out hit,enemyScript.RangedAttackRange))
+    //     {
+    //        
+    //         
+    //         GameObject objectHit = hit.collider.gameObject;
+    //         IDamageable temp = objectHit.GetComponent<IDamageable>();
+    //
+    //         if(temp != null) Debug.Log("HIT PLAYER");
+    //         temp?.TakeDamage(enemyScript.RangedAttackDamage);
+    //         
+    //         
+    //     }
+    //
+    //     attackFinished = true;
+    //
+    // }
+
+    IEnumerator RangedAttack()
     {
-       
+        isAttacking = true;
+        
+        anim.clip = rangedAttackAnimation;
+        anim.Play();
+        yield return new WaitForSeconds(impactMomentOfAnimation);
+
 
         RaycastHit hit;
-
         Vector3 rayDirection = playerTransform.position - transform.position;
-        if (Physics.Raycast 
-            (transform.position,rayDirection,out hit,enemyScript.RangedAttackRange))
+
+        if (Physics.Raycast(transform.position, rayDirection, out hit, enemyScript.RangedAttackRange,~enemyMask))
         {
-           
-            
             GameObject objectHit = hit.collider.gameObject;
             IDamageable temp = objectHit.GetComponent<IDamageable>();
 
-            if(temp != null) Debug.Log("HIT PLAYER");
+            Debug.Log(objectHit.name);
             temp?.TakeDamage(enemyScript.RangedAttackDamage);
-            
-            
         }
 
+        yield return new WaitForSeconds(rangedAttackAnimation.length - impactMomentOfAnimation);
+        
         attackFinished = true;
-
+        isAttacking = false;
     }
-    
 }

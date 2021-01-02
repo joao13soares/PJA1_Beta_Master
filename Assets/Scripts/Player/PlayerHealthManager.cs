@@ -40,7 +40,7 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 	public float GetPlayerHP => playerHealth.currenthealth;
 	
 	
-	public void TakeDamage(int damage)
+	public void TakeDamage(float damage)
 	{
 		Debug.Log(damage);
 		playerHealth.currenthealth -= damage;

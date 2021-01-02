@@ -5,13 +5,13 @@ using UnityEngine;
 public class Health 
 {
 
-	public int currenthealth;
-	public int maxHealth;
+	public float currenthealth;
+	public float maxHealth;
 
 	public Health(int health)
 	{
 		maxHealth = currenthealth = health;
 	}
 
-	public int GetHealth() => currenthealth;	
+	public float GetHealth() => currenthealth;	
 }

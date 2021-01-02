@@ -8,18 +8,18 @@ public class Enemy : MonoBehaviour
     //The box's current health point total
     [SerializeField] float currentHealth;
 
-    [SerializeField] private int rangedAttackRange;
-    [SerializeField] private int meleeAttackRange;
+    [SerializeField] private float rangedAttackRange;
+    [SerializeField] private float meleeAttackRange;
 
-    [SerializeField] private int rangedAttackDamage;
-    [SerializeField] private int meleeAttackDamage;
+    [SerializeField] private float rangedAttackDamage;
+    [SerializeField] private float meleeAttackDamage;
 
-    public int RangedAttackRange => rangedAttackRange;
+    public float RangedAttackRange => rangedAttackRange;
     
-    public int MeleeAttackRange => meleeAttackRange;
-    public int RangedAttackDamage => rangedAttackDamage;
+    public float MeleeAttackRange => meleeAttackRange;
+    public float RangedAttackDamage => rangedAttackDamage;
 
-    public int MeleeAttackDamage => meleeAttackDamage;
+    public float MeleeAttackDamage => meleeAttackDamage;
 
 
     private AudioClip[] screams;

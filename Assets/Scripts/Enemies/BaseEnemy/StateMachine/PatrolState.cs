@@ -8,6 +8,8 @@ using Random = UnityEngine.Random;
 public class PatrolState : State
 {
     
+    [SerializeField] private Animation enemyAnimation;
+    [SerializeField] private AnimationClip walkingAnimation;
     [SerializeField]private Movement baseEnemyMovement;
 
 
@@ -18,8 +20,8 @@ public class PatrolState : State
     private int lastRandom;
 
     
-    [SerializeField] private PathFindingAStar pathFinding;
-    private List<Cell> currentPath;
+    // [SerializeField] private PathFindingAStar pathFinding;
+    // private List<Cell> currentPath;
 
     
     protected override void CreateActions()
@@ -31,15 +33,22 @@ public class PatrolState : State
  
     private void PatrolAction()
     {
-       Debug.Log("PATROL STATE RUNNING");
+       
         baseEnemyMovement.MovementUpdate();
 
     }
 
-    
-   
-    
-    private void EnterPatrolState() => GetNewPath();
+
+
+
+    private void EnterPatrolState()
+    {
+        GetNewPath();
+        enemyAnimation.Stop();
+        enemyAnimation.clip = walkingAnimation;
+        enemyAnimation.Play();
+
+    } 
 
 
     private void GetNewPath()
@@ -69,21 +78,21 @@ public class PatrolState : State
     }
 
     
-    public int GetLastCellIndex()
-    {
-        if (currentPath != null) return currentPath.Count-1;
-        return 0;
-    
-    }
-
-
-    private void OnDrawGizmos()
-    {
-        if (currentPath != null)
-
-            foreach (Cell c in currentPath)
-            {
-                Gizmos.DrawCube(c.Position,new Vector3(1f,1f,1f));
-            }
-    }
+    // public int GetLastCellIndex()
+    // {
+    //     if (currentPath != null) return currentPath.Count-1;
+    //     return 0;
+    //
+    // }
+    //
+    //
+    // private void OnDrawGizmos()
+    // {
+    //     if (currentPath != null)
+    //
+    //         foreach (Cell c in currentPath)
+    //         {
+    //             Gizmos.DrawCube(c.Position,new Vector3(1f,1f,1f));
+    //         }
+    // }
 }
