@@ -27,5 +27,7 @@ public class FlashlightOrientation : MonoBehaviour
     {
         fakePlayerTransform.position = playerCamera.position + offSet;
         fakePlayerTransform.rotation = Quaternion.Slerp(fakePlayerTransform.rotation, playerCamera.transform.rotation, speed * Time.deltaTime);
+
+      
     }
 }

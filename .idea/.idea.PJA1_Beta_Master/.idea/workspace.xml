@@ -53,9 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/PLACEHOLDERNODE.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MeleeAttackActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelLeeAttackActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Book/DisplayPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTDecorator.cs" />
@@ -91,7 +88,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/Separation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BehaviourTree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/CanAttackPlayerBTNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/RangedAttackBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/MelleeAttackBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelleeAttackActionNode.cs" />
@@ -100,10 +96,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/DragDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/Flashlight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInteractable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightPickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlickerLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToPatrolTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/DoorSound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashlightOrientation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightInput.cs" />
       </list>
     </option>
   </component>
@@ -178,6 +178,9 @@
       <workItem from="1609375494362" duration="1990000" />
       <workItem from="1609428899142" duration="3695000" />
       <workItem from="1609514385148" duration="2668000" />
+      <workItem from="1609536450145" duration="1532000" />
+      <workItem from="1609604466351" duration="642000" />
+      <workItem from="1609606332939" duration="2592000" />
     </task>
     <servers />
   </component>

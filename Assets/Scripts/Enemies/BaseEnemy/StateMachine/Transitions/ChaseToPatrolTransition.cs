@@ -12,6 +12,8 @@ public class ChaseToPatrolTransition : Transition
 
     public override bool CanTransition()
     {
+        if (movementToCheckEnd.currentPath == null) return false;
+        
         if (!fovDetection.isPlayerDetected &&
             movementToCheckEnd.CurrentTargetIndex == movementToCheckEnd.currentPath.Count-1)
             currentUnknownTime += Time.deltaTime;
