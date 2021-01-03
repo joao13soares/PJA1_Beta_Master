@@ -54,7 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/IsPlayerDetectedBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/WalkPatrolPathBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/GetRandomPatrolPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolSequencerBTNode.cs" />
@@ -87,7 +86,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/Flashlight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInteractable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightPickup.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlickerLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToPatrolTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sound/DoorSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashlightOrientation.cs" />
@@ -105,6 +103,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/MelleeAttackBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/UpdateStepDestinationBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolParallel/GetRandomPatrolPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/PathFinding/VoxelDivision/WorldGrid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlickerLight.cs" />
       </list>
     </option>
   </component>
@@ -184,6 +184,7 @@
       <workItem from="1609606332939" duration="2592000" />
       <workItem from="1609618971185" duration="1926000" />
       <workItem from="1609622494905" duration="4488000" />
+      <workItem from="1609710096472" duration="1850000" />
     </task>
     <servers />
   </component>

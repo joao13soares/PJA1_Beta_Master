@@ -10,7 +10,7 @@ public class FlickerLight : MonoBehaviour
                                   currentTimer;
     [SerializeField]private float downTime;
 
-    private const float minUpTime = 3.0f,
+    [SerializeField]private const float minUpTime = 3.0f,
                         maxUpTime = 5.0f,
                         minDownTime = 0.01f,
                         maxDownTime = 0.1f;
