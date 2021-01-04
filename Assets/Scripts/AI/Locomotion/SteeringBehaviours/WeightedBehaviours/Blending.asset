@@ -7,17 +7,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9145f902bcdf1d47b66fc4b74544dee, type: 3}
   m_Name: Blending
   m_EditorClassIdentifier: 
   behavioursToBlend:
-  - weight: 0.8
-    behaviour: {fileID: 11400000, guid: 0bf43b562c5b14a408fbe8d4ba39ec64, type: 2}
-  - weight: 1
-    behaviour: {fileID: 11400000, guid: 8627bfbd33875d646b7dc650ceca7f0a, type: 2}
-  - weight: 0.2
-    behaviour: {fileID: 11400000, guid: 3703131dc5ac0a04ca5a89f9f483ca7c, type: 2}
+  - {fileID: 11400000, guid: 82cd93a272e43184f99f3f2155f8e96a, type: 2}
+  - {fileID: 11400000, guid: eafc1d9f5c9c29c4a86b4c8d190369e7, type: 2}
+  - {fileID: 11400000, guid: 775ffca8d8f1e784c88238285b5f6ffa, type: 2}
   maxAcceleration: 1
   maxRotation: 45

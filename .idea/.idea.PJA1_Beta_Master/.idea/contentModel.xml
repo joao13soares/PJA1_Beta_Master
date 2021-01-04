@@ -189,12 +189,17 @@
               <e p="MapShowArea.cs" t="Include" />
             </e>
             <e p="UIStateMachine" t="Include">
-              <e p="InGameUIState.cs" t="Include" />
-              <e p="InspectToInventoryTransition.cs" t="Include" />
-              <e p="InspectUIState.cs" t="Include" />
-              <e p="InventoryInputTransition.cs" t="Include" />
-              <e p="InventoryUIState.cs" t="Include" />
-              <e p="ToInspectTransition.cs" t="Include" />
+              <e p="CanvasManager.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="InGameUIState.cs" t="Include" />
+                <e p="InspectUIState.cs" t="Include" />
+                <e p="InventoryUIState.cs" t="Include" />
+              </e>
+              <e p="Transitions" t="Include">
+                <e p="InspectToInventoryTransition.cs" t="Include" />
+                <e p="InventoryInputTransition.cs" t="Include" />
+                <e p="ToInspectTransition.cs" t="Include" />
+              </e>
             </e>
             <e p="WeaponUI" t="Include">
               <e p="WeaponUI.cs" t="Include" />

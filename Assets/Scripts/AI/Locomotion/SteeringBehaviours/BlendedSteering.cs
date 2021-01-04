@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,8 +11,15 @@ public class BlendedSteering : SteeringBehaviour
     
     [SerializeField] private float maxAcceleration;
     [SerializeField] private float maxRotation;
-    
-    
+
+    private void Awake()
+    {
+        foreach (WeightedSteeringBehaviour wsb in behavioursToBlend)
+        {
+            wsb.Init();
+        }
+    }
+
     public override Steering GetSteering(MovementInfo origin, Vector3 target)
     {
         Steering steering = new Steering();

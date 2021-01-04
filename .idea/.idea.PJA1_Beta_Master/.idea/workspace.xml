@@ -54,10 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/WalkPatrolPathBTNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/GetRandomPatrolPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolSequencerBTNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTComposite.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/IsInAttackRangeBTNode.cs" />
@@ -77,7 +73,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/WalkPathBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/IsMeleeRangeBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/Separation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BehaviourTree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/CanAttackPlayerBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" />
@@ -105,6 +100,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolParallel/GetRandomPatrolPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/PathFinding/VoxelDivision/WorldGrid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlickerLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStateMachine/InventoryInputTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStateMachine/CanvasManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/Separation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/BlendedSteering.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/WeightedSteeringBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -185,6 +185,7 @@
       <workItem from="1609618971185" duration="1926000" />
       <workItem from="1609622494905" duration="4488000" />
       <workItem from="1609710096472" duration="1850000" />
+      <workItem from="1609716496244" duration="4375000" />
     </task>
     <servers />
   </component>

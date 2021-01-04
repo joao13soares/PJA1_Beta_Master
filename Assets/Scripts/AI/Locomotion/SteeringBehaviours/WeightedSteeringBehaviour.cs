@@ -1,8 +1,16 @@
 ﻿using System;
+using UnityEngine;
+using UnityEngine.PlayerLoop;
 
-[Serializable]
-public class WeightedSteeringBehaviour
+[CreateAssetMenu(menuName="Behaviour/WeightedSteeringBehaviour")]
+
+public class WeightedSteeringBehaviour : ScriptableObject
 {
    public float weight;
    public SteeringBehaviour behaviour;
+
+   public void Init()
+   {
+       behaviour = Instantiate(behaviour);
+   }
 }

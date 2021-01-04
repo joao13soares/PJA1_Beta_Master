@@ -11,7 +11,7 @@ public class Separation : SteeringBehaviour
     {
         Steering steering = new Steering();
 
-        float sphereRadius = 1.5f;
+        float sphereRadius = 0.7f;
 
         Ray ray = new Ray(origin.position, origin.orientation);
 
