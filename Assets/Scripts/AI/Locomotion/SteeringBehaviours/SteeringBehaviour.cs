@@ -7,7 +7,7 @@ public abstract class SteeringBehaviour : ScriptableObject
     
     public virtual SteeringBehaviour Init()
     {
-        return this;
+        return Instantiate(this);
     }
     public abstract Steering GetSteering(MovementInfo origin, Vector3 target);
 }

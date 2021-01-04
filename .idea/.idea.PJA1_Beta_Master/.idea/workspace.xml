@@ -41,12 +41,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightPickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/30/793363cc/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/Separation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/UpdateStepDestinationBTNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Interactables/UnlockDoubleDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/MelleeAttackBTNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7765070B-AFF7-442E-A7A7-D482361E5065/bf/7b342fbb/Animation.cs" root0="SKIP_HIGHLIGHTING" />
@@ -54,13 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTComposite.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/IsInAttackRangeBTNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolParallel/WalkPatrolPathBTNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/PatrolParallel/WalkPathBTNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/CanChasePlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTParallel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/CanDetectPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IAIControlable.cs" />
@@ -103,8 +98,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStateMachine/InventoryInputTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStateMachine/CanvasManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/Separation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/BlendedSteering.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/WeightedSteeringBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/BlendedSteering.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/SteeringBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/UnlockDoubleDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStateMachine/Transitions/InventoryInputTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/HeadBopping.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemySpawner.cs" />
       </list>
     </option>
   </component>
@@ -186,6 +188,7 @@
       <workItem from="1609622494905" duration="4488000" />
       <workItem from="1609710096472" duration="1850000" />
       <workItem from="1609716496244" duration="4375000" />
+      <workItem from="1609774202628" duration="9353000" />
     </task>
     <servers />
   </component>
@@ -218,9 +221,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609514829758" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608572803962">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609786104359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608572803962" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609786104359" />
   </component>
 </project>

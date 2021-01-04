@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 [CreateAssetMenu(menuName="Behaviour/WeightedBlending")]
 
@@ -14,8 +15,9 @@ public class BlendedSteering : SteeringBehaviour
 
     private void Awake()
     {
-        foreach (WeightedSteeringBehaviour wsb in behavioursToBlend)
+        foreach (WeightedSteeringBehaviour wsb in behavioursToBlend.ToArray())
         {
+            // wsb = Instantiate(wsb);
             wsb.Init();
         }
     }

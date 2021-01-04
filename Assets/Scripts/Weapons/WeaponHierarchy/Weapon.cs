@@ -233,13 +233,13 @@ public abstract class Weapon : MonoBehaviour, IInteractable, IPickUpable, IRecha
         bulletsinCurrentMagazine = (int) (defaultMagazineSize * fillPercentage);
 
 
-        // Play the reloading sound effect
-        gunAudio.PlayOneShot(gunSounds[1]);
+        // // Play the reloading sound effect
+        // gunAudio.PlayOneShot(gunSounds[1]);
 
         //DESCOMENTAR QUANDO ANIMATIONS PRONTAS
         // weaponAnimationManager.PlayReloadAnimation();
 
-        inventory.RemoveSlot(type);
+        inventory.RemoveSlot(magazineType);
     }
 
     //Calculates the % of next magazines bullets 

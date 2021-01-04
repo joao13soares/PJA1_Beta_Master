@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 [CreateAssetMenu(menuName="Behaviour/WeightedSteeringBehaviour")]
 
@@ -12,5 +11,6 @@ public class WeightedSteeringBehaviour : ScriptableObject
    public void Init()
    {
        behaviour = Instantiate(behaviour);
+       
    }
 }

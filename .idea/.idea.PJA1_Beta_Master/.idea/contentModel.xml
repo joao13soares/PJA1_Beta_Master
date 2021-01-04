@@ -119,6 +119,7 @@
               </e>
             </e>
             <e p="Enemy.cs" t="Include" />
+            <e p="EnemySpawner.cs" t="Include" />
             <e p="FieldOfViewDetection.cs" t="Include" />
           </e>
           <e p="Flashlight" t="Include">
@@ -147,6 +148,7 @@
             </e>
           </e>
           <e p="Player" t="Include">
+            <e p="HeadBopping.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="Interactables" t="Include">
               <e p="DragDoor.cs" t="Include" />
@@ -168,6 +170,7 @@
               </e>
               <e p="PickUpRigidBody.cs" t="Include" />
               <e p="PlayerRaycast.cs" t="Include" />
+              <e p="UnlockDoubleDoor.cs" t="Include" />
             </e>
             <e p="PlayerHealthManager.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />

@@ -10,6 +10,16 @@ using Vector3 = UnityEngine.Vector3;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    public enum PlayerState
+    {
+        IDLE,
+        WALKING
+    };
+
+    private PlayerState playerState;
+    public PlayerState GetPlayerState => playerState;
+    
     [SerializeField]
     MovementInfo info;
 
@@ -88,6 +98,10 @@ public class PlayerMovement : MonoBehaviour
         // Read Horizontal and Vertical Axes, and update velocity/rotation
         float vertical = Input.GetAxis("Vertical");
         float horizontal = Input.GetAxis("Horizontal");
+
+        if (vertical != 0 || horizontal != 0) playerState = PlayerState.WALKING;
+        else playerState = PlayerState.IDLE;
+        
 
         // Next frame movement
         nextFrameSteering.linear = (forwardVector * vertical + rightVector * horizontal) ;
