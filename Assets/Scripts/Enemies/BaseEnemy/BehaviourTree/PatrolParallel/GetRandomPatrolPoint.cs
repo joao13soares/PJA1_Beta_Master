@@ -17,6 +17,7 @@ public class GetRandomPatrolPoint : BTNode
 
     public override Result Execute()
     {
+        Debug.Log("NEED NEW PATH");
         enemyMovement.UpdatePath(GetRandomPatrolPosition());
         enemyAnimation.clip = walkingAnimation;
         enemyAnimation.Play();

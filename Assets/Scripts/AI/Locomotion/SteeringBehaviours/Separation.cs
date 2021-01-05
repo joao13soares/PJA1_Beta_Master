@@ -27,7 +27,7 @@ public class Separation : SteeringBehaviour
             if (hit.collider.gameObject.transform.position != origin.position)
             {
                 
-                steering.linear += hit.point - origin.position;
+                steering.linear +=  origin.position - hit.point;
                 steering.linear.y *= 0f;
             }
             

@@ -10,7 +10,6 @@ using Vector3 = UnityEngine.Vector3;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     public enum PlayerState
     {
         IDLE,
@@ -19,72 +18,58 @@ public class PlayerMovement : MonoBehaviour
 
     private PlayerState playerState;
     public PlayerState GetPlayerState => playerState;
-    
-    [SerializeField]
-    MovementInfo info;
 
-    
-    
-    
-    [SerializeField]
-    private float linearDrag = 0.95f, 
-                  angularDrag = 0.70f;
-  
-    [SerializeField]
-    private float walkVelocity = 2f;
+    [SerializeField] MovementInfo info;
 
-    [SerializeField]
-    private float mouseSensitivity = 0.1f;
 
-    
-    [SerializeField]
-    private GameObject playerCamera;
+    [SerializeField] private float linearDrag = 0.95f,
+        angularDrag = 0.70f;
 
-     private Vector3 forwardVector => transform.forward;
-     private Vector3 rightVector => transform.right;
+    [SerializeField] private float walkVelocity = 2f;
 
-    
+    [SerializeField] private float mouseSensitivity = 0.1f;
 
-    
-     [SerializeField] private float distanceBetweenStepsSounds = 0.25f;
-     public Vector3 lastStepPosition;
-     
 
-     public delegate void OnStep();
-     public event OnStep Stepped;
-    
+    [SerializeField] private GameObject playerCamera;
+
+    private Vector3 forwardVector => transform.forward;
+    private Vector3 rightVector => transform.right;
+
+
+    [SerializeField] private float distanceBetweenStepsSounds = 0.25f;
+    public Vector3 lastStepPosition;
+
+    public Vector3 GetPlayerPosition => transform.position;
+
+    public delegate void OnStep();
+
+    public event OnStep Stepped;
+
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
 
         // Checks for camera 
         if (playerCamera != null) playerCamera = GameObject.Find("Main Camera");
-        
-        
+
+
         lastStepPosition = this.transform.position;
-        
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        
         Steering nextFrameSteering = new Steering();
         PlayerMovementUpdate(nextFrameSteering);
         PlayerLookUpdate(nextFrameSteering);
-       
-
     }
 
- 
 
     private void LateUpdate()
     {
         // Keeps up to date with the tranform position cause of colisions
         info.position = transform.position;
-        
+
         // Check if plays sound manager according to new position
         if (Vector3.Distance(transform.position, lastStepPosition) >= distanceBetweenStepsSounds)
         {
@@ -101,35 +86,27 @@ public class PlayerMovement : MonoBehaviour
 
         if (vertical != 0 || horizontal != 0) playerState = PlayerState.WALKING;
         else playerState = PlayerState.IDLE;
-        
+
 
         // Next frame movement
-        nextFrameSteering.linear = (forwardVector * vertical + rightVector * horizontal) ;
+        nextFrameSteering.linear = (forwardVector * vertical + rightVector * horizontal);
 
         // Updates vectors for next frame calculus
-        info.velocity += nextFrameSteering.linear * walkVelocity ;
+        info.velocity += nextFrameSteering.linear * walkVelocity;
 
         // Do not exceed our max velocity
-        info.velocity = Vector3.ClampMagnitude(info.velocity, walkVelocity) ;
-        
-
-         transform.position += info.velocity * Time.deltaTime;
+        info.velocity = Vector3.ClampMagnitude(info.velocity, walkVelocity);
 
 
-         
-         
-         
+        transform.position += info.velocity * Time.deltaTime;
+
+
         // Apply drag
         info.velocity *= linearDrag;
-
-       
-
-
     }
 
     private void PlayerLookUpdate(Steering nextFrameSteering)
     {
-
         // Read Mouse Movement
         Vector2 mouseXY = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
@@ -138,19 +115,18 @@ public class PlayerMovement : MonoBehaviour
         if (Mathf.Abs(mouseXY.x) != 0 || Mathf.Abs(mouseXY.y) != 0)
         {
             // Gets this frame's value to rotate in X
-            nextFrameSteering.angular.x = mouseXY.x ;
+            nextFrameSteering.angular.x = mouseXY.x;
             // Gets this frame's value to rotate in Y(inverted axis)
-            nextFrameSteering.angular.y = -1 * mouseXY.y ;
-            
+            nextFrameSteering.angular.y = -1 * mouseXY.y;
         }
-        
-        // Gets rotation for next frame
-        info.rotation += nextFrameSteering.angular * mouseSensitivity ;
 
-        
+        // Gets rotation for next frame
+        info.rotation += nextFrameSteering.angular * mouseSensitivity;
+
+
         // Update our orientation according to current rotation vector 
-        info.orientation += info.rotation * Time.deltaTime ;
-        
+        info.orientation += info.rotation * Time.deltaTime;
+
         //Normalize orientation
         info.orientation = AuxMethods.NormAngle(info.orientation);
 
@@ -159,10 +135,9 @@ public class PlayerMovement : MonoBehaviour
 
         // Rotates
         RotateTransform();
-        
+
         // Add drag
         info.rotation *= angularDrag;
-      
     }
 
 
@@ -171,17 +146,11 @@ public class PlayerMovement : MonoBehaviour
         // Resets rotations for next frame(values are additive and dont reset after update)
         playerCamera.transform.localRotation = Quaternion.identity;
         transform.rotation = Quaternion.identity;
-        
+
         // Rotates all player right-left
         this.transform.Rotate(transform.up, info.orientation.x * Mathf.Rad2Deg, Space.World);
 
         // Only rotates camera up-down
-        playerCamera.transform.Rotate( playerCamera.transform.right, info.orientation.y * Mathf.Rad2Deg, Space.World);
-
-
+        playerCamera.transform.Rotate(playerCamera.transform.right, info.orientation.y * Mathf.Rad2Deg, Space.World);
     }
-    
-    
-    
-
 }

@@ -7,7 +7,7 @@ public class InventoryUIState : State
     [SerializeField]private GameObject inventoryUI;
 
 
-    public override void Start()
+    public override void OnEnable()
     {
         inventoryUI.SetActive(false);
         CreateActions();
@@ -22,6 +22,8 @@ public class InventoryUIState : State
 
     private void OnEnterActions()
     {
+        
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         inventoryUI.SetActive(true);

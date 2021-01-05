@@ -26,10 +26,10 @@ public abstract class State : MonoBehaviour
         onExitActions = new List<System.Action>();
     }
 
-    public virtual void Start()
-    {
-        CreateActions();
-    }
+    public virtual void OnEnable()
+     {
+         CreateActions();
+     }
     
     private void CheckTransitions()
     {

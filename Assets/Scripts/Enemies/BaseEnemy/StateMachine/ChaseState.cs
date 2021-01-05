@@ -93,7 +93,7 @@ public class ChaseState : State
     
     private void ChangeLastStepPosition()
     {
-        playerPositionLastStep = playerMovement.lastStepPosition;
+        playerPositionLastStep = playerMovement.GetPlayerPosition;
         baseEnemyMovement.UpdatePath(playerPositionLastStep);
 
     } 

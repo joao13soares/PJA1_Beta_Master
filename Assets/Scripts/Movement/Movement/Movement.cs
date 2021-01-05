@@ -33,14 +33,12 @@ public class Movement : MonoBehaviour
 
     void Awake()
     {
-        
-        steeringBehaviour = Instantiate(steeringBehaviour);
-
+       
         currentTargetIndex = 0;
     }
 
 
-  
+
 
     public void MovementUpdate()
     {

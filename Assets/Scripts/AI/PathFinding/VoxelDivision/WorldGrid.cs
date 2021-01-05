@@ -158,32 +158,34 @@ public class WorldGrid : MonoBehaviour
 
 
 
-    // DEBUG DRAWING, FUCK FPS IN THIS FASE
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(transform.position, new Vector3(worldSizeX, 1f, worldSizeZ));
-
-
-        if (worldCells == null) return;
-
-        foreach (Cell c in worldCells)
-        {
-            if (!c.IsWalkable)
-            {
-                Gizmos.color = Color.red;
-                Gizmos.DrawCube(c.Position, new Vector3(cellDiameter, 1f, cellDiameter));
-
-
-            }
-
-
-
-
-
-
-        }
-
-
-    }
+    // // DEBUG DRAWING, FUCK FPS IN THIS FASE
+    // private void OnDrawGizmos()
+    // {
+    //     Gizmos.DrawWireCube(transform.position, new Vector3(worldSizeX, 1f, worldSizeZ));
+    //
+    //
+    //     if (worldCells == null) return;
+    //
+    //     foreach (Cell c in worldCells)
+    //     {
+    //         if (!c.IsWalkable)
+    //         {
+    //             Gizmos.color = Color.red;
+    //             Gizmos.DrawCube(c.Position, new Vector3(cellDiameter, 1f, cellDiameter));
+    //
+    //
+    //         }
+    //        
+    //         
+    //
+    //
+    //
+    //
+    //
+    //
+    //     }
+    //
+    //
+    // }
 }
 

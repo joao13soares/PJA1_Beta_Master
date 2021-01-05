@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-[CreateAssetMenu(menuName="Behaviour/WeightedBlending")]
+
 
 public class BlendedSteering : SteeringBehaviour
 {
@@ -13,14 +13,7 @@ public class BlendedSteering : SteeringBehaviour
     [SerializeField] private float maxAcceleration;
     [SerializeField] private float maxRotation;
 
-    private void Awake()
-    {
-        foreach (WeightedSteeringBehaviour wsb in behavioursToBlend.ToArray())
-        {
-            // wsb = Instantiate(wsb);
-            wsb.Init();
-        }
-    }
+  
 
     public override Steering GetSteering(MovementInfo origin, Vector3 target)
     {

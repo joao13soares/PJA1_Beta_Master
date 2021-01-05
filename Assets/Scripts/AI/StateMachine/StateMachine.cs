@@ -11,13 +11,16 @@ public  class StateMachine : MonoBehaviour, IAIControlable
 
     private void Awake()
     {
+        
         StateEventSubscription();
         currentState = allStates.ElementAt(0);
     }
 
+
     private void Start()
     {
         currentState.OnEnter();
+        
     }
 
     // protected abstract void  StateCreation();
@@ -28,10 +31,11 @@ public  class StateMachine : MonoBehaviour, IAIControlable
             state.StateChanged += ChangeState;
         }
     }
-    
- 
 
-    public void ExecuteStateMachine() => currentState.OnStay();
+
+
+    public void ExecuteStateMachine()=> currentState.OnStay();
+    
     
     private void ChangeState(State newState)
     {
