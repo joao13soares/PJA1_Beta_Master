@@ -15,6 +15,8 @@ public class FlashLightPickup : MonoBehaviour, IInteractable,IPickUpable
     [SerializeField] protected List<Action> itemActions;
     [SerializeField] protected GameObject itemGameObjectForInspect;
     [SerializeField] protected Sprite icon;
+    [SerializeField] protected Sprite highlightIcon;
+
     [SerializeField] protected string type = "Flashlight";
     [SerializeField] protected bool isPermanent = true;
     
@@ -26,6 +28,7 @@ public class FlashLightPickup : MonoBehaviour, IInteractable,IPickUpable
     public List<Action> ItemActions => itemActions;
     public GameObject ItemGameObjectForInspect => itemGameObjectForInspect;
     public Sprite Icon => icon;
+    public Sprite HighlightIcon => highlightIcon;
     public string Type => type;
     public bool IsPermanent => isPermanent;
     

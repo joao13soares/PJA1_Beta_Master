@@ -12,7 +12,8 @@ public  class InventorySlot : MonoBehaviour, ISlot
     public IPickUpable StoredItem { get => storedItem; set => storedItem = value; }
     public int Quantity { get => quantity; set => quantity = value; }
     public Sprite GetIcon => storedItem.Icon;
-   
+    public Sprite GetHighlightIcon => storedItem.HighlightIcon;
+
 
     public string GetType => storedItem.Type;
     

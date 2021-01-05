@@ -18,6 +18,8 @@ public class Item : MonoBehaviour, IPickUpable, IInteractable
 	// Item for inspect item menu and inventory icon
 	[SerializeField] private GameObject itemGameObjectForInspect;
 	[SerializeField] private Sprite icon;
+	[SerializeField] private Sprite highlightIcon;
+
 	[SerializeField] private string type = "Item";
 	[SerializeField] private bool isPermanent = false ;
 
@@ -28,6 +30,9 @@ public class Item : MonoBehaviour, IPickUpable, IInteractable
 	public List<Action> ItemActions => itemActions;
 	public GameObject ItemGameObjectForInspect => itemGameObjectForInspect;
 	public Sprite Icon => icon;
+	
+	public Sprite HighlightIcon => highlightIcon;
+
 	public string Type => type;
 
 	public bool IsPermanent => isPermanent;

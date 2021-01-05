@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Melee : Weapon
 {
-    [SerializeField] Animator anim;
-    [SerializeField] GameObject bat;
+    [SerializeField] Animation anim;
+    [SerializeField] private AnimationClip attackAnimation;
 
     public override bool CanShoot => nextShotCooldown <= 0;
     public override bool CanReload => false;
+    
+    
+    
 
     public void Awake()
     {
-        this.type = "Bat";
+        this.type = "Knife"; 
+        
         
         defaultLocalPosition = this.transform.position;
         defaultLocalRotation = this.transform.rotation;
@@ -21,7 +25,8 @@ public class Melee : Weapon
     public override void Attacking()
     {
 
-        anim.SetTrigger("OnAttacking");
+        anim.clip = attackAnimation;
+        anim.Play();
 
         nextShotCooldown = defaultShotCooldown;
 

@@ -8,11 +8,14 @@ public abstract class Weapon : MonoBehaviour, IInteractable, IPickUpable, IRecha
     [SerializeField] protected List<Action> itemActions;
     [SerializeField] protected GameObject itemGameObjectForInspect;
     [SerializeField] protected Sprite icon;
+    [SerializeField] protected Sprite highlightIcon;
+
     [SerializeField] protected string type = "Weapon";
     [SerializeField] protected bool isPermanent = true;
 
     // Inventory to be stored
     [SerializeField] protected Inventory inventory;
+    
 
     // -------------------------------------IPickUpable---------------------------------------------//
 
@@ -20,6 +23,9 @@ public abstract class Weapon : MonoBehaviour, IInteractable, IPickUpable, IRecha
     public List<Action> ItemActions => itemActions;
     public GameObject ItemGameObjectForInspect => itemGameObjectForInspect;
     public Sprite Icon => icon;
+
+    public Sprite HighlightIcon => highlightIcon;
+
     public string Type => type;
 
     public Inventory InventoryToStore => inventory;
@@ -146,18 +152,22 @@ public abstract class Weapon : MonoBehaviour, IInteractable, IPickUpable, IRecha
 
     private void Update()
     {
-        // Gradually restore position and rotation after shooting kickback and recoil, respectively
-        this.transform.localPosition =
-            Vector3.Lerp(this.transform.localPosition, defaultLocalPosition, Time.deltaTime * 4f);
-        this.transform.localRotation =
-            Quaternion.Lerp(this.transform.localRotation, defaultLocalRotation, Time.deltaTime * 4f);
-
         // If there is a delay for the next shot
         if (nextShotCooldown > 0)
         {
             // Keep decreasing the delay
             nextShotCooldown -= Time.deltaTime;
         }
+
+
+        if (animationComponent.isPlaying) return;
+        // Gradually restore position and rotation after shooting kickback and recoil, respectively
+        this.transform.localPosition =
+            Vector3.Lerp(this.transform.localPosition, defaultLocalPosition, Time.deltaTime * 4f);
+        this.transform.localRotation =
+            Quaternion.Lerp(this.transform.localRotation, defaultLocalRotation, Time.deltaTime * 4f);
+
+       
     }
 
     public virtual void Attacking()

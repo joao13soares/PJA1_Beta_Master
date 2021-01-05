@@ -28,7 +28,7 @@ public class SlotSelection : MonoBehaviour
 		if (itemInfo == null) return; // On healthInventory there is no place to show image on mouse over 
 		
 		itemInfo.GetComponent<Mask>().enabled = false; 
-		itemInfo.GetComponent<Image>().sprite = this.gameObject.GetComponent<ISlot>().StoredItem.Icon;
+		itemInfo.GetComponent<Image>().sprite = this.gameObject.GetComponent<ISlot>().GetHighlightIcon;
 
 		Debug.Log("entrou");
     }

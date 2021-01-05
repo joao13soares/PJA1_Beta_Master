@@ -8,6 +8,7 @@ public interface IPickUpable
 	List<Action> ItemActions { get; }
     GameObject ItemGameObjectForInspect { get; }
     Sprite Icon { get; }
+    Sprite HighlightIcon { get; }
 	string Type { get; }
 	
 	bool IsPermanent { get; }

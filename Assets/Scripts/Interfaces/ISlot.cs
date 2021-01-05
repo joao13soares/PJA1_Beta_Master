@@ -9,4 +9,6 @@ public interface ISlot
     string GetType { get; }
     Sprite GetIcon { get; }
     
+    Sprite GetHighlightIcon { get; }
+    
 }
