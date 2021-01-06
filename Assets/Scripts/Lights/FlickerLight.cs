@@ -6,21 +6,23 @@ using Random = UnityEngine.Random;
 
 public class FlickerLight : MonoBehaviour
 {
-    [SerializeField]private float upTime,
+    [SerializeField]
+    private float upTime,
                                   currentTimer;
-    [SerializeField]private float downTime;
+    [SerializeField] private float downTime;
 
-    [SerializeField]private const float minUpTime = 3.0f,
+    [SerializeField]
+    private const float minUpTime = 3.0f,
                         maxUpTime = 5.0f,
                         minDownTime = 0.01f,
                         maxDownTime = 0.1f;
 
-    [SerializeField]private Light lightToTurnOff;
-    
+    [SerializeField] private List<Light> lightToTurnOff;
+
     private void Awake()
     {
-        
-        
+
+
         currentTimer = 0f;
         upTime = Random.Range(minUpTime, maxUpTime);
         downTime = Random.Range(minDownTime, maxDownTime);
@@ -30,14 +32,15 @@ public class FlickerLight : MonoBehaviour
     private void Update()
     {
 
-        if (!lightToTurnOff.enabled) return;
+        if (!lightToTurnOff[0].enabled) return;
 
         if (currentTimer >= upTime)
         {
+
             StartCoroutine(TurnOffLight());
             currentTimer = 0f;
-            
-          upTime = Random.Range(minUpTime, maxUpTime);
+
+            upTime = Random.Range(minUpTime, maxUpTime);
 
         }
         else currentTimer += Time.deltaTime;
@@ -45,13 +48,18 @@ public class FlickerLight : MonoBehaviour
 
     IEnumerator TurnOffLight()
     {
-        lightToTurnOff.enabled = false;
-        
+        foreach (Light light in lightToTurnOff)
+        {
+            light.enabled = false;
+        }
+
         yield return new WaitForSeconds(downTime);
-        
+
         downTime = Random.Range(minDownTime, maxDownTime);
 
-        lightToTurnOff.enabled = true;
-
+        foreach (Light light in lightToTurnOff)
+        {
+            light.enabled = true;
+        }
     }
 }

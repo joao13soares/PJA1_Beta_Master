@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 184.12514, g: 184.12514, b: 184.12514, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1790,7 +1790,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.3930566}
   m_BounceIntensity: 1
@@ -4074,7 +4074,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 160945583}
+  lightToTurnOff:
+  - {fileID: 160945583}
 --- !u!114 &160945582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4237,7 +4238,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -5454,7 +5455,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 202264190}
+  lightToTurnOff:
+  - {fileID: 202264190}
 --- !u!114 &202264189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5617,7 +5619,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -6833,7 +6835,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -6872,7 +6874,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 244743511}
+  lightToTurnOff:
+  - {fileID: 244743511}
 --- !u!1 &246060422
 GameObject:
   m_ObjectHideFlags: 0
@@ -6921,7 +6924,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 246060426}
+  lightToTurnOff:
+  - {fileID: 246060426}
 --- !u!114 &246060425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7084,7 +7088,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -9628,7 +9632,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.0582831}
   m_BounceIntensity: 1
@@ -10786,7 +10790,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 372256240}
+  lightToTurnOff:
+  - {fileID: 372256240}
 --- !u!114 &372256239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10949,7 +10954,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -12570,7 +12575,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 393620793}
+  lightToTurnOff:
+  - {fileID: 393620793}
 --- !u!114 &393620792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12733,7 +12739,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -15256,7 +15262,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.3930566}
   m_BounceIntensity: 1
@@ -18524,7 +18530,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 584771116}
+  lightToTurnOff:
+  - {fileID: 584771116}
 --- !u!114 &584771115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18687,7 +18694,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -23795,7 +23802,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.3930566}
   m_BounceIntensity: 1
@@ -25471,7 +25478,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.3930566}
   m_BounceIntensity: 1
@@ -27095,7 +27102,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 870501861}
+  lightToTurnOff:
+  - {fileID: 870501861}
 --- !u!114 &870501860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27258,7 +27266,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -30264,7 +30272,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.3930566}
   m_BounceIntensity: 1
@@ -31517,7 +31525,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.3930566}
   m_BounceIntensity: 1
@@ -31752,7 +31760,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.041232575, y: 1.0096959}
   m_BounceIntensity: 1
@@ -34121,7 +34129,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 1102822776}
+  lightToTurnOff:
+  - {fileID: 1102822776}
 --- !u!114 &1102822775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34284,7 +34293,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -34374,7 +34383,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 1105417352}
+  lightToTurnOff:
+  - {fileID: 1105417352}
 --- !u!114 &1105417351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34537,7 +34547,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -36060,7 +36070,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.3930566}
   m_BounceIntensity: 1
@@ -44067,7 +44077,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.3930566}
   m_BounceIntensity: 1
@@ -47041,7 +47051,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.041232575, y: 1.0096959}
   m_BounceIntensity: 6.98
@@ -50043,7 +50053,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 1572271272}
+  lightToTurnOff:
+  - {fileID: 1572271272}
 --- !u!114 &1572271271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50206,7 +50217,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -51552,7 +51563,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.059871674, y: 1.3930566}
   m_BounceIntensity: 1
@@ -51922,6 +51933,26 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.7524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.7524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.7524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -51934,6 +51965,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.0178
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
         type: 3}
@@ -51952,16 +51988,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
-        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -51974,21 +52000,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5.7524
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5.7524
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2d78e78e01841344797e7cd5a14e9c19,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5.7524
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 2d78e78e01841344797e7cd5a14e9c19,
         type: 3}
@@ -62181,7 +62192,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 1941435734}
+  lightToTurnOff:
+  - {fileID: 1941435734}
 --- !u!114 &1941435733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62344,7 +62356,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -67349,7 +67361,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 2103721977}
+  lightToTurnOff:
+  - {fileID: 2103721977}
 --- !u!114 &2103721976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67512,7 +67525,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -67995,7 +68008,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 2129781621}
+  lightToTurnOff:
+  - {fileID: 2129781621}
 --- !u!114 &2129781620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68158,7 +68172,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 4, y: 1.3930566}
   m_BounceIntensity: 1
@@ -84218,7 +84232,8 @@ MonoBehaviour:
   upTime: 0
   currentTimer: 0
   downTime: 0
-  lightToTurnOff: {fileID: 4490467825818047012}
+  lightToTurnOff:
+  - {fileID: 4490467825818047012}
 --- !u!65 &4490467826025695601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84240,7 +84255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4490467826105401997}
   m_LocalRotation: {x: -0, y: -0.99632794, z: -0, w: 0.08562014}
-  m_LocalPosition: {x: 16.36, y: 0.524, z: -17.97}
+  m_LocalPosition: {x: 14.707, y: 0.524, z: -19.294}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4490467827067958854}
@@ -84599,7 +84614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4490467827067958858}
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 27.72, y: 0, z: -10.26}
   m_LocalScale: {x: 0.24999993, y: 1, z: 0.24999993}
   m_Children:
   - {fileID: 4490467826576082399}
