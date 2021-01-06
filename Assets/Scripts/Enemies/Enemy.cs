@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
 
     public delegate void EnemyAction();
 
-    public event EnemyAction DamageTaken;
+    public event EnemyAction died;
 
     private void Awake()
     {
@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
     {
         //subtract damage amount when ReceiveDamage function is called
         currentHealth -= damageAmount;
-        DamageTaken?.Invoke();
+        
 
 
         if (currentHealth <= 0)
@@ -66,8 +66,11 @@ public class Enemy : MonoBehaviour
     private IEnumerator DestroyWithDelay()
     {
         isDying = true;
+        died?.Invoke();
         yield return new WaitForSeconds(2.0f);
 
+        
         GameObject.Destroy(this.gameObject);
+        
     }
 }

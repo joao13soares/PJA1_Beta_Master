@@ -9,8 +9,8 @@ using UnityEngine;
 public class RangedAttackBTNode : BTNode
 {
     [SerializeField] private Transform playerTransform;
-    [SerializeField] private Enemy enemyScript;
-    [SerializeField] private Animation anim;
+     private Enemy enemyScript;
+    private Animation anim;
     [SerializeField] private AnimationClip rangedAttackAnimation;
     [SerializeField] private float impactMomentOfAnimation;
     [SerializeField] private LayerMask enemyMask;
@@ -72,9 +72,5 @@ public class RangedAttackBTNode : BTNode
     }
 
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawRay(transform.position,transform.forward * enemyScript.RangedAttackRange);
-    }
+  
 }

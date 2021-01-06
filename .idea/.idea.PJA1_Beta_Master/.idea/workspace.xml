@@ -29,50 +29,41 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Spawner/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OpenAreas/FourthAreaOpenDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/RangedAttackActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/IsMeleeRangeBTNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/MoveInChasePathBTNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/RangedAttackBTNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTDecorator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/46/39b07108/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToAttackTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Boss/EnemyTriggerForActivation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelleeAttackActionNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightPickup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/30/793363cc/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Locomotion/SteeringBehaviours/Separation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSequencer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/ToChaseActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/UpdateStepDestinationBTNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Interactables/UnlockDoubleDoor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/MelleeAttackBTNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Spawner/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Boss/BossTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Boss/BossPlayerEncounterBTNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/MoveInChasePathBTNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/BehaviourTree/BTDecorator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/46/39b07108/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToAttackTransition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightPickup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/6a/a491656f/WaitForSeconds.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7765070B-AFF7-442E-A7A7-D482361E5065/bf/7b342fbb/Animation.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInMeleeRangeDecisionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/DragDoor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/Flashlight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IInteractable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/StateMachine/Transitions/ChaseToPatrolTransition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sound/DoorSound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashlightOrientation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Flashlight/FlashLightInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/FieldOfViewDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/RangedAttackActionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IDamageable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealthManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/MelleeAttackActionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/RangedAttackBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/MelleeAttackBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/UpdateStepDestinationBTNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lights/FlickerLight.cs" />
@@ -107,6 +98,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/WeaponManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/Melee/Melee.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss/BossPlayerEncounterBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/Attack/RangedAttackBTNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss/FixJointRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss/BossTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Boss/EnemyTriggerForActivation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStateMachine/Transitions/DeadTransition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIStateMachine/States/DeadScreenState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DeadScreen/DeadScreenButtonClick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EndGame/EndGameScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OpenAreas/FourthAreaOpenDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealthManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenu.cs" />
       </list>
     </option>
   </component>
@@ -191,6 +195,9 @@
       <workItem from="1609774202628" duration="9353000" />
       <workItem from="1609799509751" duration="15153000" />
       <workItem from="1609861230937" duration="8113000" />
+      <workItem from="1609881286454" duration="4885000" />
+      <workItem from="1609890267232" duration="6224000" />
+      <workItem from="1609898297677" duration="2283000" />
     </task>
     <servers />
   </component>

@@ -18,7 +18,7 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 	// Start is called before the first frame update
 	void  Awake()
 	{
-		playerHealth = new Health(100);
+		playerHealth = new Health(10000000);
 		globalVolume.profile.TryGet(out profileVignette);
 		globalVolume.profile.TryGet(out profileChromaticAberration);
 		

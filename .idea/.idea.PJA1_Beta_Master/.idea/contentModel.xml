@@ -79,6 +79,12 @@
               <e p="SlotSelection.cs" t="Include" />
             </e>
           </e>
+          <e p="DeadScreen" t="Include">
+            <e p="DeadScreenButtonClick.cs" t="Include" />
+          </e>
+          <e p="EndGame" t="Include">
+            <e p="EndGameScript.cs" t="Include" />
+          </e>
           <e p="Enemies" t="Include">
             <e p="BaseEnemy" t="Include">
               <e p="BehaviourTree" t="Include">
@@ -118,6 +124,11 @@
                 </e>
               </e>
             </e>
+            <e p="Boss" t="Include">
+              <e p="BossPlayerEncounterBTNode.cs" t="Include" />
+              <e p="BossTrigger.cs" t="Include" />
+              <e p="EnemyTriggerForActivation.cs" t="Include" />
+            </e>
             <e p="Enemy.cs" t="Include" />
             <e p="FieldOfViewDetection.cs" t="Include" />
             <e p="Spawner" t="Include">
@@ -149,6 +160,9 @@
             <e p="Movement" t="Include">
               <e p="Movement.cs" t="Include" />
             </e>
+          </e>
+          <e p="OpenAreas" t="Include">
+            <e p="FourthAreaOpenDoor.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="HeadBopping.cs" t="Include" />
@@ -198,11 +212,13 @@
             <e p="UIStateMachine" t="Include">
               <e p="CanvasManager.cs" t="Include" />
               <e p="States" t="Include">
+                <e p="DeadScreenState.cs" t="Include" />
                 <e p="InGameUIState.cs" t="Include" />
                 <e p="InspectUIState.cs" t="Include" />
                 <e p="InventoryUIState.cs" t="Include" />
               </e>
               <e p="Transitions" t="Include">
+                <e p="DeadTransition.cs" t="Include" />
                 <e p="InspectToInventoryTransition.cs" t="Include" />
                 <e p="InventoryInputTransition.cs" t="Include" />
                 <e p="ToInspectTransition.cs" t="Include" />
