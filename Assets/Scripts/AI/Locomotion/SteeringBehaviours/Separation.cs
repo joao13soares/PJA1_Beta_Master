@@ -11,27 +11,24 @@ public class Separation : SteeringBehaviour
     {
         Steering steering = new Steering();
 
-        float sphereRadius = 0.7f;
+        float sphereRadius = 0.3f;
 
         Ray ray = new Ray(origin.position, origin.orientation);
 
 
-        RaycastHit[] hits = Physics.SphereCastAll(ray, sphereRadius,sphereRadius,enemyLayerMask);
-        
-      
+        Collider[] collidersHit = Physics.OverlapSphere(origin.position, sphereRadius, enemyLayerMask);
 
-        
-        
-        foreach (RaycastHit hit in hits)
+
+        foreach (Collider hit in collidersHit)
         {
-            if (hit.collider.gameObject.transform.position != origin.position)
+            if (hit.gameObject.transform.position != origin.position)
             {
-                
-                steering.linear +=  origin.position - hit.point;
+
+                steering.linear += origin.position - hit.transform.position;
                 steering.linear.y *= 0f;
             }
-            
-               
+
+
         }
 
         return steering;
