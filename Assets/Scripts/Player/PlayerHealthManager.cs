@@ -13,6 +13,7 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 
 	private Vignette profileVignette;
 	private ChromaticAberration profileChromaticAberration;
+	[SerializeField] private List<GameObject> bloodstains;
 	
 	
 	// Start is called before the first frame update
@@ -50,6 +51,10 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 
 	private void LowHPEffects()
 	{
+		foreach (GameObject stain in bloodstains)
+		{
+			stain.SetActive(true);
+		}
 		
 		profileVignette.intensity.value = 0.5f;
 		profileChromaticAberration.active = true;
@@ -57,6 +62,11 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 
 	private void HighHPEffects()
 	{
+		
+		foreach (GameObject stain in bloodstains)
+		{
+			stain.SetActive(false);
+		}
 		profileVignette.intensity.value = 0.25f;
 
 		profileChromaticAberration.active = false;
