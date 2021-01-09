@@ -17,6 +17,8 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 	
 	[SerializeField] private List<GameObject> bloodstains;
 
+
+	private int lowHPThreshold = 50;
 	public delegate void PlayerHealthState();
 
 	public event PlayerHealthState lowHpEvent, highHPEvent;
@@ -24,7 +26,7 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 	// Start is called before the first frame update
 	void  Awake()
 	{
-		playerHealth = new Health(10000000);
+		playerHealth = new Health(100);
 		globalVolume.profile.TryGet(out profileVignette);
 		globalVolume.profile.TryGet(out profileChromaticAberration);
 		
@@ -37,7 +39,7 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 		playerHealth.currenthealth =
 			Mathf.Clamp(playerHealth.currenthealth + healAmount, 0, playerHealth.maxHealth);
 		
-		if(playerHealth.currenthealth >= 25) HighHPEffects();
+		if(playerHealth.currenthealth >= lowHPThreshold) HighHPEffects();
 		
 		
 		
@@ -51,7 +53,7 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 		Debug.Log(damage);
 		playerHealth.currenthealth -= damage;
 		
-		if(playerHealth.currenthealth <= 25) LowHPEffects();
+		if(playerHealth.currenthealth <= lowHPThreshold) LowHPEffects();
 	}
 
 	private void LowHPEffects()

@@ -83,6 +83,7 @@
             <e p="DeadScreenButtonClick.cs" t="Include" />
           </e>
           <e p="EndGame" t="Include">
+            <e p="CreditsQuitButton.cs" t="Include" />
             <e p="EndGameScript.cs" t="Include" />
           </e>
           <e p="Enemies" t="Include">

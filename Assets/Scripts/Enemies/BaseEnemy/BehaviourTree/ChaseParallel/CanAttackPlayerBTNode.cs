@@ -22,10 +22,14 @@ public class CanAttackPlayerBTNode : BTNode
 
     public override Result Execute()
     {
-        
+
         if (fovDetection.isPlayerDetected &&
             DistanceToPlayer() <= enemyScript.RangedAttackRange)
+        {
+            Debug.Log("IS IN RANGE ATTACK");
             return Result.Failure;
+
+        }
 
         return Result.Success;
     }
@@ -35,6 +39,7 @@ public class CanAttackPlayerBTNode : BTNode
         Vector2 playerPosTo2D = new Vector2(playerTransform.position.x,playerTransform.position.z);
         Vector2 thisTransformTo2D = new Vector2(transform.position.x,transform.position.z);
 
+        // Debug.Log(Vector2.Distance(playerPosTo2D, thisTransformTo2D));
         return Vector2.Distance(playerPosTo2D, thisTransformTo2D);
     }
 }

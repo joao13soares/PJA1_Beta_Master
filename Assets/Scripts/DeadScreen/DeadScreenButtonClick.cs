@@ -10,7 +10,7 @@ public class DeadScreenButtonClick : MonoBehaviour
     
     public void RestartButton()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(gameScene);
 
     }
 

@@ -60,10 +60,11 @@ public class MainMenu : MonoBehaviour
     IEnumerator LoadAsynchronously()
     {
         // // Sets loadingScreen
+        loadingScreen.SetActive(true);
+
 
         AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 
-        loadingScreen.SetActive(true);
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / 0.9f);

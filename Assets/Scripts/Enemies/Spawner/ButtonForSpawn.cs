@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,9 +7,18 @@ public class ButtonForSpawn : MonoBehaviour,IInteractable
 {
     [SerializeField] private EnemySpawner enemySpawner;
     [SerializeField] private Light lightForWrongFeedback;
+    
+    private AudioSource buttonClickAudioSource;
+
 
     private bool alreadyFailed = false;
-    
+
+
+    private void Awake()
+    {
+        buttonClickAudioSource = GetComponent<AudioSource>();
+    }
+
     public void OnRaycastSelect()
     {
         if (!alreadyFailed)
@@ -20,5 +30,9 @@ public class ButtonForSpawn : MonoBehaviour,IInteractable
         }
         
         lightForWrongFeedback.enabled = true;
+        
+        
+        buttonClickAudioSource.Play();
+        
     }
 }

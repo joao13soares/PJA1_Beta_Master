@@ -16,12 +16,18 @@ public class KeypadUnlock : MonoBehaviour
 
 
     private AudioSource beepAudioSource;
+    [SerializeField] private AudioClip beepAudioClip;
 
 
     public delegate void CodeChange();
 
     public event CodeChange CodeChanged;
 
+
+    private void Awake()
+    {
+        beepAudioSource = GetComponent<AudioSource>();
+    }
 
     private bool CanUnlock()
     {
@@ -36,6 +42,8 @@ public class KeypadUnlock : MonoBehaviour
 
     public void AddNumber(int numberToAdd)
     {
+        beepAudioSource.PlayOneShot(beepAudioClip);
+        
         if (currentIndex >= correctCode.Length) return;
 
         currentCode[currentIndex++] = numberToAdd;
@@ -44,6 +52,9 @@ public class KeypadUnlock : MonoBehaviour
 
     public void ClearKey()
     {
+        beepAudioSource.PlayOneShot(beepAudioClip);
+
+        
         ClearCode();
 
         CodeChanged?.Invoke();
@@ -53,6 +64,9 @@ public class KeypadUnlock : MonoBehaviour
 
     public void EnterKey()
     {
+        beepAudioSource.PlayOneShot(beepAudioClip);
+
+        
         if (CanUnlock()) dragDoor.UnlockDoor();
         else ClearKey();
     }

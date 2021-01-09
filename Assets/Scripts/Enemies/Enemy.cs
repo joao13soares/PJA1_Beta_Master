@@ -81,7 +81,7 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(deathAnimation.length);
 
         
-        GameObject.Destroy(this.gameObject);
+        Destroy(this.gameObject);
         
     }
 }

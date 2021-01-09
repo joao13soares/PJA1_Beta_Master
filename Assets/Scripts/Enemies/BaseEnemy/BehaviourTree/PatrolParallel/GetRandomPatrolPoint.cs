@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(Animation))]
+[RequireComponent(typeof(Movement))]
+
 public class GetRandomPatrolPoint : BTNode
 {
     [SerializeField]private List<Transform> patrolPoints;
@@ -14,10 +18,12 @@ public class GetRandomPatrolPoint : BTNode
 
     private Vector3 randomPointForNewPath;
 
+    
+    
 
     public override Result Execute()
     {
-        Debug.Log("NEED NEW PATH");
+        
         enemyMovement.UpdatePath(GetRandomPatrolPosition());
         enemyAnimation.clip = walkingAnimation;
         enemyAnimation.Play();

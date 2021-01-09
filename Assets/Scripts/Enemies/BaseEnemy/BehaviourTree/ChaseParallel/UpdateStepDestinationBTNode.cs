@@ -41,6 +41,7 @@ public class UpdateStepDestinationBTNode : BTNode
         {
             playerMovement.Stepped += UpdateDestination;
             isAlreadySubscribed = true;
+            UpdateDestination();
 
             enemyAnimation.clip = chasingAnimation;
             enemyAnimation.Play();
@@ -60,7 +61,7 @@ public class UpdateStepDestinationBTNode : BTNode
 
     private void UpdateDestination()
     {
-       enemyMovement.UpdatePath(playerMovement.lastStepPosition);
+       enemyMovement.UpdatePath(playerMovement.GetPlayerPosition);
     }
     
     

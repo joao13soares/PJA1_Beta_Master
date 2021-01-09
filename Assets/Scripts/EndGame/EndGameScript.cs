@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EndGameScript : MonoBehaviour, IInteractable
 {
 
-    private int endGameScreen = 2;
+    private int endGameScreen = 3;
     public void OnRaycastSelect()
     {
         SceneManager.LoadScene(endGameScreen);

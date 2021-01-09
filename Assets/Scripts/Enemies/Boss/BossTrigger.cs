@@ -7,9 +7,12 @@ public class BossTrigger : MonoBehaviour
 {
     [SerializeField] private EnemyTriggerForActivation bossActivation;
 
+    [SerializeField] private Animation shortcutDoor;
 
     private void OnTriggerEnter(Collider other)
     {
         bossActivation.TriggerEnemy();
+        this.gameObject.SetActive(false);
+        shortcutDoor.Play();
     }
 }
