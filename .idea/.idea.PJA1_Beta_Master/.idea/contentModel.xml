@@ -198,6 +198,7 @@
           </e>
           <e p="Sound" t="Include">
             <e p="DoorSound.cs" t="Include" />
+            <e p="HeartBeatSoundChanger.cs" t="Include" />
             <e p="StepsSoundManager.cs" t="Include" />
           </e>
           <e p="UI" t="Include">

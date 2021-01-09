@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(Animation))]
 public class Enemy : MonoBehaviour
 {
     //The box's current health point total
@@ -25,12 +27,14 @@ public class Enemy : MonoBehaviour
     private AudioClip[] screams;
 
 
-    [SerializeField] private IAIControlable AIController;
+    private IAIControlable AIController;
 
-    private Color[] colors = {Color.black, Color.red, Color.yellow, Color.green};
 
     private bool isDying;
 
+
+     private Animation anim;
+    [SerializeField] private AnimationClip deathAnimation;
 
     public delegate void EnemyAction();
 
@@ -38,6 +42,7 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
+        anim = GetComponent<Animation>();
         AIController = this.GetComponent<IAIControlable>();
         isDying = false;
     }
@@ -66,8 +71,14 @@ public class Enemy : MonoBehaviour
     private IEnumerator DestroyWithDelay()
     {
         isDying = true;
+
+        anim.clip = deathAnimation;
+        anim.Play();
+        
         died?.Invoke();
-        yield return new WaitForSeconds(2.0f);
+        
+        
+        yield return new WaitForSeconds(deathAnimation.length);
 
         
         GameObject.Destroy(this.gameObject);

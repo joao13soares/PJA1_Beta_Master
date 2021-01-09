@@ -31,6 +31,8 @@ public class HeartbeatSound : MonoBehaviour
 
         audioSource.Play();
     }
+    
+    
 
     public void ChangeHeartbeatFrequency(int frequencyLevel)
     {

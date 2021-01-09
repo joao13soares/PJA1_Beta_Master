@@ -3796,6 +3796,7 @@ MonoBehaviour:
   meleeAttackRange: 0
   rangedAttackDamage: 50
   meleeAttackDamage: 0
+  deathAnimation: {fileID: 0}
 --- !u!114 &95323193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3821,7 +3822,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e23c0310c61dbb446932f78fdfeee757, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -26990,13 +26991,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 810285470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f995ec1a54c5c824c8395d0930d0e5a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 40c653208c9340d459a85a40f2159d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartbeatAudioClips:
-  - {fileID: 8300000, guid: 6e2bf619b4edeaa428a35dab1434faa4, type: 3}
-  - {fileID: 8300000, guid: 2c8a969d09cc2c343ada83f9f2246390, type: 3}
-  - {fileID: 8300000, guid: 6c6186863dfc42d41b5f04a176863f0e, type: 3}
+  playerHealthScript: {fileID: 4490467827067958853}
+  fastHeartbeat: {fileID: 8300000, guid: 6c6186863dfc42d41b5f04a176863f0e, type: 3}
+  slowHeartbeat: {fileID: 8300000, guid: 6e2bf619b4edeaa428a35dab1434faa4, type: 3}
 --- !u!82 &810285473
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27007,11 +27007,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 6c6186863dfc42d41b5f04a176863f0e, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -40794,6 +40794,7 @@ MonoBehaviour:
   meleeAttackRange: 1
   rangedAttackDamage: 15
   meleeAttackDamage: 25
+  deathAnimation: {fileID: 7400000, guid: 873ac94e8aa18304ba9075e85365910d, type: 2}
 --- !u!82 &1195982765
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41094,6 +41095,7 @@ Animation:
   - {fileID: 7400000, guid: 33b7ce02229d2c84bb3817ca0cc422a4, type: 2}
   - {fileID: 7400000, guid: d982afe3ab1ad2f429f4193d179f46f7, type: 2}
   - {fileID: 7400000, guid: 60d251d9904859241b84162b29486c3f, type: 2}
+  - {fileID: 7400000, guid: 873ac94e8aa18304ba9075e85365910d, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -75269,6 +75271,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b8b9b6172ee7a6445ad29764dce6866a, type: 3}
   - {fileID: 21300000, guid: 7ee48ceb5cbaf184b86bfdefda70cf06, type: 3}
   - {fileID: 21300000, guid: 79b6455ede1aebf4ba9814c8f6ba8bf7, type: 3}
+  playerHealthScript: {fileID: 4490467827067958853}
 --- !u!224 &194216139143281427
 RectTransform:
   m_ObjectHideFlags: 0
@@ -77969,6 +77972,7 @@ MonoBehaviour:
   meleeAttackRange: 1
   rangedAttackDamage: 15
   meleeAttackDamage: 25
+  deathAnimation: {fileID: 7400000, guid: 873ac94e8aa18304ba9075e85365910d, type: 2}
 --- !u!65 &658050308837216266
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78341,6 +78345,7 @@ Animation:
   - {fileID: 7400000, guid: 33b7ce02229d2c84bb3817ca0cc422a4, type: 2}
   - {fileID: 7400000, guid: 397b0d427113ff14fb96870b3c4571db, type: 2}
   - {fileID: 7400000, guid: 60d251d9904859241b84162b29486c3f, type: 2}
+  - {fileID: 7400000, guid: 873ac94e8aa18304ba9075e85365910d, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0

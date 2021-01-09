@@ -52,10 +52,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/BehaviourTree/ChaseParallel/UpdateStepDestinationBTNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/KeypadUI/KeypadUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/BaseEnemy/DecisionTree/IsInAttackRangeDecisionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/HeartBeatSoundChanger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealthManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Sound/HeartBeatSoundChanger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Sound/Heartbeat/HeartbeatSound.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Book/HealthTab/HeartSprites/HeartAnimation.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lvrSQHbHVssIsETt96fEQKb57m" />
@@ -144,6 +149,8 @@
       <workItem from="1609890267232" duration="6224000" />
       <workItem from="1609898297677" duration="2283000" />
       <workItem from="1610147473827" duration="93000" />
+      <workItem from="1610202299492" duration="818000" />
+      <workItem from="1610203191310" duration="2920000" />
     </task>
     <servers />
   </component>
