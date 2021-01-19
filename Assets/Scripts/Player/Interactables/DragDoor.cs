@@ -109,7 +109,11 @@ public class DragDoor : MonoBehaviour, IInteractable
         
         // Event Condition
         if (isMouseInputValidForSound && isInsideLimits)
+        {
+            Debug.Log("sound");
             moved?.Invoke();
+
+        }
 
         else
             stopped?.Invoke();

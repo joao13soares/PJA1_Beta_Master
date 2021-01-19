@@ -12,7 +12,7 @@ public class FlashLightInput : MonoBehaviour
 
 
     [SerializeField] private Transform flashlightHolderTransform;
-    
+
     [SerializeField] private Light flashlightLight;
 
 
@@ -21,7 +21,7 @@ public class FlashLightInput : MonoBehaviour
 
     [SerializeField] int chargeDuration;
     [SerializeField] float currentChargeDurationRemaining;
-    public int CurrentChargePercentageRemaining => (int) ((currentChargeDurationRemaining / chargeDuration) * 100);
+    public int CurrentChargePercentageRemaining => (int)((currentChargeDurationRemaining / chargeDuration) * 100);
     private int RemainingCharges
     {
         get
@@ -34,8 +34,8 @@ public class FlashLightInput : MonoBehaviour
     }
 
 
-   
-    
+
+
 
     //--------------------------------------------------
 
@@ -53,23 +53,23 @@ public class FlashLightInput : MonoBehaviour
 
         // Input
         FlashLightAction();
-        
-         float forwardOffset =25f;
-          // transform.LookAt(flashlightHolderTransform.forward + new Vector3(0f,0f,forwardOffset), );
+
+        float forwardOffset = 25f;
+        // transform.LookAt(flashlightHolderTransform.forward + new Vector3(0f,0f,forwardOffset), );
 
 
-          RaycastHit hit;
-          if (Physics.Raycast(flashlightHolderTransform.transform.position, flashlightHolderTransform.forward, out hit, Mathf.Infinity))
-          {
-              Transform temp = flashlightHolderTransform;
-              temp.LookAt(hit.point);
+        RaycastHit hit;
+        if (Physics.Raycast(flashlightHolderTransform.transform.position, flashlightHolderTransform.forward, out hit, Mathf.Infinity))
+        {
+            Transform temp = flashlightHolderTransform;
+            temp.LookAt(hit.point);
 
-               Quaternion.Slerp(flashlightHolderTransform.rotation, temp.rotation,Time.deltaTime * 6f);
-              
-          }
-          else
-         transform.localRotation =
-             Quaternion.LookRotation(flashlightHolderTransform.forward + new Vector3(0f, 0f, forwardOffset));
+            Quaternion.Slerp(flashlightHolderTransform.rotation, temp.rotation, Time.deltaTime * 6f);
+
+        }
+        else
+            transform.localRotation =
+                Quaternion.LookRotation(flashlightHolderTransform.forward + new Vector3(0f, 0f, forwardOffset));
     }
 
 
@@ -103,9 +103,6 @@ public class FlashLightInput : MonoBehaviour
             else
                 currentTimer += Time.deltaTime;
         }
-        
-        
-        
     }
 
     private void BatteryTimer()
@@ -122,12 +119,11 @@ public class FlashLightInput : MonoBehaviour
         }
     }
 
-    private void Recharge()
+    public void Recharge()
     {
-        if (RemainingCharges > 0)
-        {
-            inventoryToCheckBatteries.RemoveSlot(batteriesType);
-            currentChargeDurationRemaining = chargeDuration;
-        }
+        flashlightLight.enabled = false;
+        currentTimer = 0f;
+        canBeUsed = false;
+        currentChargeDurationRemaining = chargeDuration;
     }
 }

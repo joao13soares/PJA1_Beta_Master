@@ -74,7 +74,7 @@ public class RangedAttackActionNode : ActionNode
         RaycastHit hit;
         Vector3 rayDirection = playerTransform.position - transform.position;
 
-        if (Physics.Raycast(transform.position, rayDirection, out hit, enemyScript.RangedAttackRange,~enemyMask))
+        if (Physics.Raycast(transform.position, rayDirection, out hit, enemyScript.RangedAttackRange,enemyMask))
         {
             GameObject objectHit = hit.collider.gameObject;
             IDamageable temp = objectHit.GetComponent<IDamageable>();

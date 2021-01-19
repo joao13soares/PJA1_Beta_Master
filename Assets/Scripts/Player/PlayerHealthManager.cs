@@ -33,7 +33,7 @@ public class PlayerHealthManager : MonoBehaviour,IDamageable
 	}
 
 
-	private void HealHealth(int healAmount)
+	public void HealHealth(int healAmount)
 	{
 
 		playerHealth.currenthealth =

@@ -16,6 +16,8 @@ public class FlashLightPickup : MonoBehaviour, IInteractable,IPickUpable
     [SerializeField] protected GameObject itemGameObjectForInspect;
     [SerializeField] protected Sprite icon;
     [SerializeField] protected Sprite highlightIcon;
+    [SerializeField] protected GameObject uiIcon;
+
 
     [SerializeField] protected string type = "Flashlight";
     [SerializeField] protected bool isPermanent = true;
@@ -63,6 +65,7 @@ public class FlashLightPickup : MonoBehaviour, IInteractable,IPickUpable
         transform.localEulerAngles = defaultLocalRotation;
         flashLightInput.enabled = true;
 
+        uiIcon.SetActive(true);
 
     }
 

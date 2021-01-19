@@ -91,20 +91,24 @@ public class DisplayPanel : MonoBehaviour
 				{
 					action.RespectiveAction(slotSelected);
 
-					switch (action.actionName)
-					{
-						case "Inspect":
-							inspectItemRender.inventorySlotForInspect = currentInventorySlot;
-							inspectOpen?.Invoke();
-							DisablePanel(); // Disables panel
+                    switch (action.actionName)
+                    {
+                        case "Inspect":
+                            inspectItemRender.inventorySlotForInspect = currentInventorySlot;
+                            inspectOpen?.Invoke();
+                            DisablePanel(); // Disables panel
 
-							break;
-						case "Heal":
-							DisablePanel(); // Disables panel
-							HealthPlus?.Invoke();
-							break;
-					}
-				});
+                            break;
+                        case "Heal":
+                            DisablePanel(); // Disables panel
+                            HealthPlus?.Invoke();
+                            break;
+
+                        case "Recharge":
+                            DisablePanel();
+                            break;
+                    }
+                });
 		}
 	}
 

@@ -35,9 +35,9 @@ public class FieldOfViewDetection : MonoBehaviour
         Vector3 toPlayer = playerTransform.position - enemyTransform.position;
 
 
-        enemyLayer = 1 << 2;
+        //enemyLayer = 1 << 2;
 
-        if (Physics.Raycast(enemyTransform.position, toPlayer, out hit, detectRange,~enemyLayer))
+        if (Physics.Raycast(enemyTransform.position, toPlayer, out hit, detectRange, enemyLayer))
         {
             Debug.Log(hit.collider.gameObject.name);
             if (hit.collider.gameObject.transform == playerTransform)

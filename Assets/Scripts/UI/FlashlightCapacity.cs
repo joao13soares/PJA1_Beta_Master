@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class FlashlightCapacity : MonoBehaviour
 {
     [SerializeField]
-    GameObject section1, section2, section3, section4;
+    GameObject section1, section2, section3, section4, section5;
     [SerializeField]
     Text percentageText;
     [SerializeField]
@@ -17,8 +17,7 @@ public class FlashlightCapacity : MonoBehaviour
 
     void Awake()
     {
-        currentBatteryPercentage = flashLightInput.CurrentChargePercentageRemaining;
-        percentageText.text = currentBatteryPercentage + "%";
+        section5.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,8 +26,6 @@ public class FlashlightCapacity : MonoBehaviour
         // Updates percentage value
         currentBatteryPercentage = flashLightInput.CurrentChargePercentageRemaining;
         
-        UpdatePercentageUI();
-
         BatterySectionManagement();
 
     }
@@ -43,6 +40,7 @@ public class FlashlightCapacity : MonoBehaviour
                 section2.SetActive(true);
                 section3.SetActive(true);
                 section4.SetActive(true);
+                section5.SetActive(false);
                 break;
             
             // 1st Section OFF
@@ -57,22 +55,18 @@ public class FlashlightCapacity : MonoBehaviour
             
             // 3rd Section OFF
             case 25:
+                section5.SetActive(true);
                 section3.SetActive(false);
                 break;
             
             //4th Section OFF
             case 0:
                 section4.SetActive(false);
+                section5.SetActive(false);
                 break;
         }
         
     }
     
-    //Updates Percentage text
-    private void UpdatePercentageUI()
-    {
-        
-        percentageText.text = currentBatteryPercentage + "%";
-
-    }
+    
 }

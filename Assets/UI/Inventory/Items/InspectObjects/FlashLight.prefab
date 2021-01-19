@@ -292,8 +292,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4164797307763870414}
-  - component: {fileID: 4164797307763870415}
-  - component: {fileID: 2936884034130843958}
   m_Layer: 10
   m_Name: FlashLight
   m_TagString: Untagged
@@ -310,46 +308,10 @@ Transform:
   m_GameObject: {fileID: 4164797307763870412}
   m_LocalRotation: {x: 0.09702401, y: 0.14951509, z: -0.033723183, w: 0.9834095}
   m_LocalPosition: {x: -0.29800054, y: 0.10100007, z: 0.28100035}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4164797307586517256}
   - {fileID: 4164797307690504580}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 11.59, y: 17.068, z: -2.183}
---- !u!114 &4164797307763870415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4164797307763870412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f33a25a9c5b6034cb8184ef1666c6e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashlightLight: {fileID: 4164797307690504583}
-  inventoryToCheckBatteries: {fileID: 0}
-  batteriesType: Battery
-  chargeDuration: 0
-  currentChargeDurationRemaining: 0
---- !u!114 &2936884034130843958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4164797307763870412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 101a0a57d6196cc40bc51045378ea789, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transformForParentEquip: {fileID: 0}
-  itemActions: []
-  itemGameObjectForInspect: {fileID: 0}
-  icon: {fileID: 0}
-  type: Flashlight
-  isPermanent: 1
-  inventory: {fileID: 0}

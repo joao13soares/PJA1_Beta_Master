@@ -59,7 +59,7 @@ public class RangedAttackBTNode : BTNode
         Vector3 rayDirection = playerTransform.position - transform.position;
 
         
-        if (Physics.Raycast(transform.position, rayDirection, out hit, enemyScript.RangedAttackRange,~enemyMask))
+        if (Physics.Raycast(transform.position, rayDirection, out hit, enemyScript.RangedAttackRange,enemyMask))
         {
             Debug.Log("HIT SOMETHING PLZ" + hit.collider.gameObject);
             GameObject objectHit = hit.collider.gameObject;

@@ -8,8 +8,6 @@ public class DoorSound : MonoBehaviour
 {
     private AudioSource doorAudioSource;
 
-    [SerializeField] private List<AudioClip> doorAudioClips;
-
     private DragDoor correspondentDoor;
 
     private bool raisingVolume, loweringVolume;
@@ -39,7 +37,7 @@ public class DoorSound : MonoBehaviour
 
     void Update()
     {
-        bool canChangeVolume = doorAudioSource.volume > 0f && doorAudioSource.volume < 1f;
+        bool canChangeVolume = doorAudioSource.volume >= 0f && doorAudioSource.volume <= 1f;
         if (!canChangeVolume) return;
         doorAudioSource.volume += amountToAdd * Time.deltaTime;
     }

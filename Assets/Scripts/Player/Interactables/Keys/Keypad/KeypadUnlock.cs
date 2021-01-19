@@ -15,7 +15,7 @@ public class KeypadUnlock : MonoBehaviour
     [SerializeField] private DragDoor dragDoor;
 
 
-    private AudioSource beepAudioSource;
+    [SerializeField] private AudioSource beepAudioSource;
     [SerializeField] private AudioClip beepAudioClip;
 
 
@@ -26,7 +26,7 @@ public class KeypadUnlock : MonoBehaviour
 
     private void Awake()
     {
-        beepAudioSource = GetComponent<AudioSource>();
+        //beepAudioSource = GetComponent<AudioSource>();
     }
 
     private bool CanUnlock()
