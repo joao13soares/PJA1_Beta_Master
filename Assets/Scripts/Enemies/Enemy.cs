@@ -29,7 +29,8 @@ public class Enemy : MonoBehaviour
 
     private IAIControlable AIController;
 
-
+    [SerializeField]
+    private float _removeTime;
     private bool isDying;
 
 
@@ -78,10 +79,9 @@ public class Enemy : MonoBehaviour
         died?.Invoke();
         
         
-        yield return new WaitForSeconds(deathAnimation.length);
-
-        
-        Destroy(this.gameObject);
+        yield return new WaitForSeconds(deathAnimation.length+_removeTime);
+        this.gameObject.SetActive(false);
+        //Destroy(this.gameObject);
         
     }
 }
