@@ -27,7 +27,7 @@ public class Shotgun : Weapon
         // Reduce the bullets available
         bulletsinCurrentMagazine--;
 
-        //PlayShootingSound();
+        gunAudio.PlayOneShot(gunSounds[0]);
 
         
         
@@ -58,7 +58,6 @@ public class Shotgun : Weapon
 
           
 
-            Debug.Log($"bullets: {bulletsinCurrentMagazine}");
             base.ShotEvent();
         }
 
@@ -69,7 +68,7 @@ public class Shotgun : Weapon
     protected override Vector3 WeaponSpread()
     {
         float recoilSpreadFactor = recoil;
-        Debug.Log(recoil);
+        
         float pelletSpreadRadius = Random.Range(0.0f, recoilSpreadFactor / 400.0f) * pelletSpreadRadiusMultiplier;  // Pellet spread radius increases with the current weapon X rotation, due to recoil
         Vector3 pelletSpreadAngle = this.transform.TransformDirection(Random.insideUnitCircle.normalized);  // TransformDirection from local space to world space | .normalized turns it into .onUnitCircle
         Vector3 pelletDirection = this.transform.forward - (this.transform.forward.y - playerCamera.transform.forward.y) * 0.5f * Vector3.up + pelletSpreadAngle * pelletSpreadRadius;

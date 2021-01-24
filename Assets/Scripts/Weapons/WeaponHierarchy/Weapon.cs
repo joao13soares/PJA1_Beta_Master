@@ -175,7 +175,8 @@ public abstract class Weapon : MonoBehaviour, IInteractable, IPickUpable, IRecha
         // Update the time when our player can fire next
         nextShotCooldown = defaultShotCooldown;
 
-        //PlayShootingSound();
+        gunAudio.PlayOneShot(gunSounds[0]);
+
 
         // Create a vector at the center of our camera's viewport
         rayOrigin = playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0.0f));
@@ -244,7 +245,7 @@ public abstract class Weapon : MonoBehaviour, IInteractable, IPickUpable, IRecha
 
 
         // // Play the reloading sound effect
-        // gunAudio.PlayOneShot(gunSounds[1]);
+         gunAudio.PlayOneShot(gunSounds[1]);
 
         //DESCOMENTAR QUANDO ANIMATIONS PRONTAS
         // weaponAnimationManager.PlayReloadAnimation();

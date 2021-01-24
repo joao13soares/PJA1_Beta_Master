@@ -79,6 +79,9 @@
               <e p="SlotSelection.cs" t="Include" />
             </e>
           </e>
+          <e p="Cameras" t="Include">
+            <e p="SecurityCameras.cs" t="Include" />
+          </e>
           <e p="DeadScreen" t="Include">
             <e p="DeadScreenButtonClick.cs" t="Include" />
           </e>
@@ -176,6 +179,7 @@
                 <e p="HealAction.cs" t="Include" />
                 <e p="Item.cs" t="Include" />
                 <e p="ItemInspect.cs" t="Include" />
+                <e p="RechargeAction.cs" t="Include" />
               </e>
               <e p="Keys" t="Include">
                 <e p="ItemUnlock.cs" t="Include" />

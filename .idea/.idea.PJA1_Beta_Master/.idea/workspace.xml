@@ -79,6 +79,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/UnlockDoubleDoor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Spawner/ButtonForSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interactables/Keys/Keypad/KeypadUnlock.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/Shotgun.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponHierarchy/Weapon.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lvrSQHbHVssIsETt96fEQKb57m" />
@@ -172,6 +174,7 @@
       <workItem from="1610208775514" duration="6731000" />
       <workItem from="1610216614412" duration="4678000" />
       <workItem from="1610223397744" duration="2594000" />
+      <workItem from="1611504228739" duration="776000" />
     </task>
     <servers />
   </component>
