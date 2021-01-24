@@ -978,7 +978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 4541179985545147885, guid: 9175af89441caed48801f75879b1160a,
     type: 3}
   icon: {fileID: 21300000, guid: 372c7960b2c10d0448823993b9e9b8ad, type: 3}
@@ -1672,8 +1672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
-  - {fileID: 11400000, guid: 2dd8e06974aac784eb74918e8834c210, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 3771287090455926050, guid: 4bb212755f3aeb740b88bc33f7eb4240,
     type: 3}
   icon: {fileID: 21300000, guid: 7594a5781781f174190e76767b5e65b9, type: 3}
@@ -1792,7 +1792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 4401531830387602443, guid: 5764116137ce5544e9bf35537ebc8c9b,
     type: 3}
   icon: {fileID: 21300000, guid: 557b7919d2a85ef41b512c5f756c50df, type: 3}
@@ -3867,18 +3867,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332780799}
-  m_LocalRotation: {x: 0, y: 0.007147031, z: 0, w: 0.99997455}
+  m_LocalRotation: {x: -0, y: 0.007147029, z: -0, w: 0.9999745}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.83097464, y: 0.8309749, z: 0.8309749}
+  m_LocalScale: {x: 0.48289573, y: 0.4828958, z: 0.48289573}
   m_Children:
   - {fileID: 1416903181}
   - {fileID: 1449121116}
-  m_Father: {fileID: 1948480638}
+  m_Father: {fileID: 349232855}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0.819, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.6, y: -283.3}
+  m_AnchoredPosition: {x: -122.4, y: -115.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &341659278
@@ -4033,6 +4033,7 @@ RectTransform:
   m_Children:
   - {fileID: 787715904}
   - {fileID: 1179613252}
+  - {fileID: 332780800}
   m_Father: {fileID: 7164481210091141649}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -157.225, z: 0}
@@ -4321,7 +4322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 919132149155446097, guid: 2d78e78e01841344797e7cd5a14e9c19,
     type: 3}
   icon: {fileID: 21300000, guid: b7e53adc14f50c84989d2e866f0dac27, type: 3}
@@ -7308,7 +7309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 4541179985545147885, guid: 9175af89441caed48801f75879b1160a,
     type: 3}
   icon: {fileID: 21300000, guid: 372c7960b2c10d0448823993b9e9b8ad, type: 3}
@@ -11226,8 +11227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
-  - {fileID: 11400000, guid: 2dd8e06974aac784eb74918e8834c210, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 3771287090455926050, guid: 4bb212755f3aeb740b88bc33f7eb4240,
     type: 3}
   icon: {fileID: 21300000, guid: 7594a5781781f174190e76767b5e65b9, type: 3}
@@ -16208,6 +16209,7 @@ MonoBehaviour:
   meleeAttackRange: 1
   rangedAttackDamage: 15
   meleeAttackDamage: 25
+  _removeTime: 0
   deathAnimation: {fileID: 0}
 --- !u!82 &1195982765
 AudioSource:
@@ -17066,7 +17068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 4541179985545147885, guid: 9175af89441caed48801f75879b1160a,
     type: 3}
   icon: {fileID: 21300000, guid: 372c7960b2c10d0448823993b9e9b8ad, type: 3}
@@ -19130,7 +19132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416903180}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -16.15, y: -5.7301126, z: 6.25}
+  m_LocalPosition: {x: -16.147736, y: -5.729601, z: 1.6664976}
   m_LocalScale: {x: 223.77979, y: 223.77979, z: -228.96782}
   m_Children:
   - {fileID: 1359338007}
@@ -19690,7 +19692,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449121115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.9174142}
+  m_LocalPosition: {x: 0, y: 0, z: -1.6679486}
   m_LocalScale: {x: 0.3024498, y: 0.3024498, z: 0.3024498}
   m_Children: []
   m_Father: {fileID: 332780800}
@@ -19698,7 +19700,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.144611, y: 5.7285547}
+  m_AnchoredPosition: {x: 16.144463, y: 5.729299}
   m_SizeDelta: {x: 218, y: 76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449121117
@@ -19954,8 +19956,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
-  - {fileID: 11400000, guid: 2dd8e06974aac784eb74918e8834c210, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 3771287090455926050, guid: 4bb212755f3aeb740b88bc33f7eb4240,
     type: 3}
   icon: {fileID: 21300000, guid: 7594a5781781f174190e76767b5e65b9, type: 3}
@@ -23670,7 +23672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 4541179985545147885, guid: 9175af89441caed48801f75879b1160a,
     type: 3}
   icon: {fileID: 21300000, guid: 372c7960b2c10d0448823993b9e9b8ad, type: 3}
@@ -27914,7 +27916,6 @@ RectTransform:
   m_Children:
   - {fileID: 29813276}
   - {fileID: 497990402}
-  - {fileID: 332780800}
   m_Father: {fileID: 7164481210091141649}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -157.225, z: 0}
@@ -29105,7 +29106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 4541179985545147885, guid: 9175af89441caed48801f75879b1160a,
     type: 3}
   icon: {fileID: 21300000, guid: 372c7960b2c10d0448823993b9e9b8ad, type: 3}
@@ -29481,7 +29482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 2055232638994786777, guid: 183081b637bf3694e8c9926ba01beafc,
     type: 3}
   icon: {fileID: 21300000, guid: 5d3f4a8fa67f2414f8b2dc1098e24603, type: 3}
@@ -29657,7 +29658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 4541179985545147885, guid: 9175af89441caed48801f75879b1160a,
     type: 3}
   icon: {fileID: 21300000, guid: 372c7960b2c10d0448823993b9e9b8ad, type: 3}
@@ -29803,7 +29804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 4541179985545147885, guid: 9175af89441caed48801f75879b1160a,
     type: 3}
   icon: {fileID: 21300000, guid: 372c7960b2c10d0448823993b9e9b8ad, type: 3}
@@ -31812,7 +31813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 203512671219124838, guid: 6cc1e08303ec2dd44b693a00ffa662a1,
     type: 3}
   icon: {fileID: 21300000, guid: f176342cb5026124f8e1d93b835c82ba, type: 3}
@@ -32277,7 +32278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3378acb7d59ed48bd0b362c4f9c50d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorAudioClips: []
 --- !u!23 &580223033363344076
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32501,6 +32501,7 @@ MonoBehaviour:
   meleeAttackRange: 1
   rangedAttackDamage: 15
   meleeAttackDamage: 25
+  _removeTime: 0
   deathAnimation: {fileID: 0}
 --- !u!65 &658050308837216266
 BoxCollider:
@@ -33367,7 +33368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 5054069054781275822, guid: 2484c91c174365f4caeed1e1a4d43712,
     type: 3}
   icon: {fileID: 21300000, guid: 161e714b99fef814ab91634eeb2d47f9, type: 3}
@@ -33929,7 +33930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 2055232638994786777, guid: 183081b637bf3694e8c9926ba01beafc,
     type: 3}
   icon: {fileID: 21300000, guid: 5d3f4a8fa67f2414f8b2dc1098e24603, type: 3}
@@ -34024,7 +34025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 2055232638994786777, guid: 183081b637bf3694e8c9926ba01beafc,
     type: 3}
   icon: {fileID: 21300000, guid: 5d3f4a8fa67f2414f8b2dc1098e24603, type: 3}
@@ -34434,7 +34435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 4541179985545147885, guid: 9175af89441caed48801f75879b1160a,
     type: 3}
   icon: {fileID: 21300000, guid: 372c7960b2c10d0448823993b9e9b8ad, type: 3}
@@ -34608,7 +34609,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3378acb7d59ed48bd0b362c4f9c50d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorAudioClips: []
 --- !u!33 &2840204565310360645
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -35175,7 +35175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 7816214395033696142, guid: b4ef2ab43e1070a4fbacd0fb5af81d5b,
     type: 3}
   icon: {fileID: 21300000, guid: 0c2760749f9803641a6be5ae7e25d068, type: 3}
@@ -35905,8 +35905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
-  - {fileID: 11400000, guid: 2dd8e06974aac784eb74918e8834c210, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 3771287090455926050, guid: 4bb212755f3aeb740b88bc33f7eb4240,
     type: 3}
   icon: {fileID: 21300000, guid: 7594a5781781f174190e76767b5e65b9, type: 3}
@@ -36016,8 +36016,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
-  - {fileID: 11400000, guid: 2dd8e06974aac784eb74918e8834c210, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 3771287090455926050, guid: 4bb212755f3aeb740b88bc33f7eb4240,
     type: 3}
   icon: {fileID: 21300000, guid: 7594a5781781f174190e76767b5e65b9, type: 3}
@@ -36190,7 +36190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 5054069054781275822, guid: 2484c91c174365f4caeed1e1a4d43712,
     type: 3}
   icon: {fileID: 21300000, guid: 161e714b99fef814ab91634eeb2d47f9, type: 3}
@@ -36463,8 +36463,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
-  - {fileID: 11400000, guid: 2dd8e06974aac784eb74918e8834c210, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 3771287090455926050, guid: 4bb212755f3aeb740b88bc33f7eb4240,
     type: 3}
   icon: {fileID: 21300000, guid: 7594a5781781f174190e76767b5e65b9, type: 3}
@@ -38403,7 +38403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 5054069054781275822, guid: 2484c91c174365f4caeed1e1a4d43712,
     type: 3}
   icon: {fileID: 21300000, guid: 161e714b99fef814ab91634eeb2d47f9, type: 3}
@@ -38617,8 +38617,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 0}
   itemActions:
-  - {fileID: 11400000, guid: 62a2919abc360ca4e870a445aec6866a, type: 2}
-  - {fileID: 11400000, guid: 2dd8e06974aac784eb74918e8834c210, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   itemGameObjectForInspect: {fileID: 3771287090455926050, guid: 4bb212755f3aeb740b88bc33f7eb4240,
     type: 3}
   icon: {fileID: 21300000, guid: 7594a5781781f174190e76767b5e65b9, type: 3}
