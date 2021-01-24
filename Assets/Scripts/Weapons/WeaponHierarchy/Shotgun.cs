@@ -53,7 +53,7 @@ public class Shotgun : Weapon
 
                 base.ApplyWeaponForce(hit, impactPercentageWithDistance);
 
-                base.HoleCreation(hit);
+                //base.HoleCreation(hit);
             }
 
           

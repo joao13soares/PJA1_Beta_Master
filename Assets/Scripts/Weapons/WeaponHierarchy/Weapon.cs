@@ -200,7 +200,7 @@ public abstract class Weapon : MonoBehaviour, IInteractable, IPickUpable, IRecha
 
             ApplyWeaponForce(hit, impactPercentageWithDistance);
 
-            HoleCreation(hit);
+            //HoleCreation(hit);
         }
 
         WeaponRecoil();
@@ -210,7 +210,7 @@ public abstract class Weapon : MonoBehaviour, IInteractable, IPickUpable, IRecha
 
 
     //CReates the holes
-    protected void HoleCreation(RaycastHit hit) => pelletHoleManager.NewPelletHole(hit.point, hit.collider.gameObject);
+    //protected void HoleCreation(RaycastHit hit) => pelletHoleManager.NewPelletHole(hit.point, hit.collider.gameObject);
 
     //Invokes the shot Event
     protected void ShotEvent()
